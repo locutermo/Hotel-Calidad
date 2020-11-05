@@ -13,7 +13,7 @@ if(isset($_SESSION["user_id"]) && $_SESSION["user_id"]!=""){
     	<?php if(isset($_COOKIE['password_updated'])):?>
     		<div class="alert alert-success">
     		<p><i class='glyphicon glyphicon-off'></i> Se ha cambiado la contraseña exitosamente !!</p>
-    		<p>Pruebe iniciar sesion con su nueva contraseña.</p>
+    		
 
     		</div> 
     	<?php setcookie("password_updated","",time()-18600);
