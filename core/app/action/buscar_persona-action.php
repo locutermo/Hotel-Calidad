@@ -1,5 +1,5 @@
 <?php
-if (isset($_GET['term'])){
+if (isset($_GET['term'])){	
 	
 $base = new Database();
 $con = $base->connect();
