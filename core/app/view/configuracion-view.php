@@ -7,7 +7,7 @@
         <small>Importante</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
+        <li><a href="#"><em class="fa fa-dashboard"></em> Inicio</a></li>
         <li class="active">Configuración</li>
       </ol>
     </section>
@@ -22,7 +22,7 @@
               <h3 class="box-title">Selecciona</h3>
 
               <div class="box-tools">
-                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><em class="fa fa-minus"></em>
                 </button>
               </div>
             </div>
@@ -31,7 +31,7 @@
               <ul class="nav nav-tabs nav-stacked">
                <li class="active"><a href="#tab_1" data-toggle="tab" class="btn-primary">PRINCIPAL</a></li>
               
-              <li><a href="#tab_3" data-toggle="tab" class="btn-primary"> <i class="fa fa-filter"></i>OTROS</a></li>
+              <li><a href="#tab_3" data-toggle="tab" class="btn-primary"> <em class="fa fa-filter"></em>OTROS</a></li>
               
             
             </ul>

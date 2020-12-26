@@ -82,7 +82,7 @@ if (isset($_GET['id']))//codigo elimina un elemento del array
                     <td><?php if($tmp->id_cliente!=null){echo $tmp->getCliente()->documento;}else{ echo "<center>----</center>"; }  ?></td>
                     <td><?php if($tmp->id_cliente!=null){echo $tmp->getCliente()->nombre;}else{ echo "<center>----</center>"; }  ?></td>
     				
-      				<td ><span class="pull-right"><a href="#" onclick="eliminar('<?php echo $tmp->id ?>')"><i class="glyphicon glyphicon-trash"></i> </a></span></td>
+      				<td ><span class="pull-right"><a href="#" onclick="eliminar('<?php echo $tmp->id ?>')"><em class="glyphicon glyphicon-trash"></em> </a></span></td>
          
           
                 </tr>

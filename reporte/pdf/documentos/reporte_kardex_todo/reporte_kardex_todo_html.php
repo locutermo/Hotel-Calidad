@@ -85,7 +85,7 @@ tr:hover td { background: #d0dafd; color: #339; }
                 <td style="width: 80%; text-align: left">
                 </td>
                 <td style="width: 20%; text-align: right; font-size:12px;" >
-                  WWW.<b>empresa</b>.com<br />
+                  WWW.<strong>empresa</strong>.com<br />
                   Móvil 921355925 <br />Fijo (064) 201773<br />
                 </td>
                 
@@ -122,7 +122,7 @@ tr:hover td { background: #d0dafd; color: #339; }
             ?>
             <td  style="width: 60%; text-align: center"> <br /></td>
            
-            <td  style="width: 40%; text-align: center;border:black 1px solid;"><br><b><?php echo $mes.' de '. $_GET['anio']; ?> </b></td>
+            <td  style="width: 40%; text-align: center;border:black 1px solid;"><br><strong><?php echo $mes.' de '. $_GET['anio']; ?> </strong></td>
             
         </tr>
    

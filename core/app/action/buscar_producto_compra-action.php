@@ -62,7 +62,7 @@
               						</div>
               					</td> 
                          
-                        <td><span class="pull-right"><a href="#" onclick="agregar('<?php echo $producto->id; ?>')" class="btn btn-success" data-dismiss="modal"><i class="glyphicon glyphicon-plus-sign"></i> Agregar</a></span></td>
+                        <td><span class="pull-right"><a href="#" onclick="agregar('<?php echo $producto->id; ?>')" class="btn btn-success" data-dismiss="modal"><em class="glyphicon glyphicon-plus-sign"></em> Agregar</a></span></td>
                         
                       </tr> 
                     <?php endforeach; ?>

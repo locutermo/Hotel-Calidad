@@ -85,7 +85,7 @@ tr:hover td { background: #d0dafd; color: #339; }
                 <td style="width: 80%; text-align: left">
                 </td>
                 <td style="width: 20%; text-align: right; font-size:12px;" >
-                  WWW.<b>empresa</b>.com<br />
+                  WWW.<strong>empresa</strong>.com<br />
                   Móvil 964000482 <br />Fijo (064) 201773<br />
                 </td>
                 
@@ -153,7 +153,7 @@ tr:hover td { background: #d0dafd; color: #339; }
             
             <td  style="width: 60%; text-align: center"> <br /></td>
            
-            <td  style="width: 40%; text-align: center;border:black 1px solid;"><br><b style="text-decoration:underline; font-family:Arial, Helvetica, sans-serif;" >FECHA: <?php echo $hoy; ?><BR><BR> Alquiler de habitación: <?php echo '$   '.number_format($subtotal4,2,'.',',') ?><BR><BR> Servicio de habitación: <?php echo number_format($subtotal3,2,'.',','); ?><BR><BR> Gastos: <?php echo '$  '.number_format($subtotal5,2,'.',','); ?><BR><BR> TOTAL: <?php echo '$   '.number_format($subtotal3+$subtotal4-$subtotal5,2,'.',','); ?></b></td>
+            <td  style="width: 40%; text-align: center;border:black 1px solid;"><br><strong style="text-decoration:underline; font-family:Arial, Helvetica, sans-serif;" >FECHA: <?php echo $hoy; ?><BR><BR> Alquiler de habitación: <?php echo '$   '.number_format($subtotal4,2,'.',',') ?><BR><BR> Servicio de habitación: <?php echo number_format($subtotal3,2,'.',','); ?><BR><BR> Gastos: <?php echo '$  '.number_format($subtotal5,2,'.',','); ?><BR><BR> TOTAL: <?php echo '$   '.number_format($subtotal3+$subtotal4-$subtotal5,2,'.',','); ?></strong></td>
             
         </tr>
    
@@ -195,8 +195,8 @@ tr:hover td { background: #d0dafd; color: #339; }
                   <tr> 
             <td><?php echo $numero; ?></td>
             <td><?php echo $reportediario->getHabitacion()->nombre; ?></td>
-            <td><b>$  <?php echo number_format($reportediario->precio,2,'.',','); ?></b></td>
-            <td ><b>$  <?php echo number_format($reportediario->cant_noche,2,'.',','); ?></b></td>
+            <td><strong>$  <?php echo number_format($reportediario->precio,2,'.',','); ?></strong></td>
+            <td ><strong>$  <?php echo number_format($reportediario->cant_noche,2,'.',','); ?></strong></td>
             <?php $subtotal= ($reportediario->precio*$reportediario->cant_noche)+$reportediario->total; ?>
             <td >$   <?php echo number_format($subtotal,2,'.',','); ?></td>
             <td><?php echo date($reportediario->fecha_entrada); ?></td>
@@ -266,7 +266,7 @@ tr:hover td { background: #d0dafd; color: #339; }
             <td ><?php echo   $reporproduct->cantidad; ?><br /></td>
             <td >$  <?php echo   number_format($reporproduct->precio,2,'.',','); ?><br /></td>
             <?php $subtotal1=$reporproduct->cantidad*$reporproduct->precio; ?>
-            <td><b>$   <?php echo number_format($subtotal1,2,'.',','); ?></b></td>
+            <td><strong>$   <?php echo number_format($subtotal1,2,'.',','); ?></strong></td>
             <?php $fecha=date($reporproduct->fecha_creada);?>
             
             <td><?php echo date("h:j:i", strtotime($fecha)); ?></td>

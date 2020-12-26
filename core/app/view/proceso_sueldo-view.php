@@ -3,7 +3,7 @@
 <div class="row">
 <section class="content-header">
     <ol class="breadcrumb">
-      <li><a href="index.php?view=reserva"><i class="fa fa-home"></i> Inicio</a></li>
+      <li><a href="index.php?view=reserva"><em class="fa fa-home"></em> Inicio</a></li>
       <li><a href="index.php?view=sueldo">Pagos</a></li>
       <li class="active">Realizar proceso</li>
     </ol>
@@ -23,23 +23,23 @@
         <h1 class="custom-font"><strong>PAGOS PARA</strong> <?php echo $sueldo->getUsuario()->name; ?></h1>
         <ul class="controls">
           <li class="remove">
-            <a  data-toggle="modal" data-target="#myModal"  ><i class="fa fa-plus"></i> Agregar proceso</a>
+            <a  data-toggle="modal" data-target="#myModal"  ><em class="fa fa-plus"></em> Agregar proceso</a>
           </li>
           <li class="dropdown">
             <a role="button" tabindex="0" class="dropdown-toggle settings" data-toggle="dropdown">
-            <i class="fa fa-cog"></i><i class="fa fa-spinner fa-spin"></i>
+            <em class="fa fa-cog"></em><em class="fa fa-spinner fa-spin"></em>
             </a>
             <ul class="dropdown-menu pull-right with-arrow animated littleFadeInUp">
                 <li>
                   <a role="button" tabindex="0" class="tile-toggle">
-                  <span class="minimize"><i class="fa fa-angle-down"></i>&nbsp;&nbsp;&nbsp;Minimize</span>
-                  <span class="expand"><i class="fa fa-angle-up"></i>&nbsp;&nbsp;&nbsp;Expand</span>
+                  <span class="minimize"><em class="fa fa-angle-down"></em>&nbsp;&nbsp;&nbsp;Minimize</span>
+                  <span class="expand"><em class="fa fa-angle-up"></em>&nbsp;&nbsp;&nbsp;Expand</span>
                   </a>
                 </li>
                
             </ul>
           </li>
-          <li class="remove"><a role="button" tabindex="0" class="tile-close"><i class="fa fa-times"></i></a></li>
+          <li class="remove"><a role="button" tabindex="0" class="tile-close"><em class="fa fa-times"></em></a></li>
         </ul>
       </div>
       <!-- tile body -->
@@ -82,7 +82,7 @@
                         </td>
                         <td>  
                           <?php if($proceso->estado=='1'){ ?>
-                            <a href="index.php?view=anular_sueldo&id=<?php echo $proceso->id; ?>&id_su=<?php echo $proceso->id_sueldo; ?>" class="btn btn-warning btn-xs"><i class="glyphicon glyphicon-trash"></i> Anular</a>
+                            <a href="index.php?view=anular_sueldo&id=<?php echo $proceso->id; ?>&id_su=<?php echo $proceso->id_sueldo; ?>" class="btn btn-warning btn-xs"><em class="glyphicon glyphicon-trash"></em> Anular</a>
                           <?php }else{ ?>
                             <a  class="btn btn-danger btn-xs"> Anulado</a>
                           <?php }; ?>

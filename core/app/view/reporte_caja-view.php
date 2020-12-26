@@ -23,7 +23,7 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
 <div class="row">
 <section class="content-header">
     <ol class="breadcrumb">
-      <li><a href="index.php?view=reserva"><i class="fa fa-home"></i> Inicio</a></li>
+      <li><a href="index.php?view=reserva"><em class="fa fa-home"></em> Inicio</a></li>
       <li><a href="#">Reportes</a></li>
       <li class="active">Reporte de caja</li>
     </ol>
@@ -80,7 +80,7 @@ if($id_caja!=0){
 <?php $caja_abierta=CajaData::getById($id_caja); ?>
 <section class="tile tile-simple col-md-4">
         <div class="tile-widget dvd dvd-btm" style="text-align: center;">
-            <h5 class="box-title"><b>REPORTE DE CAJA</b></h5>
+            <h5 class="box-title"><strong>REPORTE DE CAJA</strong></h5>
              <!-- /.box-tools -->
         </div>
       <!-- /.box-header -->
@@ -230,7 +230,7 @@ if($id_caja!=0){
             <ul class="nav nav-tabs" style="background-color: #d2d6de;">
               <li class="active"><a href="#tab_1" data-toggle="tab">Tabla alquiler</a></li>
               <li><a href="#tab_2" data-toggle="tab">Tabla servicio a la habitación</a></li>
-              <li class="pull-right text-red"><a href="reporte/pdf/documentos/reporte_diario_caja.php" target="_blank" class="text-muted"><i class="fa fa-print"></i> IMPRIMIR</a></li>
+              <li class="pull-right text-red"><a href="reporte/pdf/documentos/reporte_diario_caja.php" target="_blank" class="text-muted"><em class="fa fa-print"></em> IMPRIMIR</a></li>
             </ul>
             <div class="tab-content">
               <div class="tab-pane active" id="tab_1">
@@ -256,8 +256,8 @@ if($id_caja!=0){
                       <tr>
                         <td><?php echo $numero; ?></td>
                         <td><?php echo $reportediario->getHabitacion()->nombre; ?></td>
-                        <td><b>$    <?php echo number_format($reportediario->precio,2,'.',','); ?></b></td>
-                        <td><b>$    <?php echo number_format($reportediario->cant_noche,2,'.',','); ?></b></td>
+                        <td><strong>$    <?php echo number_format($reportediario->precio,2,'.',','); ?></strong></td>
+                        <td><strong>$    <?php echo number_format($reportediario->cant_noche,2,'.',','); ?></strong></td>
                         <?php $subtotal= ($reportediario->precio*$reportediario->cant_noche)+$reportediario->total ?>
                         <td>$    <?php echo number_format($subtotal,2,'.',','); ?></td>
                         <td><?php echo date($reportediario->fecha_entrada); ?></td>
@@ -268,7 +268,7 @@ if($id_caja!=0){
 
                      <tfoot style="color: black; background-color: #e3e4e6;">
                         <th colspan="4"><p class="pull-right">Total</p></th>
-                        <th><b>$    <?php echo number_format($total,2,'.',','); ?> </b></th> 
+                        <th><strong>$    <?php echo number_format($total,2,'.',','); ?> </strong></th> 
                         <th></th>
                         <th></th>
                     </tfoot>
@@ -307,10 +307,10 @@ if($id_caja!=0){
                         <td><?php echo $numero; ?></td>
                         <td><?php echo $reporproduct->getProceso()->getHabitacion()->nombre; ?></td>
                         <td><?php echo $reporproduct->getProducto()->nombre; ?></td>
-                        <td><b><?php echo $reporproduct->cantidad; ?></b></td>
-                        <td><b>$   <?php echo number_format($reporproduct->precio,2,'.',','); ?></b></td>
+                        <td><strong><?php echo $reporproduct->cantidad; ?></strong></td>
+                        <td><strong>$   <?php echo number_format($reporproduct->precio,2,'.',','); ?></strong></td>
                         <?php $subtotal1=$reporproduct->cantidad*$reporproduct->precio; ?>
-                        <td><b>$   <?php echo number_format($subtotal1,2,'.',','); ?></b></td>
+                        <td><strong>$   <?php echo number_format($subtotal1,2,'.',','); ?></strong></td>
                         <td><?php echo date($reporproduct->fecha_creada); ?></td>
                       </tr> 
                     <?php $subtotal2=$subtotal1+$subtotal2; ?>
@@ -319,7 +319,7 @@ if($id_caja!=0){
 
                     <tfoot style="color: black; background-color: #e3e4e6;">
                         <th colspan="5"><p class="pull-right">Total</p></th>
-                        <th><b>$    <?php echo number_format($subtotal2,2,'.',','); ?></b> </th> 
+                        <th><strong>$    <?php echo number_format($subtotal2,2,'.',','); ?></strong> </th> 
                         <th></th>
                     </tfoot>
 

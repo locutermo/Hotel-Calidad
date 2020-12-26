@@ -91,7 +91,7 @@ function backup_tables($host, $user, $pass, $dbname, $tables = '*') {
         
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> </a></li>
+        <li><a href="#"><em class="fa fa-dashboard"></em> </a></li>
       
       </ol>
     </section>
@@ -112,7 +112,7 @@ function backup_tables($host, $user, $pass, $dbname, $tables = '*') {
             <!-- /.box-header -->
             <div class="box-body">
              
-              <a href="<?php echo $fileName; ?>" style="text-align: center;" ><strong><i class="fa fa-book margin-r-5"></i> DESCARGAR</strong></a>
+              <a href="<?php echo $fileName; ?>" style="text-align: center;" ><strong><em class="fa fa-book margin-r-5"></em> DESCARGAR</strong></a>
               <hr>
               <p class="text-muted">
                La copia de seguridad de guardará por defecto en la carpeta de "DESCARGA"

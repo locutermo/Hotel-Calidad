@@ -24,7 +24,7 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
         <small>Avance</small>
       </h3> 
       <ol class="breadcrumb">
-        <li><a href="index.php?view=reserva"><i class="fa fa-home"></i> Inicio</a></li>
+        <li><a href="index.php?view=reserva"><em class="fa fa-home"></em> Inicio</a></li>
         <li><a href="#">Reportes</a></li>
         <li class="active">Reporte Por rango</li>
       </ol>
@@ -79,7 +79,7 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
             <ul class="nav nav-tabs" style="background-color: #d2d6de;">
               <li class="active"><a href="#tab_1" data-toggle="tab">Tabla alquiler</a></li>
               
-              <li class="pull-right text-red"><a href="javascript:print();"  class="text-muted"><i class="fa fa-print"></i> IMPRIMIR</a></li>
+              <li class="pull-right text-red"><a href="javascript:print();"  class="text-muted"><em class="fa fa-print"></em> IMPRIMIR</a></li>
             </ul>
             <div class="tab-content">
               <div class="tab-pane active" id="tab_1"> 
@@ -144,7 +144,7 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
                                       foreach($tmps as $p):  ?>
                                             <tr>
                                               
-                                              <td><b><?php echo $p->getCliente()->getTipoDocumento()->nombre; ?></b></td>
+                                              <td><strong><?php echo $p->getCliente()->getTipoDocumento()->nombre; ?></strong></td>
                                               <td><?php echo $p->getCliente()->documento; ?></td>
                                               <td><?php echo $p->getCliente()->nombre; ?></td>
                                               
@@ -195,7 +195,7 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
 
                      <tfoot style="color: black; background-color: #e3e4e6;">
                         <th colspan="4"><p class="pull-right">Total</p></th>
-                        <th><b>$   <?php echo number_format($total,2,'.',','); ?> </b></th> 
+                        <th><strong>$   <?php echo number_format($total,2,'.',','); ?> </strong></th> 
                         <th></th>
                         <th></th>
                         <th></th>

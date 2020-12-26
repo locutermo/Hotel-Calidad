@@ -57,7 +57,7 @@ $hora = date("H:i:s");
                                 <td>R.U.C 101010101010</td>
                               </tr> 
                               <tr>
-                                <td><b style="text-align: center;">TICKET BOLETA</b></td>
+                                <td><strong style="text-align: center;">TICKET BOLETA</strong></td>
                               </tr> 
          
                               <tr>
@@ -100,8 +100,8 @@ $hora = date("H:i:s");
                     <tr>
                       <td></td>
                       <td><?php echo 'Habitación '.$operacion->getHabitacion()->nombre.' Por '.$contar_dias.' Dias y '.$contar_hora.' Horas'; ?></td>
-                      <td ><b>$  <?php echo number_format($operacion->getHabitacion()->precio,2,'.',','); ?></b></td>
-                      <td><span class="badge"><b>$  <?php echo number_format($operacion->total,2,'.',','); ?></b></span></td>
+                      <td ><strong>$  <?php echo number_format($operacion->getHabitacion()->precio,2,'.',','); ?></strong></td>
+                      <td><span class="badge"><strong>$  <?php echo number_format($operacion->total,2,'.',','); ?></strong></span></td>
                     </tr>
 
                   <?php $total=0;?>
@@ -114,9 +114,9 @@ $hora = date("H:i:s");
 
                       <td><?php echo $producto->cantidad; ?></td>
                       <td><?php echo $producto->getProducto()->nombre; ?></td>
-                      <td ><b>$  <?php echo number_format($producto->precio,2,'.',','); ?></b></td>
+                      <td ><strong>$  <?php echo number_format($producto->precio,2,'.',','); ?></strong></td>
                       <?php $sub_total=$producto->precio*$producto->cantidad; ?>
-                      <td><span class="badge"><b>$  <?php echo number_format($sub_total,2,'.',','); ?></b></span></td>
+                      <td><span class="badge"><strong>$  <?php echo number_format($sub_total,2,'.',','); ?></strong></span></td>
                     </tr>
                     <?php $total=$sub_total+$total; ?>
 
@@ -126,7 +126,7 @@ $hora = date("H:i:s");
                <?php }else{ };?>
                   <tr>
                   <th colspan="3" style="border-right: 1px solid #a09e9e;"><p style="float: right;font-size: 18px;">Total $ </p></th>
-                  <th><b>$  <?php echo number_format($total+$operacion->total,2,'.',','); ?></b></th>
+                  <th><strong>$  <?php echo number_format($total+$operacion->total,2,'.',','); ?></strong></th>
                   </tr>
 
                    

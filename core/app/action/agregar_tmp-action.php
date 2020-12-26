@@ -53,7 +53,7 @@ if (isset($_GET['id']))//codigo elimina un elemento del array
                 <td>$  <?php echo number_format($tmp->precio_tmp,2,'.',','); ?></td>
                 <?php $sumar_t=$tmp->cantidad_tmp*$tmp->precio_tmp; ?>
                 <td>$  <?php echo number_format($sumar_t,2,'.',','); ?></td>
-  				<td ><span class="pull-right"><a href="#" onclick="eliminar('<?php echo $tmp->id_tmp ?>')"><i class="glyphicon glyphicon-trash"></i> </a></span></td>
+  				<td ><span class="pull-right"><a href="#" onclick="eliminar('<?php echo $tmp->id_tmp ?>')"><em class="glyphicon glyphicon-trash"></em> </a></span></td>
          
           
            </tr>

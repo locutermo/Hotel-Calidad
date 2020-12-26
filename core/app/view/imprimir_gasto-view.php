@@ -50,7 +50,7 @@ window.location='index.php?view=egreso';
  
                       <tr>
                         <td>Monto </td>
-                        <td><b>$  <?php echo number_format($gasto->precio,2,'.',','); ?></b></td>
+                        <td><strong>$  <?php echo number_format($gasto->precio,2,'.',','); ?></strong></td>
                         <td></td>
                       </tr> 
                       <tr>

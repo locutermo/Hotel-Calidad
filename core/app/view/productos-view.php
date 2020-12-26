@@ -3,7 +3,7 @@
 <div class="row">
 <section class="content-header">
     <ol class="breadcrumb">
-      <li><a href="index.php?view=cliebte"><i class="fa fa-home"></i> Inicio</a></li>
+      <li><a href="index.php?view=cliebte"><em class="fa fa-home"></em> Inicio</a></li>
       <li><a href="#">Punto de venta</a></li>
       <li class="active">Productos</li>
     </ol>
@@ -25,28 +25,28 @@
                   </li>
                   <li class="dropdown">
                     <a role="button" tabindex="0" class="dropdown-toggle settings" data-toggle="dropdown">
-                    <i class="fa fa-cog"></i><i class="fa fa-spinner fa-spin"></i>
+                    <em class="fa fa-cog"></em><em class="fa fa-spinner fa-spin"></em>
                     </a>
                     <ul class="dropdown-menu pull-right with-arrow animated littleFadeInUp">
                         <li>
                           <a role="button" tabindex="0" class="tile-toggle">
-                          <span class="minimize"><i class="fa fa-angle-down"></i>&nbsp;&nbsp;&nbsp;Minimize</span>
-                          <span class="expand"><i class="fa fa-angle-up"></i>&nbsp;&nbsp;&nbsp;Expand</span>
+                          <span class="minimize"><em class="fa fa-angle-down"></em>&nbsp;&nbsp;&nbsp;Minimize</span>
+                          <span class="expand"><em class="fa fa-angle-up"></em>&nbsp;&nbsp;&nbsp;Expand</span>
                           </a>
                         </li>
                         <li>
                           <a role="button" tabindex="0" class="tile-refresh">
-                            <i class="fa fa-refresh"></i> Refresh
+                            <em class="fa fa-refresh"></em> Refresh
                           </a>
                         </li>
                         <li>
                           <a role="button" tabindex="0" class="tile-fullscreen">
-                          <i class="fa fa-expand"></i> Fullscreen
+                          <em class="fa fa-expand"></em> Fullscreen
                           </a>
                         </li>
                     </ul>
                   </li>
-                  <li class="remove"><a role="button" tabindex="0" class="tile-close"><i class="fa fa-times"></i></a></li>
+                  <li class="remove"><a role="button" tabindex="0" class="tile-close"><em class="fa fa-times"></em></a></li>
                 </ul>
               </div>
 
@@ -81,14 +81,14 @@
                         <td><?php echo $producto->nombre; ?></td>
                         <td><?php if($producto->marca!="NULL"){ echo $producto->marca;}else{ echo "------"; } ?></td>
                         <td><?php if($producto->descripcion!="NULL"){ echo $producto->descripcion; }else{ echo "------";} ?></td>
-                        <td><b><?php if($producto->precio_compra!="NULL"){ echo '$   '.number_format($producto->precio_compra,2,'.',','); }else{ echo "------";} ?></b></td>
-                        <td><b>$   <?php echo number_format($producto->precio_venta,2,'.',','); ?></b></td>
+                        <td><strong><?php if($producto->precio_compra!="NULL"){ echo '$   '.number_format($producto->precio_compra,2,'.',','); }else{ echo "------";} ?></strong></td>
+                        <td><strong>$   <?php echo number_format($producto->precio_venta,2,'.',','); ?></strong></td>
                         <td><?php if($producto->id_proveedor!="NULL" and $producto->id_proveedor!=0 ){ echo $producto->getProveedor()->nombre; }else{ echo "------";} ?></td>
                         
                         <td>
-                        <a href="#"  data-toggle="modal" data-target="#myModal<?php echo $producto->id; ?>"  class="btn btn-warning btn-xs"><i class="glyphicon glyphicon-edit"></i> Editar</a>
+                        <a href="#"  data-toggle="modal" data-target="#myModal<?php echo $producto->id; ?>"  class="btn btn-warning btn-xs"><em class="glyphicon glyphicon-edit"></em> Editar</a>
                         </td>
-                        <td> <a href="index.php?view=delproducto&id=<?php echo $producto->id; ?>"  class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-trash"></i> Eliminar</a></td>
+                        <td> <a href="index.php?view=delproducto&id=<?php echo $producto->id; ?>"  class="btn btn-danger btn-xs"><em class="glyphicon glyphicon-trash"></em> Eliminar</a></td>
                       </tr> 
                     
 

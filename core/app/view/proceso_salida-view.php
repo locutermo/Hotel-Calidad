@@ -28,11 +28,11 @@ $hora = date("H:i:s");
 
  <section class="content-header">
       <h3 >
-       <i class='fa fa-sign-out'></i> PROCESO CHECK OUT 
+       <em class='fa fa-sign-out'></em> PROCESO CHECK OUT 
         <small>Avance</small>
       </h3>
       <ol class="breadcrumb">
-        <li><a href="index.php?view=reserva"><i class="fa fa-home"></i> Inicio</a></li>
+        <li><a href="index.php?view=reserva"><em class="fa fa-home"></em> Inicio</a></li>
         <li><a href="#">Check out</a></li>
         <li class="active">Proceso check out</li>
       </ol>
@@ -61,10 +61,10 @@ $cliente = PersonaData::getById($habitacion->id_cliente);
 
               <ul class="list-group list-group-unbordered">
                 <li class="list-group-item" style="border-top: 2px solid black;">
-                  <b>Nombre habitación</b> <a class="pull-right"><?php echo $habitacion->getHabitacion()->nombre; ?></a>
+                  <strong>Nombre habitación</strong> <a class="pull-right"><?php echo $habitacion->getHabitacion()->nombre; ?></a>
                 </li>
                 <li class="list-group-item"> 
-                  <b>Tipo </b> <a class="pull-right"><?php echo $habitacion->getHabitacion()->getCategoria()->nombre.' / Tarifa: '. $habitacion->getTarifaHabitacion()->getTarifa()->nombre; ?></a>
+                  <strong>Tipo </strong> <a class="pull-right"><?php echo $habitacion->getHabitacion()->getCategoria()->nombre.' / Tarifa: '. $habitacion->getTarifaHabitacion()->getTarifa()->nombre; ?></a>
                 </li>
                 
                 
@@ -80,10 +80,10 @@ $cliente = PersonaData::getById($habitacion->id_cliente);
 
               <ul class="list-group list-group-unbordered">
                 <li class="list-group-item" style="border-top: 2px solid black;">
-                  <b>Nombre </b> <a href="#"  data-toggle="modal" data-target="#mostrar_cliente"  class="pull-right"><?php echo $habitacion->getCliente()->nombre; ?></a>
+                  <strong>Nombre </srong> <a href="#"  data-toggle="modal" data-target="#mostrar_cliente"  class="pull-right"><?php echo $habitacion->getCliente()->nombre; ?></a>
                 </li>
                 <li class="list-group-item">
-                  <b>E-mail cliente</b> <a class="pull-right"><?php echo $habitacion->getCliente()->documento; ?></a>
+                  <strong>E-mail cliente</strong> <a class="pull-right"><?php echo $habitacion->getCliente()->documento; ?></a>
                 </li>
                 
                 <!-- Modal -->
@@ -122,7 +122,7 @@ $cliente = PersonaData::getById($habitacion->id_cliente);
                             foreach($tmps as $p):  ?>
                                   <tr> 
                                     
-                                    <td><b><?php echo $p->getCliente()->getTipoDocumento()->nombre; ?></b></td>
+                                    <td><strong><?php echo $p->getCliente()->getTipoDocumento()->nombre; ?></strong></td>
                                     <td><?php echo $p->getCliente()->documento; ?></td>
                                     <td><?php echo $p->getCliente()->nombre; ?></td>
                                     
@@ -182,10 +182,10 @@ $fecha1 = new DateTime($habitacion->fecha_entrada);//fecha inicial
 
               <ul class="list-group list-group-unbordered">
                 <li class="list-group-item" style="border-top: 2px solid black;">
-                  <b>Fecha y Hora entrada</b> <b><a class="pull-right" style="color: #dd4b39;"><?php echo $habitacion->fecha_entrada; ?></a></b>
+                  <strong>Fecha y Hora entrada</strong> <strong><a class="pull-right" style="color: #dd4b39;"><?php echo $habitacion->fecha_entrada; ?></a></strong>
                 </li>
                 <li class="list-group-item">
-                  <b>Fecha y Hora salida</b> <b><a class="pull-right" style="color: #dd4b39;"><?php echo $habitacion->fecha_salida; ?></a></b>
+                  <strong>Fecha y Hora salida</strong> <strong><a class="pull-right" style="color: #dd4b39;"><?php echo $habitacion->fecha_salida; ?></a></strong>
                 </li>
                 
               </ul>
@@ -247,7 +247,7 @@ $fecha1 = new DateTime($habitacion->fecha_entrada);//fecha inicial
                   <td style="border-right: 1px solid #a09e9e;">1.</td>
             
                   <td >$  <?php echo number_format($habitacion->precio,2,'.',','); ?></td>
-                  <td ><b> <?php echo $habitacion->cant_noche; ?></b></td>
+                  <td ><strong> <?php echo $habitacion->cant_noche; ?></strong></td>
                   <script>
                   function fncSumar(){ 
                   caja=document.forms["sumar"].elements;
@@ -302,7 +302,7 @@ $fecha1 = new DateTime($habitacion->fecha_entrada);//fecha inicial
 		                  <td style="border-right: 1px solid #a09e9e;">1.</td>
 
 		                  <td><?php echo $producto->getProducto()->nombre; ?></td>
-		                  <td><b>$  <?php echo number_format($producto->precio,2,'.',','); ?></b></td>
+		                  <td><strong>$  <?php echo number_format($producto->precio,2,'.',','); ?></strong></td>
 		                  <td ><?php echo $producto->cantidad; ?></td>
                       <?php if($producto->fecha_creada!=NULL){ ?>
                       <td style="border-right: 1px solid #a09e9e;"><p class="text-green">Pagado</p></td>
@@ -315,7 +315,7 @@ $fecha1 = new DateTime($habitacion->fecha_entrada);//fecha inicial
                       <?php }else{ ?>
                       <?php $sub_total=$producto->precio*$producto->cantidad; ?>
                       <?php }; ?>
-		                  <td><span class="badge"><b>$   <?php echo number_format($sub_total,2,'.',','); ?></b></span></td>
+		                  <td><span class="badge"><strong>$   <?php echo number_format($sub_total,2,'.',','); ?></strong></span></td>
 		                </tr>
 		            	<?php $total=$sub_total+$total; ?>
                     <?php endforeach; ?>
@@ -334,7 +334,7 @@ $fecha1 = new DateTime($habitacion->fecha_entrada);//fecha inicial
                   <input type="hidden" name="subtotal" value="<?php echo $total; ?>" onKeyUp="fncSumar()">
 
                   <?php if($habitacion->pagado=='1'){ $sumarrr=0;}else{ $sumarrr= $habitacion->precio*$habitacion->cant_noche; } ?>
-                  <th style="width: 100px;"><b><input type="text" style="border-color: green;" readonly name="total" value="<?php echo $total + $sumarrr; ?>"></b></th>
+                  <th style="width: 100px;"><strong><input type="text" style="border-color: green;" readonly name="total" value="<?php echo $total + $sumarrr; ?>"></strong></th>
                 </tr>
 
 
@@ -343,7 +343,7 @@ $fecha1 = new DateTime($habitacion->fecha_entrada);//fecha inicial
                   <th style="width: 10px;border-right: 1px solid #a09e9e;"></th>
                   <th colspan="4" style="border-right: 1px solid #a09e9e;"><p style="float: right;font-size: 14px;">Tipo de pago</p></th>
                  
-                  <th style="width: 100px;"><b>
+                  <th style="width: 100px;"><strong>
                     <select class="form-control" onchange="CargarMediopago(this.value);" required name="id_tipo_pago">
                     
                       <option value="">--- Selecciona ---</option>
@@ -353,7 +353,7 @@ $fecha1 = new DateTime($habitacion->fecha_entrada);//fecha inicial
                       <option value="3" >DEPÓSITO</option> -->
                        
                     
-                    </select> </b>
+                    </select> </strong>
                   </th>
                 </tr>
 
@@ -384,16 +384,16 @@ $fecha1 = new DateTime($habitacion->fecha_entrada);//fecha inicial
            
              <div class="box-footer clearfix">
               
-                 <a href="index.php?view=recepcion" class="btn btn-danger"><i class='fa fa-sign-out'></i> Cancelar</a>
+                 <a href="index.php?view=recepcion" class="btn btn-danger"><em class='fa fa-sign-out'></em> Cancelar</a>
 	            
 	                <input type="hidden" name="id_operacion" value="<?php echo $habitacion->id; ?>">
 	                <input type="hidden" name="fecha_salida" value="<?php echo $hoy.' '.$hora; ?>">
 	                <input type="hidden" name="id_habitacion" value="<?php echo $habitacion->getHabitacion()->id; ?>">
                  
-	                <button type="submit" name="boleta" class="btn btn-success pull-right"><i class='fa fa-print'></i> Imprimir Boleta</button>
-                  <button type="submit" name="factura" class="btn btn-warning pull-right" style="margin-right: 10px;"><i class='fa fa-print'></i> Imprimir Factura</button>
+	                <button type="submit" name="boleta" class="btn btn-success pull-right"><em class='fa fa-print'></em> Imprimir Boleta</button>
+                  <button type="submit" name="factura" class="btn btn-warning pull-right" style="margin-right: 10px;"><em class='fa fa-print'></em> Imprimir Factura</button>
  
-                  <button type="submit" name="ticket" class="btn btn-primary pull-right" style="margin-right: 10px;"><i class='fa fa-print'></i> Imprimir Ticket</button>
+                  <button type="submit" name="ticket" class="btn btn-primary pull-right" style="margin-right: 10px;"><em class='fa fa-print'></em> Imprimir Ticket</button>
 	            
         
             </div>

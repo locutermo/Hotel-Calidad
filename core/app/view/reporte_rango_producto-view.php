@@ -24,7 +24,7 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
         <small>Avance</small>
       </h3> 
       <ol class="breadcrumb">
-        <li><a href="index.php?view=reserva"><i class="fa fa-home"></i> Inicio</a></li>
+        <li><a href="index.php?view=reserva"><em class="fa fa-home"></em> Inicio</a></li>
         <li><a href="#">Reportes</a></li>
         <li class="active">Reporte productos</li>
       </ol>
@@ -142,10 +142,10 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
                         <td><?php echo $numero; ?></td>
                         <td><?php if($reporproduct->id_operacion!=NULL){ echo $reporproduct->getProceso()->getHabitacion()->nombre;}else{echo "Venta libre";} ?></td>
                         <td><?php echo $reporproduct->getProducto()->nombre; ?></td>
-                        <td><b><?php echo $reporproduct->cantidad; ?></b></td>
-                        <td><b>$   <?php echo number_format($reporproduct->precio,2,'.',','); ?></b></td>
+                        <td><strong><?php echo $reporproduct->cantidad; ?></strong></td>
+                        <td><strong>$   <?php echo number_format($reporproduct->precio,2,'.',','); ?></strong></td>
                         <?php $subtotal1=$reporproduct->cantidad*$reporproduct->precio; ?>
-                        <td><b>$   <?php echo number_format($subtotal1,2,'.',','); ?></b></td>
+                        <td><strong>$   <?php echo number_format($subtotal1,2,'.',','); ?></strong></td>
                         <td><?php echo date($reporproduct->fecha_creada); ?></td>
                       </tr> 
                     <?php $subtotal2=$subtotal1+$subtotal2; ?>
@@ -154,7 +154,7 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
 
                     <tfoot style="color: black; background-color: #e3e4e6;">
                         <th colspan="5"><p class="pull-right">Total</p></th>
-                        <th><b>$   <?php echo number_format($subtotal2,2,'.',','); ?></b> </th> 
+                        <th><strong>$   <?php echo number_format($subtotal2,2,'.',','); ?></strong> </th> 
                         <th></th>
                     </tfoot>
 

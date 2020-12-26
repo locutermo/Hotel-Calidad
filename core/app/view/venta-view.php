@@ -63,9 +63,9 @@
           <div class="form-group">
             <div class="row">
               <div class="col-sm-3">
-                <a  href="index.php?view=cancelar_venta" class="btn btn-danger btn-labeled btn-block"><b>
-                <i class="icon-cancel-circle2"></i>
-                </b> Cancelar Venta</a>
+                <a  href="index.php?view=cancelar_venta" class="btn btn-danger btn-labeled btn-block"><strong>
+                <em class="icon-cancel-circle2"></em>
+                </strong> Cancelar Venta</a>
               </div>
             </div>
           </div> 
@@ -166,8 +166,8 @@
                 <div class="row">
                   <div class="col-sm-12">
                     <button type="submit"  class="btn btn-success
-                    btn-labeled btn-block btn-ladda btn-ladda-spinner"><b><i class="fa fa-money"></i>
-                    </b> Guardar Venta</button>
+                    btn-labeled btn-block btn-ladda btn-ladda-spinner"><strong><em class="fa fa-money"></em>
+                    </strong> Guardar Venta</button>
                   </div>
                 </div>
               </div>

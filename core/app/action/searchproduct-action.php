@@ -26,7 +26,7 @@ $q= OperationData::getQYesF($product->id);
 		<td style="width:80px;"><?php echo $product->id; ?></td>
 		<td><?php echo $product->name; ?></td>
 		<td><?php echo $product->unit; ?></td>
-		<td><b>$<?php echo $product->price_out; ?></b></td>
+		<td><strong>$<?php echo $product->price_out; ?></strong></td>
 		<td>
 			<?php echo $q; ?>
 		</td>
@@ -36,7 +36,7 @@ $q= OperationData::getQYesF($product->id);
 <div class="input-group">
 		<input type="" class="form-control" required name="q" placeholder="Cantidad ...">
       <span class="input-group-btn">
-		<button type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-plus-sign"></i> Agregar</button>
+		<button type="submit" class="btn btn-primary"><em class="glyphicon glyphicon-plus-sign"></em> Agregar</button>
       </span>
     </div>
 
