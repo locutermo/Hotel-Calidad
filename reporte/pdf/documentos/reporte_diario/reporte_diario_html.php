@@ -85,7 +85,7 @@ tr:hover td { background: #d0dafd; color: #339; }
                 <td style="width: 80%; text-align: left">
                 </td>
                 <td style="width: 20%; text-align: right; font-size:12px;" >
-                  WWW.<b>empresa</b>.com<br />
+                  WWW.<strong>empresa</strong>.com<br />
                   Móvil 964000482 <br />Fijo (064) 201773<br />
                 </td>
                 
@@ -96,9 +96,9 @@ tr:hover td { background: #d0dafd; color: #339; }
     <table cellspacing="0" style="width: 100%; border: solid 0px #7f8c8d; text-align: center; font-size: 10pt;padding:1mm; padding-top: 0mm !important;">
         <tr >
             
-            <th  style="width: 60%"></th>
+            <th  scope = "col" style="width: 60%"></th>
            
-            <th class="pumpkin" style="width: 40%; border: black 1px solid">REPORTE DIARIO</th>
+            <th scope = "col" class="pumpkin" style="width: 40%; border: black 1px solid">REPORTE DIARIO</th>
             
             
         </tr>
@@ -107,7 +107,7 @@ tr:hover td { background: #d0dafd; color: #339; }
             
             <td  style="width: 60%; text-align: center"> <br /></td>
            
-            <td  style="width: 40%; text-align: center;border:black 1px solid;"><br><b style="text-decoration:underline; font-family:Arial, Helvetica, sans-serif;" >FECHA<BR><BR> <?php echo $hoy; ?></b></td>
+            <td  style="width: 40%; text-align: center;border:black 1px solid;"><br><strong style="text-decoration:underline; font-family:Arial, Helvetica, sans-serif;" >FECHA<BR><BR> <?php echo $hoy; ?></strong></td>
             
         </tr>
    
@@ -125,13 +125,13 @@ tr:hover td { background: #d0dafd; color: #339; }
 <table  class="contenido">
 
                   <tr class="tr" style="width: 100%; ">
-                        <th style="width: 8%;">Nº</th> 
-                        <th style="width: 20%;">Habitación</th>
-                        <th style="width: 30%;">Precio tarifa</th>
-                        <th style="width: 25%;">Cantidad</th>
-                        <th style="width: 30%;">Total</th>
-                        <th style="width: 20%;">Hora ingreso</th>
-                        <th style="width: 20%;">Hora salida </th> 
+                        <th scope = "col" style="width: 8%;">Nº</th> 
+                        <th scope = "col" style="width: 20%;">Habitación</th>
+                        <th scope = "col" style="width: 30%;">Precio tarifa</th>
+                        <th scope = "col" style="width: 25%;">Cantidad</th>
+                        <th scope = "col" style="width: 30%;">Total</th>
+                        <th scope = "col" style="width: 20%;">Hora ingreso</th>
+                        <th scope = "col" style="width: 20%;">Hora salida </th> 
                   </tr>
  
 
@@ -149,8 +149,8 @@ tr:hover td { background: #d0dafd; color: #339; }
                   <tr> 
             <td><?php echo $numero; ?></td>
             <td><?php echo $reportediario->getHabitacion()->nombre; ?></td>
-            <td><b>$   <?php echo number_format($reportediario->precio,2,'.',','); ?></b></td>
-            <td ><b>$   <?php echo number_format($reportediario->cant_noche,2,'.',','); ?></b></td>
+            <td><strong>$   <?php echo number_format($reportediario->precio,2,'.',','); ?></strong></td>
+            <td ><strong>$   <?php echo number_format($reportediario->cant_noche,2,'.',','); ?></strong></td>
             <?php $subtotal= ($reportediario->precio*$reportediario->cant_noche)+$reportediario->total; ?>
             <td >$   <?php echo number_format($subtotal,2,'.',','); ?></td>
             <td><?php echo date($reportediario->fecha_entrada); ?></td>
@@ -165,13 +165,13 @@ tr:hover td { background: #d0dafd; color: #339; }
                 <?php endforeach; ?>
                
             <tr class="tr" style="width: 100%; ">
-                        <th style="width: 8%;"></th> 
-                        <th style="width: 20%;"></th>
-                        <th style="width: 30%;"></th>
-                        <th style="width: 25%;">TOTAL</th>
-                        <th style="width: 30%;float: right !important;">$   <?php echo number_format($total,2,'.',','); ?> </th>
-                        <th style="width: 20%;"></th>
-                        <th style="width: 20%;"> </th> 
+                        <th scope = "col" style="width: 8%;"></th> 
+                        <th scope = "col" style="width: 20%;"></th>
+                        <th scope = "col" style="width: 30%;"></th>
+                        <th scope = "col" style="width: 25%;">TOTAL</th>
+                        <th scope = "col" style="width: 30%;float: right !important;">$   <?php echo number_format($total,2,'.',','); ?> </th>
+                        <th scope = "col" style="width: 20%;"></th>
+                        <th scope = "col" style="width: 20%;"> </th> 
             </tr>
 <?php 
 
@@ -190,13 +190,13 @@ tr:hover td { background: #d0dafd; color: #339; }
 <table  class="contenido">
 
                   <tr class="tr" style="width: 100%; ">
-                        <th style="width: 5%;">Nº</th> 
-                        <th style="width: 20%;">Habitación</th>
-                        <th style="width: 56%;">Artículo</th>
-                        <th style="width: 15%;">Cantidad</th>
-                        <th style="width: 30%;">Precio unitario</th>
-                        <th style="width: 20%;">Total</th>
-                        <th style="width: 10%;">Hora </th> 
+                        <th scope = "col" style="width: 5%;">Nº</th> 
+                        <th scope = "col" style="width: 20%;">Habitación</th>
+                        <th scope = "col" style="width: 56%;">Artículo</th>
+                        <th scope = "col" style="width: 15%;">Cantidad</th>
+                        <th scope = "col" style="width: 30%;">Precio unitario</th>
+                        <th scope = "col" style="width: 20%;">Total</th>
+                        <th scope = "col" style="width: 10%;">Hora </th> 
                   </tr>
  
 
@@ -220,7 +220,7 @@ tr:hover td { background: #d0dafd; color: #339; }
             <td ><?php echo   $reporproduct->cantidad; ?><br /></td>
             <td >$   <?php echo   number_format($reporproduct->precio,2,'.',','); ?><br /></td>
             <?php $subtotal1=$reporproduct->cantidad*$reporproduct->precio; ?>
-            <td><b>$   <?php echo number_format($subtotal1,2,'.',','); ?></b></td>
+            <td><strong>$   <?php echo number_format($subtotal1,2,'.',','); ?></strong></td>
             <?php $fecha=date($reporproduct->fecha_creada);?>
             
             <td><?php echo date("h:j:i", strtotime($fecha)); ?></td>
@@ -232,13 +232,13 @@ tr:hover td { background: #d0dafd; color: #339; }
                 <?php endforeach; ?>
                
             <tr class="tr" style="width: 100%; ">
-                        <th style="width: 5%;"></th> 
-                        <th style="width: 20%;"></th>
-                        <th style="width: 56%;"></th>
-                        <th style="width: 15%;"></th>
-                        <th style="width: 30%;float: right !important;"> TOTAL: </th>
-                        <th style="width: 20%;">$    <?php echo   number_format($subtotal2,2,'.',','); ?></th>
-                        <th style="width: 10%;"> </th> 
+                        <th scope = "col" style="width: 5%;"></th> 
+                        <th scope = "col" style="width: 20%;"></th>
+                        <th scope = "col" style="width: 56%;"></th>
+                        <th scope = "col" style="width: 15%;"></th>
+                        <th scope = "col" style="width: 30%;float: right !important;"> TOTAL: </th>
+                        <th scope = "col" style="width: 20%;">$    <?php echo   number_format($subtotal2,2,'.',','); ?></th>
+                        <th scope = "col" style="width: 10%;"> </th> 
             </tr>
 <?php 
 

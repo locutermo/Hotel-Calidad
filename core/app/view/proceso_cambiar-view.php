@@ -18,7 +18,7 @@ $nuevafecha = date ( 'Y-m-j' , $nuevafecha );
 <div class="row">
 <section class="content-header">
     <ol class="breadcrumb">
-      <li><a href="index.php?view=reserva"><i class="fa fa-home"></i> Inicio</a></li>
+      <li><a href="index.php?view=reserva"><em class="fa fa-home"></em> Inicio</a></li>
       <li><a href="javascript:;">Check in</a></li>
       <li class="active"><a href="#">Cambiar habitación</a></li>
     </ol>
@@ -54,7 +54,7 @@ $nuevafecha = date ( 'Y-m-j' , $nuevafecha );
                                     <h1 class="custom-font"><strong>HABITACIÓN  </strong><?php echo $habitacion->getHabitacion()->nombre; ?></h1>
                                     <ul class="controls">
                                        
-                                        <li class="remove"><a role="button" tabindex="0" class="tile-close"><i class="fa fa-times"></i></a></li>
+                                        <li class="remove"><a role="button" tabindex="0" class="tile-close"><em class="fa fa-times"></em></a></li>
                                     </ul>
                                 </div>
                                 <!-- /tile header -->
@@ -88,7 +88,7 @@ $nuevafecha = date ( 'Y-m-j' , $nuevafecha );
                                     <h1 class="custom-font"><strong>HABITACIÓN  </strong>a cambiarse</h1>
                                     <ul class="controls">
                                        
-                                        <li class="remove"><a role="button" tabindex="0" class="tile-close"><i class="fa fa-times"></i></a></li>
+                                        <li class="remove"><a role="button" tabindex="0" class="tile-close"><em class="fa fa-times"></em></a></li>
                                     </ul>
                                 </div> 
                                 <!-- /tile header -->
@@ -123,7 +123,7 @@ $nuevafecha = date ( 'Y-m-j' , $nuevafecha );
                                 <div class="tile-footer">
                                     <div class="form-group text-center">
                                         <a href="index.php?view=recepcion" class="btn btn-rounded btn-danger ripple">Cancelar</a>
-                                        <button class="btn btn-rounded btn-success ripple" type="submit"><i class="fa fa-open-eye"></i> Cambiar habitación</button>
+                                        <button class="btn btn-rounded btn-success ripple" type="submit"><em class="fa fa-open-eye"></em> Cambiar habitación</button>
                                     </div>
                                 </div>
                             </form>

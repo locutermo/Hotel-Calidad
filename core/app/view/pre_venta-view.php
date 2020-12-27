@@ -4,7 +4,7 @@
 <div class="row">
 <section class="content-header">
     <ol class="breadcrumb">
-      <li><a href="index.php?view=reserva"><i class="fa fa-home"></i> Inicio</a></li>
+      <li><a href="index.php?view=reserva"><em class="fa fa-home"></em> Inicio</a></li>
       <li><a class="active">seleccion habitacion</a></li>
     </ol>
 </section> 
@@ -39,7 +39,7 @@
                             <h1 class="custom-font" style="font-size: 12px;"><?php echo $habitacion->getHabitacion()->getCategoria()->nombre; ?></h1>
                             <ul class="controls"> 
                                 <li ><a  href="index.php?view=proceso_venta&id=<?php echo $habitacion->id; ?>" >
-                                    <i class="fa fa-shopping-cart"></i>  </a>
+                                    <em class="fa fa-shopping-cart"></em>  </a>
                                 </li>
                             </ul>
                         </div> 
@@ -47,7 +47,7 @@
 
                         <!-- tile body -->
                         <div class="tile-body" style="padding: 1px;">
-                            <h4 style="text-align: center;"><i class="fa fa-bed"></i> <?php echo $habitacion->getHabitacion()->nombre; ?></h4>
+                            <h4 style="text-align: center;"><em class="fa fa-bed"></em> <?php echo $habitacion->getHabitacion()->nombre; ?></h4>
                         </div> 
                        <!-- /tile body -->
 

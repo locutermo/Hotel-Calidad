@@ -12,7 +12,7 @@
         <small>Avance</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="index.php?view=reserva"><i class="fa fa-home"></i> Inicio</a></li>
+        <li><a href="index.php?view=reserva"><em class="fa fa-home"></em> Inicio</a></li>
         <li><a href="#">Punto de venta</a></li>
         <li class="active">Proceso venta</li>
       </ol>
@@ -36,13 +36,13 @@ if(count($habitacion)>0){ ?>
 
               <ul class="list-group list-group-unbordered">
                 <li class="list-group-item" style="border-top: 2px solid black;">
-                  <b>Nombre habitación</b> <a class="pull-right"><?php echo $habitacion->getHabitacion()->nombre; ?></a>
+                  <strong>Nombre habitación</strong> <a class="pull-right"><?php echo $habitacion->getHabitacion()->nombre; ?></a>
                 </li>
                 <li class="list-group-item">
-                  <b>Tipo habitación</b> <a class="pull-right"><?php echo $habitacion->getHabitacion()->getCategoria()->nombre; ?></a>
+                  <strong>Tipo habitación</strong> <a class="pull-right"><?php echo $habitacion->getHabitacion()->getCategoria()->nombre; ?></a>
                 </li>
                 <li class="list-group-item">
-                  <b>Costo habitación</b> <a class="pull-right"><b>$   <?php echo number_format($habitacion->precio,2,'.',','); ?></b></a>
+                  <strong>Costo habitación</strong> <a class="pull-right"><strong>$   <?php echo number_format($habitacion->precio,2,'.',','); ?></strong></a>
                 </li>
               </ul>
             </div>
@@ -56,13 +56,13 @@ if(count($habitacion)>0){ ?>
 
               <ul class="list-group list-group-unbordered">
                 <li class="list-group-item" style="border-top: 2px solid black;">
-                  <b>Nombre cliente</b> <a class="pull-right"><?php echo $habitacion->getCliente()->nombre; ?></a>
+                  <strong>Nombre cliente</strong> <a class="pull-right"><?php echo $habitacion->getCliente()->nombre; ?></a>
                 </li>
                 <li class="list-group-item">
-                  <b>Documento cliente</b> <a class="pull-right"><?php echo $habitacion->getCliente()->documento; ?></a>
+                  <strong>Documento cliente</strong> <a class="pull-right"><?php echo $habitacion->getCliente()->documento; ?></a>
                 </li>
                 <li class="list-group-item">
-                  <b>Fecha entrada</b> <a class="pull-right"><?php echo $habitacion->fecha_entrada; ?></a>
+                  <strong>Fecha entrada</strong> <a class="pull-right"><?php echo $habitacion->fecha_entrada; ?></a>
                 </li>
               </ul>
             </div>
