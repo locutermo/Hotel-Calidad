@@ -18,11 +18,11 @@ $operacion_n->add();
  				<table class="table table-bordered">
                     <thead>
                       <tr>
-                        <th>Acción</th>
-                        <th>Fecha ocup.</th>
-                        <th>Descripción</th>
-                        <th>Habitación</th>
-                        <th>Precio</th>
+                        <th scope = "col">Acción</th>
+                        <th scope = "col">Fecha ocup.</th>
+                        <th scope = "col">Descripción</th>
+                        <th scope = "col">Habitación</th>
+                        <th scope = "col">Precio</th>
                       </tr> 
                     </thead> 
                     <tbody>

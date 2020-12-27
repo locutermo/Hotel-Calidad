@@ -103,13 +103,13 @@
                                         <thead style="background-color: #16a085;
     color: white;">
                                         <tr>
-                                          <th>FECHA DE APERTURA</th>
-                                          <th>MONTO APERTURA</th>
-                                          <th>EGRESOS</th>
-                                          <th>VENTA TOTAL</th>
+                                          <th scope = "col">FECHA DE APERTURA</th>
+                                          <th scope = "col">MONTO APERTURA</th>
+                                          <th scope = "col">EGRESOS</th>
+                                          <th scope = "col">VENTA TOTAL</th>
 
-                                          <th>VENTA TOTAL + APERTURA</th>
-                                          <th>USUARIO RESPONSABLE</th>
+                                          <th scope = "col">VENTA TOTAL + APERTURA</th>
+                                          <th scope = "col">USUARIO RESPONSABLE</th>
                                         </tr>
                                         </thead>
                                         <tbody>

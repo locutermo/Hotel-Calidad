@@ -68,10 +68,10 @@ if (isset($_GET['id']))//codigo elimina un elemento del array
 			?>
             <table class="table" border="1">
                 <thead>
-                    <th>Tipo documento</th>
-                    <th>Documento</th>
-                    <th>Nombres completos</th>
-                    <th></th>
+                    <th scope = "col">Tipo documento</th>
+                    <th scope = "col">Documento</th>
+                    <th scope = "col">Nombres completos</th>
+                    <th scope = "col"></th>
                 </thead>
 			<?php
 			$sumador_total=0;

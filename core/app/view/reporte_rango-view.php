@@ -90,15 +90,15 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
                   <table id="example1" class="table table-bordered table-hover">
 
                   <thead style="color: black; background-color: #d2d6de;">
-                        <th>Nº</th> 
-                        <th>Cliente</th> 
-                        <th>Cliente Nombres</th> 
-                        <th>Habitación</th>
+                        <th scope = "col">Nº</th> 
+                        <th scope = "col">Cliente</th> 
+                        <th scope = "col">Cliente Nombres</th> 
+                        <th scope = "col">Habitación</th>
 
-                        <th>Total</th>
-                        <th>Hora ingreso</th>
-                        <th>Hora salida</th> 
-                        <th>Usuario</th>
+                        <th scope = "col">Total</th>
+                        <th scope = "col">Hora ingreso</th>
+                        <th scope = "col">Hora salida</th> 
+                        <th scope = "col">Usuario</th>
                   </thead> 
                    <?php $numero=0;?>
                    <?php $total=0;?>
@@ -125,17 +125,17 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
                                   <thead style="color: white; background-color: #827e7e;">
                                       <tr>
                                       
-                                        <th>Tipo documento</th>
-                                        <th data-hide="phone">Documento</th>
-                                        <th data-hide='phone, tablet'>Nombres completos</th>
-                                        <th data-hide='phone, tablet'>Fecha nac.</th>  
-                                        <th data-hide='phone, tablet'>Procedencia</th> 
-                                        <th data-hide='phone, tablet'>Nacionalidad</th> 
-                                        <th data-hide='phone, tablet'>Estado civil</th> 
-                                        <th data-hide='phone, tablet'>Ocupación</th> 
-                                        <th data-hide='phone, tablet'>Medio transporte</th> 
-                                        <th data-hide='phone, tablet'>Destino</th> 
-                                        <th data-hide='phone, tablet'>Motivo</th> 
+                                        <th scope = "col">Tipo documento</th>
+                                        <th scope = "col" data-hide="phone">Documento</th>
+                                        <th scope = "col" data-hide='phone, tablet'>Nombres completos</th>
+                                        <th scope = "col" data-hide='phone, tablet'>Fecha nac.</th>  
+                                        <th scope = "col" data-hide='phone, tablet'>Procedencia</th> 
+                                        <th scope = "col" data-hide='phone, tablet'>Nacionalidad</th> 
+                                        <th scope = "col" data-hide='phone, tablet'>Estado civil</th> 
+                                        <th scope = "col" data-hide='phone, tablet'>Ocupación</th> 
+                                        <th scope = "col" data-hide='phone, tablet'>Medio transporte</th> 
+                                        <th scope = "col" data-hide='phone, tablet'>Destino</th> 
+                                        <th scope = "col" data-hide='phone, tablet'>Motivo</th> 
                                         
                                       </tr>
                                     </thead>
@@ -194,11 +194,11 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
                     <?php endforeach; ?>
 
                      <tfoot style="color: black; background-color: #e3e4e6;">
-                        <th colspan="4"><p class="pull-right">Total</p></th>
-                        <th><strong>$   <?php echo number_format($total,2,'.',','); ?> </strong></th> 
-                        <th></th>
-                        <th></th>
-                        <th></th>
+                        <th scope = "col" colspan="4"><p class="pull-right">Total</p></th>
+                        <th scope = "col"><strong>$   <?php echo number_format($total,2,'.',','); ?> </strong></th> 
+                        <th scope = "col"></th>
+                        <th scope = "col"></th>
+                        <th scope = "col"></th>
                     </tfoot>
 
                   </table>

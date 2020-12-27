@@ -166,16 +166,16 @@ date_default_timezone_set('America/Lima');
                   <table id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
 
                   <thead style="color: white; background-color: #827e7e;">
-                        <th>DESDE</th> 
-                        <th>HASTA</th> 
-                        <th>TRABAJADOR</th>
-                        <th>SUELDO POR MES</th>
-                        <th>REMUNERAR</th>
-                        <th>ACUMULADO</th>
-                        <th>AUMENTO</th> 
-                        <th>DESCUENTO</th>
-                        <th>RESTA</th>
-                        <th>ESTADO</th> 
+                        <th scope = "col">DESDE</th> 
+                        <th scope = "col">HASTA</th> 
+                        <th scope = "col">TRABAJADOR</th>
+                        <th scope = "col">SUELDO POR MES</th>
+                        <th scope = "col">REMUNERAR</th>
+                        <th scope = "col">ACUMULADO</th>
+                        <th scope = "col">AUMENTO</th> 
+                        <th scope = "col">DESCUENTO</th>
+                        <th scope = "col">RESTA</th>
+                        <th scope = "col">ESTADO</th> 
                         
                   </thead>
                    <?php foreach($sueldos as $sueldo):?>

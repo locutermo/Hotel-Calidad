@@ -15,12 +15,12 @@
                   <table id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
 
                   <thead style="color: white; background-color: #dd4b39;">
-                        <th>CÓDIGO</th> 
-                        <th>NOMBRE</th> 
-                        <th>EN STOCK</th> 
-                        <th>CANTIDAD</th>
-                        <th>PRECIO VENTA</th>
-                        <th></th>  
+                        <th scope = "col">CÓDIGO</th> 
+                        <th scope = "col">NOMBRE</th> 
+                        <th scope = "col">EN STOCK</th> 
+                        <th scope = "col">CANTIDAD</th>
+                        <th scope = "col">PRECIO VENTA</th>
+                        <th scope = "col"></th>  
                   </thead>
                    <?php foreach($productos as $producto):?>  
                       <tr>

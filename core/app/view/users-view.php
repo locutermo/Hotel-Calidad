@@ -63,13 +63,13 @@
                   <table id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
 
                   <thead style="color: white; background-color: #827e7e;">
-                        <th>Nº</th> 
-                        <th>Nombre completo</th>
-						<th>Nombre de usuario</th>
-						<th>Email</th>
-						<th>Activo</th>
-						<th>Admin</th>
-						<th></th>
+                        <th scope = "col">Nº</th> 
+                        <th scope = "col">Nombre completo</th>
+						            <th scope = "col">Nombre de usuario</th>
+						            <th scope = "col">Email</th>
+						            <th scope = "col">Activo</th>
+						            <th scope = "col">Admin</th>
+						            <th scope = "col"></th>
                   </thead>
                    <?php foreach($users as $user):?>
                       <tr>

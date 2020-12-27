@@ -128,7 +128,7 @@ $(function() {
                 <div class="col-md-6">
                 <table class="table no-margin">
                   <tr>
-                    <th colspan="4" style="text-align: center;">DATOS DEL CLIENTE  <div class="col-md-2">
+                    <th scope = "col" colspan="4" style="text-align: center;">DATOS DEL CLIENTE  <div class="col-md-2">
                        
                      </div></th>
                   </tr>
@@ -299,7 +299,7 @@ $(function() {
                  <table class="table no-margin">
                  <thead>
                   <tr>
-                    <th colspan="4" style="text-align: center;">DATOS DEL ALOJAMIENTO</th>
+                    <th scope = "col" colspan="4" style="text-align: center;">DATOS DEL ALOJAMIENTO</th>
                   </tr>
                   </thead>
                   <tbody style="padding: 0px;">

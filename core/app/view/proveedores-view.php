@@ -62,12 +62,12 @@
             <thead style="color: white; background-color: #827e7e;">
                 <tr>
 
-                  <th>Tipo documento</th>
-                  <th data-hide="phone">Documento</th>
-                  <th data-hide='phone, tablet'>Nombres completos</th>
-                  <th data-hide='phone, tablet'>Razón social</th>
-                  <th data-hide='phone, tablet'>Dirección</th>  
-                  <th></th>
+                  <th scope = "col">Tipo documento</th>
+                  <th scope = "col" data-hide="phone">Documento</th>
+                  <th scope = "col" data-hide='phone, tablet'>Nombres completos</th>
+                  <th scope = "col"data-hide='phone, tablet'>Razón social</th>
+                  <th scope = "col"data-hide='phone, tablet'>Dirección</th>  
+                  <th scope = "col"></th>
 
                   
                 </tr>

@@ -59,10 +59,10 @@
 
                   <thead style="color: white; background-color: #827e7e;">
                         
-                        <th>FECHA</th> 
-                        <th>MONTO</th>
-                        <th>TIPO DE PROCESO</th>
-                        <th></th>
+                        <th scope = "col">FECHA</th> 
+                        <th scope = "col">MONTO</th>
+                        <th scope = "col">TIPO DE PROCESO</th>
+                        <th scope = "col"></th>
                   </thead>
 
                   <?php 

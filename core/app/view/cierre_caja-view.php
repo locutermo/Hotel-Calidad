@@ -28,8 +28,8 @@
               <div class="tile-body p-0" style="text-align: left;">
 
                 <table>
-                  <th style="width: 50%;"></th>
-                  <th style="width: 45%;"></th>
+                  <th scope = "col" style="width: 50%;"></th>
+                  <th scope = "col" style="width: 45%;"></th>
                   <tr>
                       <td><h5>FECHA CIERRE:</h5></td>
                       <td><h5 class="control-label text-red"><?php echo $hoy.' '. $hora; ?></h5></td>
@@ -183,13 +183,13 @@
          <?php if(count($cajas)>0){?>
               <table id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 12px;">
                 <thead style="color: white; background-color: #827e7e;">
-                  <th>USUARIO APERTURA</th>
-                  <th>FECHA APERTURA</th>
-                  <th>MONTO APERTURA</th>
-                  <th>FECHA CIERRE</th>
-                  <th>MONTO CIERRE</th>
-                  <th>ESTADO CAJA</th>
-                  <th>VOLVER A IMPRIMIR</th>
+                  <th scope = "col">USUARIO APERTURA</th>
+                  <th scope = "col">FECHA APERTURA</th>
+                  <th scope = "col">MONTO APERTURA</th>
+                  <th scope = "col">FECHA CIERRE</th>
+                  <th scope = "col">MONTO CIERRE</th>
+                  <th scope = "col">ESTADO CAJA</th>
+                  <th scope = "col">VOLVER A IMPRIMIR</th>
                 </thead>
                 
                <?php foreach($cajas as $caja):?>

@@ -42,13 +42,12 @@
 									<table id="tbldetalle" class="table table-xxs">
 										<thead>
 											<tr class="bg-blue">
-												<th></th>
-												<th>Producto</th>
-												<th>Cant.</th>
-												<th class="text-center">Precio</th>
-												<th class="text-center">Importe</th>
-												<th class="text-center">Quitar</th>
-												
+												<th scope = "col"></th>
+												<th scope = "col">Producto</th>
+												<th scope = "col">Cant.</th>
+												<th scope = "col" class="text-center">Precio</th>
+												<th scope = "col" class="text-center">Importe</th>
+												<th scope = "col" class="text-center">Quitar</th>												
 											</tr>
 										</thead> 
 										<tbody id="resultados"> 

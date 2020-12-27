@@ -59,13 +59,13 @@
         <table id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
             <thead style="color: white; background-color: #827e7e;">
                 <tr>
-                  <th>Nº</th> 
-                  <th data-hide="phone">Documento</th>
-                  <th data-hide='phone, tablet'>Nombres completos</th>
-                  <th data-hide='phone, tablet'>Teléfono</th>
-                  <th data-hide='phone, tablet'>E-mail</th> 
-                  <th></th>
-                  <th></th>
+                  <th scope = "col">Nº</th> 
+                  <th scope = "col" data-hide="phone">Documento</th>
+                  <th scope = "col" data-hide='phone, tablet'>Nombres completos</th>
+                  <th scope = "col" data-hide='phone, tablet'>Teléfono</th>
+                  <th scope = "col" data-hide='phone, tablet'>E-mail</th> 
+                  <th scope = "col"></th>
+                  <th scope = "col"></th>
                 </tr>
               </thead>
               <tbody>

@@ -241,13 +241,13 @@ if($id_caja!=0){
                   <table id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
 
                   <thead style="color: black; background-color: #d2d6de;">
-                        <th>Nº</th> 
-                        <th>Habitación</th>
-                        <th>Precio</th>
-                        <th>Cant</th>
-                        <th>Total</th>
-                        <th>Hora ingreso</th>
-                        <th>Hora salida</th> 
+                        <th scope = "col">Nº</th> 
+                        <th scope = "col">Habitación</th>
+                        <th scope = "col">Precio</th>
+                        <th scope = "col">Cant</th>
+                        <th scope = "col">Total</th>
+                        <th scope = "col">Hora ingreso</th>
+                        <th scope = "col">Hora salida</th> 
                   </thead> 
                    <?php $numero=0;?>
                    <?php $total=0;?>
@@ -267,10 +267,10 @@ if($id_caja!=0){
                     <?php endforeach; ?>
 
                      <tfoot style="color: black; background-color: #e3e4e6;">
-                        <th colspan="4"><p class="pull-right">Total</p></th>
-                        <th><strong>$    <?php echo number_format($total,2,'.',','); ?> </strong></th> 
-                        <th></th>
-                        <th></th>
+                        <th scope = "col" colspan="4"><p class="pull-right">Total</p></th>
+                        <th scope = "col"><strong>$    <?php echo number_format($total,2,'.',','); ?> </strong></th> 
+                        <th scope = "col"></th>
+                        <th scope = "col"></th>
                     </tfoot>
 
                   </table>
@@ -290,13 +290,13 @@ if($id_caja!=0){
                   <table  id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
 
                   <thead style="color: black; background-color: #d2d6de;">
-                        <th>Nº</th> 
-                        <th>Habitación</th>
-                        <th>Precio tarifa</th>
-                        <th>Cantidad</th> 
-                        <th>Precio unitario</th>
-                        <th>Total</th>
-                        <th>Hora </th> 
+                        <th scope = "col">Nº</th> 
+                        <th scope = "col">Habitación</th>
+                        <th scope = "col">Precio tarifa</th>
+                        <th scope = "col">Cantidad</th> 
+                        <th scope = "col">Precio unitario</th>
+                        <th scope = "col">Total</th>
+                        <th scope = "col">Hora </th> 
                   </thead>
                    <?php $numero=0;?>
                    <?php $subtotal2=0;?>
@@ -318,9 +318,9 @@ if($id_caja!=0){
                     <?php endforeach; ?>
 
                     <tfoot style="color: black; background-color: #e3e4e6;">
-                        <th colspan="5"><p class="pull-right">Total</p></th>
-                        <th><strong>$    <?php echo number_format($subtotal2,2,'.',','); ?></strong> </th> 
-                        <th></th>
+                        <th scope = "col" colspan="5"><p class="pull-right">Total</p></th>
+                        <th scope = "col"><strong>$    <?php echo number_format($subtotal2,2,'.',','); ?></strong> </th> 
+                        <th scope = "col"></th>
                     </tfoot>
 
                   </table>

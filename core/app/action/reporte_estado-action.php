@@ -24,10 +24,10 @@
                   <table  class="table table-custom" style="font-size: 11px;" border="1px">
 
                   <thead style="color: white; background-color: #827e7e;">
-                        <th>Nº</th> 
-                        <th>NOMBRE</th>
-                        <th>CATEGORÍA</th>
-                        <th>ESTADO</th>
+                        <th scope = "col">Nº</th> 
+                        <th scope = "col">NOMBRE</th>
+                        <th scope = "col">CATEGORÍA</th>
+                        <th scope = "col">ESTADO</th>
                   </thead>
                    <?php foreach($habitaciones as $habitacion):?>
                       <tr>

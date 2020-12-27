@@ -67,9 +67,9 @@
 
                   <thead style="color: white; background-color: #827e7e;">
                         
-                        <th>TARIFA</th>
-                        <th>PRECIO</th>
-                        <th></th> 
+                        <th scope = "col">TARIFA</th>
+                        <th scope = "col">PRECIO</th>
+                        <th scope = "col"></th> 
                   </thead>
                    <?php foreach($tarifas_ha as $tarifa_ha):?>
                       <tr>

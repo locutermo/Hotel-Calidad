@@ -96,9 +96,9 @@ tr:hover td { background: #d0dafd; color: #339; }
     <table cellspacing="0" style="width: 100%; border: solid 0px #7f8c8d; text-align: center; font-size: 10pt;padding:1mm; padding-top: 0mm !important;">
         <tr >
             
-            <th  style="width: 60%"></th>
+            <th  scope = "col" style="width: 60%"></th>
            
-            <th class="pumpkin" style="width: 40%; border: black 1px solid">INFORME DE CIERRE DE CAJA </th>
+            <th  scope = "col" class="pumpkin" style="width: 40%; border: black 1px solid">INFORME DE CIERRE DE CAJA </th>
             
             
         </tr>
@@ -126,32 +126,32 @@ tr:hover td { background: #d0dafd; color: #339; }
 
   
             <tr class="tr" style="width: 100%; ">
-                        <th style="width: 8%;">USUARIO APERTURA</th> 
-                        <th style="width: 20%;"><?php echo $caja->getUsuario()->name; ?></th>
+                        <th scope = "col" style="width: 8%;">USUARIO APERTURA</th> 
+                        <th scope = "col" style="width: 20%;"><?php echo $caja->getUsuario()->name; ?></th>
             </tr>
             <tr class="tr" style="width: 100%; ">
-                        <th style="width: 8%;">FECHA COMPLETA APERTURA</th> 
-                        <th style="width: 20%;"><?php echo $caja->fecha_apertura; ?></th>
+                        <th scope = "col" style="width: 8%;">FECHA COMPLETA APERTURA</th> 
+                        <th scope = "col" style="width: 20%;"><?php echo $caja->fecha_apertura; ?></th>
             </tr>
             <tr class="tr" style="width: 100%; ">
-                        <th style="width: 8%;">FECHA COMPLETA CIERRE</th> 
-                        <th style="width: 20%;"><?php echo $caja->fecha_cierre ?></th>
+                        <th scope = "col" style="width: 8%;">FECHA COMPLETA CIERRE</th> 
+                        <th scope = "col" style="width: 20%;"><?php echo $caja->fecha_cierre ?></th>
             </tr>
             <tr class="tr" style="width: 100%; ">
-                        <th style="width: 8%;">MONTO APERTURA</th> 
-                        <th style="width: 20%;">$   <?php echo number_format($caja->monto_apertura,2,'.',','); ?></th>
+                        <th scope = "col" style="width: 8%;">MONTO APERTURA</th> 
+                        <th scope = "col" style="width: 20%;">$   <?php echo number_format($caja->monto_apertura,2,'.',','); ?></th>
             </tr>
             <tr class="tr" style="width: 100%; ">
-                        <th style="width: 8%;">MONTO CIERRE</th> 
-                        <th style="width: 20%;">$   <?php echo number_format($caja->monto_cierre+$caja->monto_apertura,2,'.',','); ?></th>
+                        <th scope = "col" style="width: 8%;">MONTO CIERRE</th> 
+                        <th scope = "col" style="width: 20%;">$   <?php echo number_format($caja->monto_cierre+$caja->monto_apertura,2,'.',','); ?></th>
             </tr>
             <tr>
-                <th></th>
-                <th></th>
+                <th scope = "col"></th>
+                <th scope = "col"></th>
             </tr>
             <tr class="tr" style="width: 100%; ">
-                        <th style="width: 8%;">TOTAL EN CAJA</th> 
-                        <th style="width: 20%;"><strong>$   <?php echo number_format($caja->monto_cierre+$caja->monto_apertura,2,'.',','); ?></strong></th>
+                        <th scope = "col" style="width: 8%;">TOTAL EN CAJA</th> 
+                        <th scope = "col" style="width: 20%;"><strong>$   <?php echo number_format($caja->monto_cierre+$caja->monto_apertura,2,'.',','); ?></strong></th>
             </tr>
 
     </table>

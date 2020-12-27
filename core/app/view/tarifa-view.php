@@ -63,9 +63,9 @@
                   <table id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
 
                   <thead style="color: white; background-color: #827e7e;">
-                        <th>Nº</th> 
-                        <th>NOMBRE</th>
-                        <th></th> 
+                        <th scope = "col">Nº</th> 
+                        <th scope = "col">NOMBRE</th>
+                        <th scope = "col"></th> 
                   </thead>
                    <?php foreach($tarifas as $tarifa):?>
                       <tr>

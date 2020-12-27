@@ -77,10 +77,10 @@ $hora = date("H:i:s");
                   <table class="table table-bordered table-hover">
 
                   <thead style="color: white; background-color: #dd4b39;">
-                        <th>CANT.</th>
-                        <th>DESCRIPCIÓN</th>
-                        <th>P. UNIT.</th>
-                        <th>IMPORTE</th>
+                        <th scope = "col">CANT.</th>
+                        <th scope = "col">DESCRIPCIÓN</th>
+                        <th scope = "col">P. UNIT.</th>
+                        <th scope = "col">IMPORTE</th>
                   </thead>
                   
 
@@ -125,8 +125,8 @@ $hora = date("H:i:s");
 
                <?php }else{ };?>
                   <tr>
-                  <th colspan="3" style="border-right: 1px solid #a09e9e;"><p style="float: right;font-size: 18px;">Total $ </p></th>
-                  <th><strong>$  <?php echo number_format($total+$operacion->total,2,'.',','); ?></strong></th>
+                  <th scope = "col" colspan="3" style="border-right: 1px solid #a09e9e;"><p style="float: right;font-size: 18px;">Total $ </p></th>
+                  <th scope = "col"><strong>$  <?php echo number_format($total+$operacion->total,2,'.',','); ?></strong></th>
                   </tr>
 
                    

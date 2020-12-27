@@ -155,13 +155,13 @@
                   <table id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
 
                   <thead style="color: white; background-color: #827e7e;">
-                        <th>Nro</th> 
-                        <th>PRODUCTO</th>
-                        <th>MARCA</th>
-                        <th>SALDO INICIAL</th>
-                        <th>ENTRADAS</th>
-                        <th>SALIDAS</th>
-                        <th>SALDO</th>
+                        <th scope = "col">Nro</th> 
+                        <th scope = "col">PRODUCTO</th>
+                        <th scope = "col">MARCA</th>
+                        <th scope = "col">SALDO INICIAL</th>
+                        <th scope = "col">ENTRADAS</th>
+                        <th scope = "col">SALIDAS</th>
+                        <th scope = "col">SALDO</th>
                         
                   </thead>
                    <?php foreach($productos as $producto):?>

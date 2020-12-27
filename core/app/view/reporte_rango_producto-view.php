@@ -77,8 +77,8 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
               <div class="box-body" style="text-align: left;">
 
                 <table>
-                  <th style="width: 50%;"></th>
-                  <th style="width: 45%;"></th>
+                  <th scope = "col"style="width: 50%;"></th>
+                  <th scope = "col"style="width: 45%;"></th>
                   <tr>
                       <td><h5>FECHA INICIO:</h5></td>
                       <td><h5 class="control-label text-red"><?php echo $_POST['start']; ?></h5></td>
@@ -125,13 +125,13 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
                   <table id="example2" class="table table-bordered table-hover">
 
                   <thead style="color: black; background-color: #d2d6de;">
-                        <th>Nº</th> 
-                        <th>Habitación</th>
-                        <th>Artículo</th>
-                        <th>Cantidad</th>
-                        <th>Precio unitario</th>
-                        <th>Total</th>
-                        <th>Hora </th> 
+                        <th scope = "col">Nº</th> 
+                        <th scope = "col">Habitación</th>
+                        <th scope = "col">Artículo</th>
+                        <th scope = "col">Cantidad</th>
+                        <th scope = "col">Precio unitario</th>
+                        <th scope = "col">Total</th>
+                        <th scope = "col">Hora </th> 
                   </thead> 
                    <?php $numero=0;?>
                    <?php $subtotal2=0;?>
@@ -153,9 +153,9 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
                     <?php endforeach; ?>
 
                     <tfoot style="color: black; background-color: #e3e4e6;">
-                        <th colspan="5"><p class="pull-right">Total</p></th>
-                        <th><strong>$   <?php echo number_format($subtotal2,2,'.',','); ?></strong> </th> 
-                        <th></th>
+                        <th scope = "col" colspan="5"><p class="pull-right">Total</p></th>
+                        <th scope = "col"><strong>$   <?php echo number_format($subtotal2,2,'.',','); ?></strong> </th> 
+                        <th scope = "col"></th>
                     </tfoot>
 
                   </table>

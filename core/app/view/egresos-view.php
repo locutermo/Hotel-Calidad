@@ -39,14 +39,14 @@
                   <table id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
 
                   <thead style="color: black; background-color: #d2d6de;">
-                        <th>Nº</th> 
-                        <th>Descripción</th>
+                        <th scope = "col">Nº</th> 
+                        <th scope = "col">Descripción</th>
                         <th data-hide="phone">Precio</th>
                         <th data-hide='phone, tablet'>Fecha</th>
-                        <th data-hide='phone, tablet'>Responsable</th> 
+                        <th data-hide='phone, tablet'>Responsable</th>
 
-                        <th></th>
-                        <th></th>
+                        <th scope = "col"></th>
+                        <th scope = "col"></th>
                   </thead> 
                    <?php foreach($gastos as $gasto):?> 
                       <tr>
@@ -150,13 +150,13 @@
                   <table id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
 
                   <thead style="color: black; background-color: #d2d6de;">
-                        <th>Nº</th> 
-                        <th>Descripción</th>
-                        <th data-hide="phone">Precio</th>
-                        <th data-hide='phone, tablet'>Fecha</th>
-                        <th data-hide='phone, tablet'>Responsable</th> 
+                        <th scope = "col">Nº</th> 
+                        <th scope = "col">Descripción</th>
+                        <th scope = "col" data-hide="phone">Precio</th>
+                        <th scope = "col" data-hide='phone, tablet'>Fecha</th>
+                        <th scope = "col" data-hide='phone, tablet'>Responsable</th> 
 
-                        <th>Estado</th>
+                        <th scope = "col">Estado</th>
                       
                   </thead> 
                    <?php foreach($gastos as $gasto):?> 

@@ -96,9 +96,9 @@ tr:hover td { background: #d0dafd; color: #339; }
     <table cellspacing="0" style="width: 100%; border: solid 0px #7f8c8d; text-align: center; font-size: 10pt;padding:1mm; padding-top: 0mm !important;">
         <tr >
             
-            <th  style="width: 60%"></th>
+            <th scope = "col" style="width: 60%"></th>
            
-            <th class="pumpkin" style="width: 40%; border: black 1px solid">ENTRADAS DE PRODUCTOS </th>
+            <th scope = "col" class="pumpkin" style="width: 40%; border: black 1px solid">ENTRADAS DE PRODUCTOS </th>
             
             
         </tr>
@@ -144,11 +144,11 @@ tr:hover td { background: #d0dafd; color: #339; }
                   <table class="contenido"> 
 
                   <tr class="tr" style="width: 100%; ">
-                        <th style="width: 30%;">Nro</th> 
-                        <th style="width: 80%;">PRODUCTO</th>
-                        <th style="width: 30%;">MARCA</th>
-                        <th style="width: 30%;">SALDO INICIAL</th>
-                        <th style="width: 30%;">ENTRADAS</th>
+                        <th scope = "col" style="width: 30%;">Nro</th> 
+                        <th scope = "col" style="width: 80%;">PRODUCTO</th>
+                        <th scope = "col" style="width: 30%;">MARCA</th>
+                        <th scope = "col" style="width: 30%;">SALDO INICIAL</th>
+                        <th scope = "col" style="width: 30%;">ENTRADAS</th>
                         
                         
                   </tr>

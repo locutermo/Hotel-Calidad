@@ -104,14 +104,14 @@
 
                   <thead style="color: black; background-color: #d2d6de;">
          
-                        <th >Comprobante</th>
-                        <th >Nro. comprobante</th>
-                        <th >Fecha</th>
-                        <th>Proveedor</th>
-                        <th data-hide="phone">Total</th>
-                        <th data-hide='phone, tablet'>Responsable</th> 
+                        <th scope = "col">Comprobante</th>
+                        <th scope = "col">Nro. comprobante</th>
+                        <th scope = "col">Fecha</th>
+                        <th scope = "col">Proveedor</th>
+                        <th scope = "col" data-hide="phone">Total</th>
+                        <th scope = "col" data-hide='phone, tablet'>Responsable</th> 
 
-                        <th></th>
+                        <th scope = "col"></th>
                   </thead> 
                    <?php foreach($compras as $compra):?> 
                       <tr> 
@@ -144,11 +144,11 @@
                       <table id="tbldetalle" class="table table-xxs">
                                 <thead>
                                   <tr class="bg-blue">
-                                    <th></th>
-                                    <th>Producto</th>
-                                    <th>Cant.</th>
-                                    <th class="text-center">Precio</th>
-                                    <th class="text-center">Importe</th> 
+                                    <th scope = "col"></th>
+                                    <th scope = "col">Producto</th>
+                                    <th scope = "col">Cant.</th>
+                                    <th scope = "col" class="text-center">Precio</th>
+                                    <th scope = "col" class="text-center">Importe</th> 
                                    
                                     
                                   </tr>

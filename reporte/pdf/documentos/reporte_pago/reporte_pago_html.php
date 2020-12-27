@@ -96,9 +96,9 @@ tr:hover td { background: #d0dafd; color: #339; }
     <table cellspacing="0" style="width: 100%; border: solid 0px #7f8c8d; text-align: center; font-size: 10pt;padding:1mm; padding-top: 0mm !important;">
         <tr >
             
-            <th  style="width: 60%"></th>
+            <th scope = "col" style="width: 60%"></th>
            
-            <th class="pumpkin" style="width: 40%; border: black 1px solid">INFORME DE PAGOS HASTA </th>
+            <th scope = "col" class="pumpkin" style="width: 40%; border: black 1px solid">INFORME DE PAGOS HASTA </th>
             
             
         </tr>
@@ -144,16 +144,16 @@ tr:hover td { background: #d0dafd; color: #339; }
                   <table  class="contenido">
  
                   <tr class="tr" style="width: 100%; ">
-                        <th>DESDE</th> 
-                        <th>HASTA</th> 
-                        <th>TRABAJADOR</th>
-                        <th>SUELDO POR MES</th>
+                        <th scope = "col">DESDE</th> 
+                        <th scope = "col">HASTA</th> 
+                        <th scope = "col">TRABAJADOR</th>
+                        <th scope = "col">SUELDO POR MES</th>
                        
-                        <th>ACUMULADO</th>
-                        <th>AUMENTO</th> 
-                        <th>DESCUENTO</th>
-                        <th>RESTA</th>
-                        <th>ESTADO</th> 
+                        <th scope = "col">ACUMULADO</th>
+                        <th scope = "col">AUMENTO</th> 
+                        <th scope = "col">DESCUENTO</th>
+                        <th scope = "col">RESTA</th>
+                        <th scope = "col">ESTADO</th> 
                         
                   </tr>
                    <?php foreach($sueldos as $sueldo):?>

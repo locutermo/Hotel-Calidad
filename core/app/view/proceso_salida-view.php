@@ -102,18 +102,18 @@ $cliente = PersonaData::getById($habitacion->id_cliente);
                         <thead style="color: white; background-color: #827e7e;">
                             <tr>
                             
-                              <th>Tipo documento</th>
-                              <th data-hide="phone">E-mail</th>
-                              <th data-hide='phone, tablet'>Nombres completos</th>
-                              <th data-hide='phone, tablet'>RFC</th>  
-                              <th data-hide='phone, tablet'>Procedencia</th> 
-                              <th data-hide='phone, tablet'>Razón social</th> 
-                              <th data-hide='phone, tablet'>Teléfono</th> 
-                              <th data-hide='phone, tablet'>Nro toallas</th> 
+                              <th scope = "col">Tipo documento</th>
+                              <th scope = "col" data-hide="phone">E-mail</th>
+                              <th scope = "col"data-hide='phone, tablet'>Nombres completos</th>
+                              <th scope = "col" data-hide='phone, tablet'>RFC</th>  
+                              <th scope = "col" data-hide='phone, tablet'>Procedencia</th> 
+                              <th scope = "col" data-hide='phone, tablet'>Razón social</th> 
+                              <th scope = "col" data-hide='phone, tablet'>Teléfono</th> 
+                              <th scope = "col" data-hide='phone, tablet'>Nro toallas</th> 
                                
-                              <th data-hide='phone, tablet'>Factura</th> 
-                              <th data-hide='phone, tablet'>Nro de folio</th> 
-                              <th data-hide='phone, tablet'>Nota</th> 
+                              <th scope = "col" data-hide='phone, tablet'>Factura</th> 
+                              <th scope = "col" data-hide='phone, tablet'>Nro de folio</th> 
+                              <th scope = "col" data-hide='phone, tablet'>Nota</th> 
                               
                             </tr>
                           </thead>
@@ -229,18 +229,18 @@ $fecha1 = new DateTime($habitacion->fecha_entrada);//fecha inicial
             <div class="box-body">
               <table class="table table-bordered">
               	<tr style="background-color: #dcd6d6;">
-                  <th style="width: 10px;border-right: 1px solid #a09e9e;"></th>
-                  <th colspan="4" style="border-right:1px solid #a09e9e;">Costo del alojamiento</th>
-                  <th style="width: 100px"></th>
+                  <th scope = "col" style="width: 10px;border-right: 1px solid #a09e9e;"></th>
+                  <th scope = "col" colspan="4" style="border-right:1px solid #a09e9e;">Costo del alojamiento</th>
+                  <th scope = "col" style="width: 100px"></th>
                 </tr> 
                 <tr>
-                  <th style="width: 10px;border-right: 1px solid #a09e9e;">#</th>
+                  <th scope = "col" style="width: 10px;border-right: 1px solid #a09e9e;">#</th>
                   
-                  <th>Costo por tarifa </th>
-                  <th>Cant. noches</th>
-                  <th style="border-right:1px solid #a09e9e;" colspan="2">Carga por salir tarde</th>
+                  <th scope = "col">Costo por tarifa </th>
+                  <th scope = "col">Cant. noches</th>
+                  <th scope = "col" style="border-right:1px solid #a09e9e;" colspan="2">Carga por salir tarde</th>
                   
-                  <th style="width: 40px"></th>
+                  <th scope = "col" style="width: 40px"></th>
                 </tr>
              <form action="index.php?view=addsalida" method="post" name="sumar">
                 <tr>
@@ -278,18 +278,18 @@ $fecha1 = new DateTime($habitacion->fecha_entrada);//fecha inicial
                 </tr>
 
                 <tr style="background-color: #dcd6d6;">
-                  <th style="width: 10px;border-right: 1px solid #a09e9e;"></th>
-                  <th colspan="4" style="border-right: 1px solid #a09e9e;">Servicio al cuarto</th>
-                  <th style="width: 100px"></th>
+                  <th scope = "col" style="width: 10px;border-right: 1px solid #a09e9e;"></th>
+                  <th scope = "col" colspan="4" style="border-right: 1px solid #a09e9e;">Servicio al cuarto</th>
+                  <th scope = "col" style="width: 100px"></th>
                 </tr>
 
                  <tr>
-                  <th style="width: 10px;border-right: 1px solid #a09e9e;">#</th>
-                  <th>Descripción</th>
-                  <th>Precio unitario</th>
-                  <th style="border-right:1px solid #a09e9e;">Cantidad</th>
-                  <th style="border-right:1px solid #a09e9e;">Estado</th>
-                  <th style="width: 40px"> <?php if($habitacion->pagado=='0'){ ?><h4 style="color: red;">FALTA PAGAR</h4><?php }else{ ?><h4 style="color: blue;">PAGADO</h4><?php }; ?></th>
+                  <th scope = "col"style="width: 10px;border-right: 1px solid #a09e9e;">#</th>
+                  <th scope = "col">Descripción</th>
+                  <th scope = "col">Precio unitario</th>
+                  <th scope = "col" style="border-right:1px solid #a09e9e;">Cantidad</th>
+                  <th scope = "col" style="border-right:1px solid #a09e9e;">Estado</th>
+                  <th scope = "col" style="width: 40px"> <?php if($habitacion->pagado=='0'){ ?><h4 style="color: red;">FALTA PAGAR</h4><?php }else{ ?><h4 style="color: blue;">PAGADO</h4><?php }; ?></th>
                 </tr>
 
                 <?php $total=0;?>
@@ -329,21 +329,21 @@ $fecha1 = new DateTime($habitacion->fecha_entrada);//fecha inicial
 
 
                 <tr style="background-color: #dcd6d6;">
-                  <th style="width: 10px;border-right: 1px solid #a09e9e;"></th>
-                  <th colspan="4" style="border-right: 1px solid #a09e9e;"><p style="float: right;font-size: 18px;">Total $  </p></th>
+                  <th scope = "col" style="width: 10px;border-right: 1px solid #a09e9e;"></th>
+                  <th scope = "col" colspan="4" style="border-right: 1px solid #a09e9e;"><p style="float: right;font-size: 18px;">Total $  </p></th>
                   <input type="hidden" name="subtotal" value="<?php echo $total; ?>" onKeyUp="fncSumar()">
 
                   <?php if($habitacion->pagado=='1'){ $sumarrr=0;}else{ $sumarrr= $habitacion->precio*$habitacion->cant_noche; } ?>
-                  <th style="width: 100px;"><strong><input type="text" style="border-color: green;" readonly name="total" value="<?php echo $total + $sumarrr; ?>"></strong></th>
+                  <th scope = "col" style="width: 100px;"><strong><input type="text" style="border-color: green;" readonly name="total" value="<?php echo $total + $sumarrr; ?>"></strong></th>
                 </tr>
 
 
                  <?php if($habitacion->pagado=='0'){ ?>
                 <tr style="background-color: #dcd6d6;">
-                  <th style="width: 10px;border-right: 1px solid #a09e9e;"></th>
-                  <th colspan="4" style="border-right: 1px solid #a09e9e;"><p style="float: right;font-size: 14px;">Tipo de pago</p></th>
+                  <th scope = "col" style="width: 10px;border-right: 1px solid #a09e9e;"></th>
+                  <th scope = "col" colspan="4" style="border-right: 1px solid #a09e9e;"><p style="float: right;font-size: 14px;">Tipo de pago</p></th>
                  
-                  <th style="width: 100px;"><strong>
+                  <th scope = "col" style="width: 100px;"><strong>
                     <select class="form-control" onchange="CargarMediopago(this.value);" required name="id_tipo_pago">
                     
                       <option value="">--- Selecciona ---</option>
@@ -359,8 +359,8 @@ $fecha1 = new DateTime($habitacion->fecha_entrada);//fecha inicial
 
 
                 <tr style="background-color: #dcd6d6;">
-                  <th style="width: 10px;border-right: 1px solid #a09e9e;"></th>
-                  <th colspan="4" style="border-right: 1px solid #a09e9e;"><p style="float: right;font-size: 14px;">Nro operación</p></th> 
+                  <th scope = "col" style="width: 10px;border-right: 1px solid #a09e9e;"></th>
+                  <th scope = "col" colspan="4" style="border-right: 1px solid #a09e9e;"><p style="float: right;font-size: 14px;">Nro operación</p></th> 
                  
                   <th style="width: 100px;" id="mostrar_mediopago">
                     

@@ -185,10 +185,10 @@
                                                             <table class="table table-hover table-striped">
                                                                 <thead>
                                                                 <tr>
-                                                                    <th>CANT.</th>
-                                                                    <th>DESCRIPCIÓN</th>
-                                                                    <th>P. UNITARIO</th>
-                                                                    <th>IMPORTE</th>
+                                                                    <th scope = "col">CANT.</th>
+                                                                    <th scope = "col">DESCRIPCIÓN</th>
+                                                                    <th scope = "col">P. UNITARIO</th>
+                                                                    <th scope = "col">IMPORTE</th>
                                                                     
                                                                 </tr>
                                                                 </thead>

@@ -38,9 +38,9 @@
                   <table id="example1" class="table table-bordered table-hover">
 
                   <thead style="color: white; background-color: #dd4b39;">
-                        <th>Nº</th> 
-                        <th>NOMBRE</th>
-                        <th></th> 
+                        <th scope = "col">Nº</th> 
+                        <th scope = "col">NOMBRE</th>
+                        <th scope = "col"></th> 
                   </thead>
                    <?php foreach($categorias as $categoria):?>
                       <tr>

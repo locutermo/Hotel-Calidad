@@ -7,12 +7,12 @@ if(count($products)>0){
 <h3>Resultados de la Busqueda</h3>
 <table class="table table-bordered table-hover">
 	<thead>
-		<th>Codigo</th>
-		<th>Nombre</th>
-		<th>Unidad</th>
-		<th>Precio unitario</th>
-		<th>En inventario</th>
-		<th>Cantidad</th>
+		<th scope = "col">Codigo</th>
+		<th scope = "col">Nombre</th>
+		<th scope = "col">Unidad</th>
+		<th scope = "col">Precio unitario</th>
+		<th scope = "col">En inventario</th>
+		<th scope = "col">Cantidad</th>
 	</thead>
 	<?php
 $products_in_cero=0;
