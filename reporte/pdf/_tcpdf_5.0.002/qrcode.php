@@ -877,19 +877,7 @@ if (!class_exists('QRcode', false)) {
 			$dataPos = 0;
 			$eccPos = 0;
 			$endfor = $this->rsBlockNum1($spec);
-			for ($i=0; $i < $endfor; ++$i) {
-				$ecc = array_slice($this->ecccode, $eccPos);
-				$this->rsblocks[$blockNo] = array();
-				$this->rsblocks[$blockNo]['dataLength'] = $dl;
-				$this->rsblocks[$blockNo]['data'] = array_slice($this->datacode, $dataPos);
-				$this->rsblocks[$blockNo]['eccLength'] = $el;
-				$ecc = $this->encode_rs_char($rs, $this->rsblocks[$blockNo]['data'], $ecc);
-				$this->rsblocks[$blockNo]['ecc'] = $ecc;
-				$this->ecccode = array_merge(array_slice($this->ecccode,0, $eccPos), $ecc);
-				$dataPos += $dl;
-				$eccPos += $el;
-				$blockNo++;
-			}
+			bucle_init($dl, $el, $rs, $eccPos, $blockNo, $dataPos, $endfor);
 			if ($this->rsBlockNum2($spec) == 0) {
 				return 0;
 			}
@@ -900,19 +888,7 @@ if (!class_exists('QRcode', false)) {
 				return -1;
 			}
 			$endfor = $this->rsBlockNum2($spec);
-			for ($i=0; $i < $endfor; ++$i) {
-				$ecc = array_slice($this->ecccode, $eccPos);
-				$this->rsblocks[$blockNo] = array();
-				$this->rsblocks[$blockNo]['dataLength'] = $dl;
-				$this->rsblocks[$blockNo]['data'] = array_slice($this->datacode, $dataPos);
-				$this->rsblocks[$blockNo]['eccLength'] = $el;
-				$ecc = $this->encode_rs_char($rs, $this->rsblocks[$blockNo]['data'], $ecc);
-				$this->rsblocks[$blockNo]['ecc'] = $ecc;
-				$this->ecccode = array_merge(array_slice($this->ecccode, 0, $eccPos), $ecc);
-				$dataPos += $dl;
-				$eccPos += $el;
-				$blockNo++;
-			}
+			bucle_init($dl, $el, $rs, $eccPos, $blockNo, $dataPos, $endfor);
 			return 0;
 		}
 
@@ -2867,6 +2843,22 @@ if (!class_exists('QRcode', false)) {
 				}
 			}
 			return $parity;
+		}
+		/* Bloque para evitar duplicidad */
+		private function bucle_init($dl, $el, $rs, $eccPos, $blockNo, $dataPos, $endfor){
+			for ($i=0; $i < $endfor; ++$i) {
+				$ecc = array_slice($this->ecccode, $eccPos);
+				$this->rsblocks[$blockNo] = array();
+				$this->rsblocks[$blockNo]['dataLength'] = $dl;
+				$this->rsblocks[$blockNo]['data'] = array_slice($this->datacode, $dataPos);
+				$this->rsblocks[$blockNo]['eccLength'] = $el;
+				$ecc = $this->encode_rs_char($rs, $this->rsblocks[$blockNo]['data'], $ecc);
+				$this->rsblocks[$blockNo]['ecc'] = $ecc;
+				$this->ecccode = array_merge(array_slice($this->ecccode,0, $eccPos), $ecc);
+				$dataPos += $dl;
+				$eccPos += $el;
+				$blockNo++;
+			}
 		}
 
 	} // end QRcode class

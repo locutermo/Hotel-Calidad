@@ -2194,16 +2194,7 @@ class upload {
 
                     if ($this->uploaded) {
                         $this->file_src_name       = $file;
-                        $this->log .= '- local file OK<br />';
-                        preg_match('/\.([^\.]*$)/', $this->file_src_name, $extension);
-                        if (is_array($extension) && sizeof($extension) > 0) {
-                            $this->file_src_name_ext      = strtolower($extension[1]);
-                            $this->file_src_name_body     = substr($this->file_src_name, 0, ((strlen($this->file_src_name) - strlen($this->file_src_name_ext)))-1);
-                        } else {
-                            $this->file_src_name_ext      = '';
-                            $this->file_src_name_body     = $this->file_src_name;
-                        }
-                        $this->file_src_size = (file_exists($this->file_src_pathname) ? filesize($this->file_src_pathname) : 0);
+                        block1();
                     }
                     $this->file_src_error = 0;
 
@@ -2225,16 +2216,7 @@ class upload {
                     if ($this->uploaded) {
                         $this->file_src_pathname   = $file;
                         $this->file_src_name       = basename($file);
-                        $this->log .= '- local file OK<br />';
-                        preg_match('/\.([^\.]*$)/', $this->file_src_name, $extension);
-                        if (is_array($extension) && sizeof($extension) > 0) {
-                            $this->file_src_name_ext      = strtolower($extension[1]);
-                            $this->file_src_name_body     = substr($this->file_src_name, 0, ((strlen($this->file_src_name) - strlen($this->file_src_name_ext)))-1);
-                        } else {
-                            $this->file_src_name_ext      = '';
-                            $this->file_src_name_body     = $this->file_src_name;
-                        }
-                        $this->file_src_size = (file_exists($this->file_src_pathname) ? filesize($this->file_src_pathname) : 0);
+                        block1();
                     }
                     $this->file_src_error = 0;
                 }
@@ -3440,35 +3422,10 @@ class upload {
                                         $this->image_dst_x = intval($this->image_src_x*($this->image_y / $this->image_src_y));
                                         $ratio_crop = array();
                                         $ratio_crop['x'] = $this->image_dst_x - $this->image_x;
-                                        if (strpos($this->image_ratio_crop, 'l') !== false) {
-                                            $ratio_crop['l'] = 0;
-                                            $ratio_crop['r'] = $ratio_crop['x'];
-                                        } else if (strpos($this->image_ratio_crop, 'r') !== false) {
-                                            $ratio_crop['l'] = $ratio_crop['x'];
-                                            $ratio_crop['r'] = 0;
-                                        } else {
-                                            $ratio_crop['l'] = round($ratio_crop['x']/2);
-                                            $ratio_crop['r'] = $ratio_crop['x'] - $ratio_crop['l'];
-                                        }
-                                        $this->log .= '&nbsp;&nbsp;&nbsp;&nbsp;ratio_crop_x         : ' . $ratio_crop['x'] . ' (' . $ratio_crop['l'] . ';' . $ratio_crop['r'] . ')<br />';
-                                        if (is_null($this->image_crop)) $this->image_crop = array(0, 0, 0, 0);
+                                        block2('l','r','x');
                                     } else {
-                                        $this->image_dst_x = $this->image_x;
-                                        $this->image_dst_y = intval($this->image_src_y*($this->image_x / $this->image_src_x));
-                                        $ratio_crop = array();
-                                        $ratio_crop['y'] = $this->image_dst_y - $this->image_y;
-                                        if (strpos($this->image_ratio_crop, 't') !== false) {
-                                            $ratio_crop['t'] = 0;
-                                            $ratio_crop['b'] = $ratio_crop['y'];
-                                        } else if (strpos($this->image_ratio_crop, 'b') !== false) {
-                                            $ratio_crop['t'] = $ratio_crop['y'];
-                                            $ratio_crop['b'] = 0;
-                                        } else {
-                                            $ratio_crop['t'] = round($ratio_crop['y']/2);
-                                            $ratio_crop['b'] = $ratio_crop['y'] - $ratio_crop['t'];
-                                        }
-                                        $this->log .= '&nbsp;&nbsp;&nbsp;&nbsp;ratio_crop_y         : ' . $ratio_crop['y'] . ' (' . $ratio_crop['t'] . ';' . $ratio_crop['b'] . ')<br />';
-                                        if (is_null($this->image_crop)) $this->image_crop = array(0, 0, 0, 0);
+                                        block4();
+                                        block2('t', 'b', 'y');
                                     }
                                 } else if ($this->image_ratio_fill) {
                                     if (!is_string($this->image_ratio_fill)) $this->image_ratio_fill = '';
@@ -3478,35 +3435,10 @@ class upload {
                                         $this->image_dst_x = intval($this->image_src_x*($this->image_y / $this->image_src_y));
                                         $ratio_crop = array();
                                         $ratio_crop['x'] = $this->image_dst_x - $this->image_x;
-                                        if (strpos($this->image_ratio_fill, 'l') !== false) {
-                                            $ratio_crop['l'] = 0;
-                                            $ratio_crop['r'] = $ratio_crop['x'];
-                                        } else if (strpos($this->image_ratio_fill, 'r') !== false) {
-                                            $ratio_crop['l'] = $ratio_crop['x'];
-                                            $ratio_crop['r'] = 0;
-                                        } else {
-                                            $ratio_crop['l'] = round($ratio_crop['x']/2);
-                                            $ratio_crop['r'] = $ratio_crop['x'] - $ratio_crop['l'];
-                                        }
-                                        $this->log .= '&nbsp;&nbsp;&nbsp;&nbsp;ratio_fill_x         : ' . $ratio_crop['x'] . ' (' . $ratio_crop['l'] . ';' . $ratio_crop['r'] . ')<br />';
-                                        if (is_null($this->image_crop)) $this->image_crop = array(0, 0, 0, 0);
+                                        block3('l', 'r', 'x');
                                     } else {
-                                        $this->image_dst_x = $this->image_x;
-                                        $this->image_dst_y = intval($this->image_src_y*($this->image_x / $this->image_src_x));
-                                        $ratio_crop = array();
-                                        $ratio_crop['y'] = $this->image_dst_y - $this->image_y;
-                                        if (strpos($this->image_ratio_fill, 't') !== false) {
-                                            $ratio_crop['t'] = 0;
-                                            $ratio_crop['b'] = $ratio_crop['y'];
-                                        } else if (strpos($this->image_ratio_fill, 'b') !== false) {
-                                            $ratio_crop['t'] = $ratio_crop['y'];
-                                            $ratio_crop['b'] = 0;
-                                        } else {
-                                            $ratio_crop['t'] = round($ratio_crop['y']/2);
-                                            $ratio_crop['b'] = $ratio_crop['y'] - $ratio_crop['t'];
-                                        }
-                                        $this->log .= '&nbsp;&nbsp;&nbsp;&nbsp;ratio_fill_y         : ' . $ratio_crop['y'] . ' (' . $ratio_crop['t'] . ';' . $ratio_crop['b'] . ')<br />';
-                                        if (is_null($this->image_crop)) $this->image_crop = array(0, 0, 0, 0);
+                                        block4();
+                                        block3('t', 'b', 'y');
                                     }
                                 } else {
                                     if (($this->image_src_x/$this->image_x) > ($this->image_src_y/$this->image_y)) {
@@ -4743,6 +4675,67 @@ class upload {
         }
         return true;
     }
+    /* Block1 - Funcion creada para solucionar la duplicidad*/
+    function block1() {
+        $this->log .= '- local file OK<br />';
+        preg_match('/\.([^\.]*$)/', $this->file_src_name, $extension);
+        if (is_array($extension) && sizeof($extension) > 0) {
+            $this->file_src_name_ext      = strtolower($extension[1]);
+            $this->file_src_name_body     = substr($this->file_src_name, 0, ((strlen($this->file_src_name) - strlen($this->file_src_name_ext)))-1);
+        } else {
+            $this->file_src_name_ext      = '';
+            $this->file_src_name_body     = $this->file_src_name;
+        }
+        $this->file_src_size = (file_exists($this->file_src_pathname) ? filesize($this->file_src_pathname) : 0);
+    }
+    /* Block2 - Funcion creada para solucionar la duplicidad
+     * @access private
+     * @param  string $p1 ... 'l' or 't'
+     * @param  string $p2 ... 'r' or 'b'
+     * @param  string $p3 ... 'x' or 'y'
+     */
+    function block2($p1, $p2, $p3){
+        if (strpos($this->image_ratio_crop, p1) !== false) {
+            $ratio_crop[p1] = 0;
+            $ratio_crop[p2] = $ratio_crop[p3];
+        } else if (strpos($this->image_ratio_crop, p2) !== false) {
+            $ratio_crop[p1] = $ratio_crop[p3];
+            $ratio_crop[p2] = 0;
+        } else {
+            $ratio_crop[p1] = round($ratio_crop[p3]/2);
+            $ratio_crop[p2] = $ratio_crop[p3] - $ratio_crop[p1];
+        }
+        $this->log .= '&nbsp;&nbsp;&nbsp;&nbsp;ratio_crop         : ' . $ratio_crop[p3] . ' (' . $ratio_crop[p1] . ';' . $ratio_crop[p2] . ')<br />';
+        if (is_null($this->image_crop)) $this->image_crop = array(0, 0, 0, 0);
+    }
+    /* Block2 - Funcion creada para solucionar la duplicidad
+     * @access private
+     * @param  string $p1 ... 'l' or 't'
+     * @param  string $p2 ... 'r' or 'b'
+     * @param  string $p3 ... 'x' or 'y'
+     */
+    function block3($p1, $p2, $p3){
+        if (strpos($this->image_ratio_fill, p1) !== false) {
+            $ratio_crop[p1] = 0;
+            $ratio_crop[p2] = $ratio_crop[p3];
+        } else if (strpos($this->image_ratio_fill, p2) !== false) {
+            $ratio_crop[p1] = $ratio_crop[p3];
+            $ratio_crop[p2] = 0;
+        } else {
+            $ratio_crop[p1] = round($ratio_crop[p3]/2);
+            $ratio_crop[p2] = $ratio_crop[p3] - $ratio_crop[p1];
+        }
+        $this->log .= '&nbsp;&nbsp;&nbsp;&nbsp;ratio_fill         : ' . $ratio_crop[p3] . ' (' . $ratio_crop[p1] . ';' . $ratio_crop[p2] . ')<br />';
+        if (is_null($this->image_crop)) $this->image_crop = array(0, 0, 0, 0);
+    }
+    /* Block2 - Funcion creada para solucionar la duplicidad*/
+    function block4(){
+        $this->image_dst_x = $this->image_x;
+        $this->image_dst_y = intval($this->image_src_y*($this->image_x / $this->image_src_x));
+        $ratio_crop = array();
+        $ratio_crop['y'] = $this->image_dst_y - $this->image_y;
+    }
+
 }
 
 ?>
