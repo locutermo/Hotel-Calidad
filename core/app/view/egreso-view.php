@@ -73,7 +73,7 @@ margin-bottom:27px;
 <div class="row">
 <section class="content-header">
     <ol class="breadcrumb">
-      <li><a href="index.php?view=reserva"><i class="fa fa-home"></i> Inicio</a></li>
+      <li><a href="index.php?view=reserva"><em class="fa fa-home"></em> Inicio</a></li>
       <li class="active">Egreso</li>
     </ol>
 </section> 
@@ -136,7 +136,7 @@ margin-bottom:27px;
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-3 control-label"></label>
     <div class="col-md-8">
-      <button type="submit" class="btn btn-primary"> Registrar egreso <i class="fa fa-print"></i></button>
+      <button type="submit" class="btn btn-primary"> Registrar egreso <em class="fa fa-print"></em></button>
     </div>
   </div>
 </form>

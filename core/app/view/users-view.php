@@ -4,7 +4,7 @@
 <div class="row">
 <section class="content-header">
     <ol class="breadcrumb">
-      <li><a href="index.php?view=reserva"><i class="fa fa-home"></i> Inicio</a></li>
+      <li><a href="index.php?view=reserva"><em class="fa fa-home"></em> Inicio</a></li>
       <li><a href="#">Administración</a></li>
         <li class="active">Counters</li>
     </ol>
@@ -20,32 +20,32 @@
         <h1 class="custom-font"><strong>REGISTRO DE </strong> COUNTERS</h1>
         <ul class="controls">
           <li class="remove">
-            <a  data-toggle="modal" data-target="#myModal"  ><i class="fa fa-user-plus"></i> REGISTRAR NUEVO COUNTER</a>
+            <a  data-toggle="modal" data-target="#myModal"  ><em class="fa fa-user-plus"></em> REGISTRAR NUEVO COUNTER</a>
           </li>
           <li class="dropdown">
             <a role="button" tabindex="0" class="dropdown-toggle settings" data-toggle="dropdown">
-            <i class="fa fa-cog"></i><i class="fa fa-spinner fa-spin"></i>
+            <em class="fa fa-cog"></em><em class="fa fa-spinner fa-spin"></em>
             </a>
             <ul class="dropdown-menu pull-right with-arrow animated littleFadeInUp">
                 <li>
                   <a role="button" tabindex="0" class="tile-toggle">
-                  <span class="minimize"><i class="fa fa-angle-down"></i>&nbsp;&nbsp;&nbsp;Minimize</span>
-                  <span class="expand"><i class="fa fa-angle-up"></i>&nbsp;&nbsp;&nbsp;Expand</span>
+                  <span class="minimize"><em class="fa fa-angle-down"></em>&nbsp;&nbsp;&nbsp;Minimize</span>
+                  <span class="expand"><em class="fa fa-angle-up"></em>&nbsp;&nbsp;&nbsp;Expand</span>
                   </a>
                 </li>
                 <li>
                   <a role="button" tabindex="0" class="tile-refresh">
-                    <i class="fa fa-refresh"></i> Refresh
+                    <em class="fa fa-refresh"></em> Refresh
                   </a>
                 </li>
                 <li>
                   <a role="button" tabindex="0" class="tile-fullscreen">
-                  <i class="fa fa-expand"></i> Fullscreen
+                  <em class="fa fa-expand"></em> Fullscreen
                   </a>
                 </li>
             </ul>
           </li>
-          <li class="remove"><a role="button" tabindex="0" class="tile-close"><i class="fa fa-times"></i></a></li>
+          <li class="remove"><a role="button" tabindex="0" class="tile-close"><em class="fa fa-times"></em></a></li>
         </ul>
       </div>
       <!-- tile body -->
@@ -63,32 +63,32 @@
                   <table id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
 
                   <thead style="color: white; background-color: #827e7e;">
-                        <th>Nº</th> 
-                        <th>Nombre completo</th>
-						<th>Nombre de usuario</th>
-						<th>Email</th>
-						<th>Activo</th>
-						<th>Admin</th>
-						<th></th>
+                        <th scope = "col">Nº</th> 
+                        <th scope = "col">Nombre completo</th>
+						            <th scope = "col">Nombre de usuario</th>
+						            <th scope = "col">Email</th>
+						            <th scope = "col">Activo</th>
+						            <th scope = "col">Admin</th>
+						            <th scope = "col"></th>
                   </thead>
                    <?php foreach($users as $user):?>
                       <tr>
                         <td><?php echo $user->id; ?></td>
                         <td><?php echo $user->name." ".$user->lastname; ?></td>
                         <td><?php echo $user->username; ?></td>
-                        <td><b><?php echo $user->email; ?></b></td>
+                        <td><strong><?php echo $user->email; ?></strong></td>
                         <td>
 		                    <?php if($user->is_active):?>
-								<i class="glyphicon glyphicon-ok"></i>
+								<em class="glyphicon glyphicon-ok"></em>
 							<?php endif; ?>
 						</td>
 						<td>
 							<?php if($user->is_admin):?>
-								<i class="glyphicon glyphicon-ok"></i>
+								<em class="glyphicon glyphicon-ok"></em>
 							<?php endif; ?>
 						</td>
                         <td>
-                        <a href="index.php?view=edituser&id=<?php echo $user->id;?>" class="btn btn-warning btn-xs"><i class="fa fa-edit"></i>Editar</a>
+                        <a href="index.php?view=edituser&id=<?php echo $user->id;?>" class="btn btn-warning btn-xs"><em class="fa fa-edit"></em>Editar</a>
                         </td>
                       </tr> 
                     <?php endforeach; ?>

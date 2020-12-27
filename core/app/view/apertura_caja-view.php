@@ -103,13 +103,13 @@
                                         <thead style="background-color: #16a085;
     color: white;">
                                         <tr>
-                                          <th>FECHA DE APERTURA</th>
-                                          <th>MONTO APERTURA</th>
-                                          <th>EGRESOS</th>
-                                          <th>VENTA TOTAL</th>
+                                          <th scope = "col">FECHA DE APERTURA</th>
+                                          <th scope = "col">MONTO APERTURA</th>
+                                          <th scope = "col">EGRESOS</th>
+                                          <th scope = "col">VENTA TOTAL</th>
 
-                                          <th>VENTA TOTAL + APERTURA</th>
-                                          <th>USUARIO RESPONSABLE</th>
+                                          <th scope = "col">VENTA TOTAL + APERTURA</th>
+                                          <th scope = "col">USUARIO RESPONSABLE</th>
                                         </tr>
                                         </thead>
                                         <tbody>
@@ -207,7 +207,7 @@
                                     <?php }else{ ?>
                                         <div class="alert alert-danger alert-dismissible">
                                           <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                                          <h4><i class="icon fa fa-ban"></i> No hay ningún apertura de caja!</h4>
+                                          <h4><em class="icon fa fa-ban"></em> No hay ningún apertura de caja!</h4>
                                           
                                         </div>
                                      <?php }; ?>

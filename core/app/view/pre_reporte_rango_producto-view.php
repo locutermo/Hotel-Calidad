@@ -24,7 +24,7 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
         <small>Avance</small>
       </h3> 
       <ol class="breadcrumb">
-        <li><a href="index.php?view=reserva"><i class="fa fa-home"></i> Inicio</a></li>
+        <li><a href="index.php?view=reserva"><em class="fa fa-home"></em> Inicio</a></li>
         <li><a href="#">Reportes</a></li>
         <li class="active">Reporte Por rango</li>
       </ol>
@@ -86,7 +86,7 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
                                 <div class="tile-footer">
                                     <div class="form-group text-center">
                                        
-                                        <button class="btn btn-rounded btn-success ripple" type="submit"><i class="fa fa-open-eye"></i> Ver reporte</button>
+                                        <button class="btn btn-rounded btn-success ripple" type="submit"><em class="fa fa-open-eye"></em> Ver reporte</button>
                                     </div>
                                 </div>
                             </form>

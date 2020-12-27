@@ -68,10 +68,10 @@ if (isset($_GET['id']))//codigo elimina un elemento del array
 			?>
             <table class="table" border="1">
                 <thead>
-                    <th>Tipo documento</th>
-                    <th>Documento</th>
-                    <th>Nombres completos</th>
-                    <th></th>
+                    <th scope = "col">Tipo documento</th>
+                    <th scope = "col">Documento</th>
+                    <th scope = "col">Nombres completos</th>
+                    <th scope = "col"></th>
                 </thead>
 			<?php
 			$sumador_total=0;
@@ -82,7 +82,7 @@ if (isset($_GET['id']))//codigo elimina un elemento del array
                     <td><?php if($tmp->id_cliente!=null){echo $tmp->getCliente()->documento;}else{ echo "<center>----</center>"; }  ?></td>
                     <td><?php if($tmp->id_cliente!=null){echo $tmp->getCliente()->nombre;}else{ echo "<center>----</center>"; }  ?></td>
     				
-      				<td ><span class="pull-right"><a href="#" onclick="eliminar('<?php echo $tmp->id ?>')"><i class="glyphicon glyphicon-trash"></i> </a></span></td>
+      				<td ><span class="pull-right"><a href="#" onclick="eliminar('<?php echo $tmp->id ?>')"><em class="glyphicon glyphicon-trash"></em> </a></span></td>
          
           
                 </tr>

@@ -85,7 +85,7 @@ tr:hover td { background: #d0dafd; color: #339; }
                 <td style="width: 80%; text-align: left">
                 </td>
                 <td style="width: 20%; text-align: right; font-size:12px;" >
-                  WWW.<b>empresa</b>.com<br />
+                  WWW.<strong>empresa</strong>.com<br />
                   Móvil 964000482 <br />Fijo (064) 201773<br />
                 </td>
                 
@@ -96,7 +96,7 @@ tr:hover td { background: #d0dafd; color: #339; }
     <table cellspacing="0" style="width: 100%; border: solid 0px #7f8c8d; text-align: center; font-size: 10pt;padding:1mm; padding-top: 0mm !important;">
         <tr >
             
-            <th  style="width: 60%"></th>
+            <th  scope = "col" style="width: 60%"></th>
 <?php
 $mes=$_POST['mes'];
 
@@ -118,7 +118,7 @@ $mes=$_POST['mes'];
 
  
            
-            <th class="pumpkin" style="width: 40%; border: black 1px solid">REPORTE MENSUAL DE <?PHP echo $mes.' '.$_POST['anio']; ?> </th>
+            <th scope = "col" class="pumpkin" style="width: 40%; border: black 1px solid">REPORTE MENSUAL DE <?PHP echo $mes.' '.$_POST['anio']; ?> </th>
             
             
         </tr>
@@ -127,7 +127,7 @@ $mes=$_POST['mes'];
             
             <td  style="width: 60%; text-align: center"><br /></td>
            
-            <td  style="width: 40%; text-align: center;border:black 1px solid;"><br><b style="text-decoration:underline; font-family:Arial, Helvetica, sans-serif;" >FECHA<BR><BR> <?php echo $hoy; ?></b></td>
+            <td  style="width: 40%; text-align: center;border:black 1px solid;"><br><strong style="text-decoration:underline; font-family:Arial, Helvetica, sans-serif;" >FECHA<BR><BR> <?php echo $hoy; ?></strong></td>
             
         </tr>
    
@@ -287,10 +287,10 @@ $numero1=0;
 <table class="contenido">
             <tr class="tr" style="width: 100%; ">
               
-                <th style="width: 10%;">Nº</th>
-                <th style="width: 60%;">FECHA </th>
-                <th style="width:40%;">INGRESOS</th>
-                <th style="width: 40%;">EGRESOS</th>
+                <th scope = "col" style="width: 10%;">Nº</th>
+                <th scope = "col" style="width: 60%;">FECHA </th>
+                <th scope = "col" style="width:40%;">INGRESOS</th>
+                <th scope = "col" style="width: 40%;">EGRESOS</th>
             </tr>
 <?php
 $egreso=0;
