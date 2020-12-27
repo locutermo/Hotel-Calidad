@@ -38,8 +38,8 @@ window.location='index.php?view=egreso';
                   <table class="table table-bordered table-hover">
 
                   <thead style="color: white; background-color: #dd4b39;">
-                        <th colspan="2" style="text-align: center;">Nº DE TICKET - <?php echo $gasto->id; ?> -</th> 
-                        <th></th> 
+                        <th scope = "col" colspan="2" style="text-align: center;">Nº DE TICKET - <?php echo $gasto->id; ?> -</th> 
+                        <th scope = "col"></th> 
                   </thead>
                   
                       <tr>
@@ -50,7 +50,7 @@ window.location='index.php?view=egreso';
  
                       <tr>
                         <td>Monto </td>
-                        <td><b>$  <?php echo number_format($gasto->precio,2,'.',','); ?></b></td>
+                        <td><strong>$  <?php echo number_format($gasto->precio,2,'.',','); ?></strong></td>
                         <td></td>
                       </tr> 
                       <tr>

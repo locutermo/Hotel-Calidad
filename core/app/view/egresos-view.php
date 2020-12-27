@@ -4,7 +4,7 @@
 <div class="row">
 <section class="content-header">
     <ol class="breadcrumb">
-      <li><a href="index.php?view=reserva"><i class="fa fa-home"></i> Inicio</a></li>
+      <li><a href="index.php?view=reserva"><em class="fa fa-home"></em> Inicio</a></li>
       <li class="active"><a href="#">Egresos</a></li>
     </ol>
 </section> 
@@ -39,28 +39,28 @@
                   <table id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
 
                   <thead style="color: black; background-color: #d2d6de;">
-                        <th>Nº</th> 
-                        <th>Descripción</th>
+                        <th scope = "col">Nº</th> 
+                        <th scope = "col">Descripción</th>
                         <th data-hide="phone">Precio</th>
                         <th data-hide='phone, tablet'>Fecha</th>
-                        <th data-hide='phone, tablet'>Responsable</th> 
+                        <th data-hide='phone, tablet'>Responsable</th>
 
-                        <th></th>
-                        <th></th>
+                        <th scope = "col"></th>
+                        <th scope = "col"></th>
                   </thead> 
                    <?php foreach($gastos as $gasto):?> 
                       <tr>
                         <td><?php echo $gasto->id; ?></td>
-                        <td><b><?php echo $gasto->descripcion; ?></b></td>
+                        <td><strong><?php echo $gasto->descripcion; ?></strong></td>
                         <td><?php echo $gasto->precio; ?></td>
                         <td><?php echo $gasto->fecha; ?></td>
                         <td><?php if($gasto->id_usuario!=NULL){ echo $gasto->getUsuario()->name;}else{ echo "--------";} ?></td>
                         
                         <td>
-                        <a href=""  data-toggle="modal" data-target="#myModal<?php echo $gasto->id; ?>" class="btn btn-warning btn-xs"><i class="glyphicon glyphicon-trash"></i> Anular</a>
+                        <a href=""  data-toggle="modal" data-target="#myModal<?php echo $gasto->id; ?>" class="btn btn-warning btn-xs"><em class="glyphicon glyphicon-trash"></em> Anular</a>
                         </td>
                         <td>
-                        <a href="index.php?view=imprimir_gasto&id=<?php echo $gasto->id;?>"  class="btn btn-success btn-xs"><i class="glyphicon glyphicon-print"></i> Imprimir</a>
+                        <a href="index.php?view=imprimir_gasto&id=<?php echo $gasto->id;?>"  class="btn btn-success btn-xs"><em class="glyphicon glyphicon-print"></em> Imprimir</a>
                         </td>
                       </tr> 
                   
@@ -150,25 +150,25 @@
                   <table id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
 
                   <thead style="color: black; background-color: #d2d6de;">
-                        <th>Nº</th> 
-                        <th>Descripción</th>
-                        <th data-hide="phone">Precio</th>
-                        <th data-hide='phone, tablet'>Fecha</th>
-                        <th data-hide='phone, tablet'>Responsable</th> 
+                        <th scope = "col">Nº</th> 
+                        <th scope = "col">Descripción</th>
+                        <th scope = "col" data-hide="phone">Precio</th>
+                        <th scope = "col" data-hide='phone, tablet'>Fecha</th>
+                        <th scope = "col" data-hide='phone, tablet'>Responsable</th> 
 
-                        <th>Estado</th>
+                        <th scope = "col">Estado</th>
                       
                   </thead> 
                    <?php foreach($gastos as $gasto):?> 
                       <tr>
                         <td><?php echo $gasto->id; ?></td>
-                        <td><b><?php echo $gasto->descripcion; ?></b></td>
+                        <td><strong><?php echo $gasto->descripcion; ?></strong></td>
                         <td><?php echo $gasto->precio; ?></td>
                         <td><?php echo $gasto->fecha; ?></td>
                         <td><?php if($gasto->id_usuario!=NULL){ echo $gasto->getUsuario()->name;}else{ echo "--------";} ?></td>
                         
                         <td>
-                        <a class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-trash"></i> Anulado</a>
+                        <a class="btn btn-danger btn-xs"><em class="glyphicon glyphicon-trash"></em> Anulado</a>
                         </td>
 
                       </tr> 

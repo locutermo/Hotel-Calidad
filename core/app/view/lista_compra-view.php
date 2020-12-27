@@ -13,7 +13,7 @@
  <section class="content-header">
       
       <ol class="breadcrumb">
-        <li><a href="index.php?view=reserva"><i class="fa fa-home"></i> Inicio</a></li>
+        <li><a href="index.php?view=reserva"><em class="fa fa-home"></em> Inicio</a></li>
         <li><a href="#">Reportes</a></li>
         <li class="active">Reporte compras</li>
       </ol>
@@ -44,7 +44,7 @@
                 <div class="row">
                   <div class="form-group">
                     <div class="input-group">
-                      <span class="input-group-addon text-green"><i class="fa fa-calendar"></i> Fecha inicio</span>
+                      <span class="input-group-addon text-green"><em class="fa fa-calendar"></em> Fecha inicio</span>
                       <input type="date" name="start" class="form-control" value="<?php if(isset($_GET['start'])){ echo $_GET['start']; } ?>">
                     </div>
                   </div>
@@ -54,7 +54,7 @@
               <div class="col-md-3">
                   <div class="form-group">
                     <div class="input-group">
-                      <span class="input-group-addon text-green" ><i class="fa fa-calendar"></i> Fecha fin</span>
+                      <span class="input-group-addon text-green" ><em class="fa fa-calendar"></em> Fecha fin</span>
                       <input type="date" name="end" class="form-control" value="<?php if(isset($_GET['end'])){ echo $_GET['end']; } ?>">  
                     </div>
                   </div>  
@@ -65,7 +65,7 @@
               <div class="col-md-2">
                   <div class="form-group">
                     <div class="input-group">
-                      <button  type="submit" class="btn btn-success pull-right" ><i class='fa fa-file-pdf-o'></i> Buscar</button> 
+                      <button  type="submit" class="btn btn-success pull-right" ><em class='fa fa-file-pdf-o'></em> Buscar</button> 
                     </div>
                   </div> 
               </div>
@@ -104,19 +104,19 @@
 
                   <thead style="color: black; background-color: #d2d6de;">
          
-                        <th >Comprobante</th>
-                        <th >Nro. comprobante</th>
-                        <th >Fecha</th>
-                        <th>Proveedor</th>
-                        <th data-hide="phone">Total</th>
-                        <th data-hide='phone, tablet'>Responsable</th> 
+                        <th scope = "col">Comprobante</th>
+                        <th scope = "col">Nro. comprobante</th>
+                        <th scope = "col">Fecha</th>
+                        <th scope = "col">Proveedor</th>
+                        <th scope = "col" data-hide="phone">Total</th>
+                        <th scope = "col" data-hide='phone, tablet'>Responsable</th> 
 
-                        <th></th>
+                        <th scope = "col"></th>
                   </thead> 
                    <?php foreach($compras as $compra):?> 
                       <tr> 
            
-                        <td><b><?php echo $compra->getTipoComprobante()->nombre; ?></b></td>
+                        <td><strong><?php echo $compra->getTipoComprobante()->nombre; ?></strong></td>
                         <td><?php echo $compra->nro_comprobante; ?></td>
                         <td><?php echo $compra->fecha_creada; ?></td>
                         <td><?php if($compra->id_proveedor!=NULL){ echo $compra->getProveedor()->razon_social;}else{ echo "--------";} ?></td>
@@ -125,7 +125,7 @@
                          
                         
                         <td>
-                        <a href=""  data-toggle="modal" data-target="#myModal<?php echo $compra->id; ?>"  class="btn btn-success btn-xs"><i class="glyphicon glyphicon-eye-open"></i> Ver detalles</a>
+                        <a href=""  data-toggle="modal" data-target="#myModal<?php echo $compra->id; ?>"  class="btn btn-success btn-xs"><em class="glyphicon glyphicon-eye-open"></em> Ver detalles</a>
 
                          <div class="modal fade bs-example-modal-lg" id="myModal<?php echo $compra->id; ?>" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog modal-lg">
@@ -144,11 +144,11 @@
                       <table id="tbldetalle" class="table table-xxs">
                                 <thead>
                                   <tr class="bg-blue">
-                                    <th></th>
-                                    <th>Producto</th>
-                                    <th>Cant.</th>
-                                    <th class="text-center">Precio</th>
-                                    <th class="text-center">Importe</th> 
+                                    <th scope = "col"></th>
+                                    <th scope = "col">Producto</th>
+                                    <th scope = "col">Cant.</th>
+                                    <th scope = "col" class="text-center">Precio</th>
+                                    <th scope = "col" class="text-center">Importe</th> 
                                    
                                     
                                   </tr>

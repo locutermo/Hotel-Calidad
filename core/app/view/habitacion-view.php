@@ -3,7 +3,7 @@
 <div class="row">
 <section class="content-header">
     <ol class="breadcrumb">
-      <li><a href="index.php?view=reserva"><i class="fa fa-home"></i> Inicio</a></li>
+      <li><a href="index.php?view=reserva"><em class="fa fa-home"></em> Inicio</a></li>
       <li><a href="#">Configuración</a></li>
         <li class="active">Habitaciones</li>
     </ol>
@@ -20,32 +20,32 @@
         <h1 class="custom-font"><strong>MANTENIMIENTO DE</strong> HABITACIONES</h1>
         <ul class="controls">
           <li class="remove">
-            <a  data-toggle="modal" data-target="#myModal"  ><i class="fa fa-hotel"></i> REGISTRAR NUEVA HABITACIÓN</a>
+            <a  data-toggle="modal" data-target="#myModal"  ><em class="fa fa-hotel"></em> REGISTRAR NUEVA HABITACIÓN</a>
           </li>
           <li class="dropdown">
             <a role="button" tabindex="0" class="dropdown-toggle settings" data-toggle="dropdown">
-            <i class="fa fa-cog"></i><i class="fa fa-spinner fa-spin"></i>
+            <em class="fa fa-cog"></em><em class="fa fa-spinner fa-spin"></em>
             </a>
             <ul class="dropdown-menu pull-right with-arrow animated littleFadeInUp">
                 <li>
                   <a role="button" tabindex="0" class="tile-toggle">
-                  <span class="minimize"><i class="fa fa-angle-down"></i>&nbsp;&nbsp;&nbsp;Minimize</span>
-                  <span class="expand"><i class="fa fa-angle-up"></i>&nbsp;&nbsp;&nbsp;Expand</span>
+                  <span class="minimize"><em class="fa fa-angle-down"></em>&nbsp;&nbsp;&nbsp;Minimize</span>
+                  <span class="expand"><em class="fa fa-angle-up"></em>&nbsp;&nbsp;&nbsp;Expand</span>
                   </a>
                 </li>
                 <li>
                   <a role="button" tabindex="0" class="tile-refresh">
-                    <i class="fa fa-refresh"></i> Refresh
+                    <em class="fa fa-refresh"></em> Refresh
                   </a>
                 </li>
                 <li>
                   <a role="button" tabindex="0" class="tile-fullscreen">
-                  <i class="fa fa-expand"></i> Fullscreen
+                  <em class="fa fa-expand"></em> Fullscreen
                   </a>
                 </li>
             </ul>
           </li>
-          <li class="remove"><a role="button" tabindex="0" class="tile-close"><i class="fa fa-times"></i></a></li>
+          <li class="remove"><a role="button" tabindex="0" class="tile-close"><em class="fa fa-times"></em></a></li>
         </ul>
       </div>
       <!-- tile body -->
@@ -64,18 +64,15 @@
                   <table id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
 
                   <thead style="color: white; background-color: #827e7e;">
-                        <th>Nº</th> 
-                        <th>NOMBRE</th>
-                        <th>CATEGORÍA</th>
+                        <th scope = "col">Nº</th> 
+                        <th scope = "col">NOMBRE</th>
+                        <th scope = "col">CATEGORÍA</th>
                       
-                        <th>DETALLES</th>
-                        <th></th> 
-                        <th></th> 
-                        <th></th>
-                        <th></th>
-                        <!--
-                        <th></th>
-                      -->
+                        <th scope = "col">DETALLES</th>
+                        <th scope = "col"></th> 
+                        <th scope = "col"></th> 
+                        <th scope = "col"></th>
+                        <th scope = "col"></th>
                   </thead>
                    <?php foreach($habitaciones as $habitacion):?>
                       <tr>
@@ -88,17 +85,17 @@
 
                           <?php $tarifas_hab = TarifaHabitacionData::getAllHabitacion($habitacion->id);
                           if(count($tarifas_hab)>0){ ?>
-                            <a href="index.php?view=ha_tarifas&id=<?php echo $habitacion->id; ?>" class="btn btn-success btn-xs"><i class="glyphicon glyphicon-eye-open"></i> Ver tarifas</a>
+                            <a href="index.php?view=ha_tarifas&id=<?php echo $habitacion->id; ?>" class="btn btn-success btn-xs"><em class="glyphicon glyphicon-eye-open"></em> Ver tarifas</a>
 
                           <?php }else{ ?>
-                            <a href="index.php?view=ha_tarifas&id=<?php echo $habitacion->id; ?>" class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-eye-open"></i> Ver tarifas</a>
+                            <a href="index.php?view=ha_tarifas&id=<?php echo $habitacion->id; ?>" class="btn btn-primary btn-xs"><em class="glyphicon glyphicon-eye-open"></em> Ver tarifas</a>
                           <?php }; ?>
                           
                         </td>
                         <td>
-                          <a href=""  data-toggle="modal" data-target="#myModal<?php echo $habitacion->id; ?>"  class="btn btn-warning btn-xs"><i class="glyphicon glyphicon-edit"></i> Editar</a>
+                          <a href=""  data-toggle="modal" data-target="#myModal<?php echo $habitacion->id; ?>"  class="btn btn-warning btn-xs"><em class="glyphicon glyphicon-edit"></em> Editar</a>
                         </td>
-                        <td> <a href="index.php?view=delhabitacion&id=<?php echo $habitacion->id; ?>"  class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-trash"></i> Eliminar</a></td>
+                        <td> <a href="index.php?view=delhabitacion&id=<?php echo $habitacion->id; ?>"  class="btn btn-danger btn-xs"><em class="glyphicon glyphicon-trash"></em> Eliminar</a></td>
 
                         <td> 
                           <?php if($habitacion->estado=='4'){ ?>

@@ -17,12 +17,12 @@
                   <table id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
 
                   <thead style="color: white; background-color: #dd4b39;">
-                        <th>CÓDIGO</th> 
-                        <th>NOMBRE</th> 
-                        <th>EN ESTOCK</th>
-                        <th>CANTIDAD</th>
-                        <th>PRECIO VENTA</th> 
-                        <th></th>  
+                        <th scope = "col">CÓDIGO</th> 
+                        <th scope = "col">NOMBRE</th> 
+                        <th scope = "col">EN ESTOCK</th>
+                        <th scope = "col">CANTIDAD</th>
+                        <th scope = "col">PRECIO VENTA</th> 
+                        <th scope = "col"></th>  
                   </thead>
                    <?php foreach($productos as $producto):?> 
                       <tr>
@@ -62,7 +62,7 @@
               						</div>
               					</td> 
                          
-                        <td><span class="pull-right"><a href="#" onclick="agregar('<?php echo $producto->id; ?>')" class="btn btn-success" data-dismiss="modal"><i class="glyphicon glyphicon-plus-sign"></i> Agregar</a></span></td>
+                        <td><span class="pull-right"><a href="#" onclick="agregar('<?php echo $producto->id; ?>')" class="btn btn-success" data-dismiss="modal"><em class="glyphicon glyphicon-plus-sign"></em> Agregar</a></span></td>
                         
                       </tr> 
                     <?php endforeach; ?>

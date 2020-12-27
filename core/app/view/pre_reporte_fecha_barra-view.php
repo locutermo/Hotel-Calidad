@@ -12,7 +12,7 @@
 <div class="row">
 <section class="content-header">
     <ol class="breadcrumb">
-      <li><a href="index.php?view=reserva"><i class="fa fa-home"></i> Inicio</a></li>
+      <li><a href="index.php?view=reserva"><em class="fa fa-home"></em> Inicio</a></li>
       <li><a href="javascript:;">Gráficos</a></li>
       <li class="active"><a href="#">Reporte por fecha</a></li>
     </ol>
@@ -61,7 +61,7 @@
                                 <div class="tile-footer">
                                     <div class="form-group text-center">
                                         <a href="index.php?view=reserva" class="btn btn-rounded btn-danger ripple">Cancelar</a>
-                                        <button class="btn btn-rounded btn-success ripple" type="submit"><i class="fa fa-open-eye"></i> Ver informe</button>
+                                        <button class="btn btn-rounded btn-success ripple" type="submit"><em class="fa fa-open-eye"></em> Ver informe</button>
                                     </div>
                                 </div>
                             </form>

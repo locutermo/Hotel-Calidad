@@ -5,7 +5,7 @@
 <div class="row">
 <section class="content-header">
     <ol class="breadcrumb">
-      <li><a href="index.php?view=reserva"><i class="fa fa-home"></i> Inicio</a></li>
+      <li><a href="index.php?view=reserva"><em class="fa fa-home"></em> Inicio</a></li>
       <li><a href="javascript:;">Inventario</a></li>
       <li class="active"><a href="#">Kardex de Productos</a></li>
     </ol>
@@ -41,7 +41,7 @@
               <input type="hidden" name="view" value="kardex">
  
               <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                <span class="input-group-addon"><em class="fa fa-calendar"></em></span>
                 <!--
                 <input type="text" id="txtMes" name="txtMes" placeholder=""
                  class="form-control input-sm" style=""> -->
@@ -68,7 +68,7 @@
             <div class="col-sm-3">
               <label>MES PAGO</label>
               <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                <span class="input-group-addon"><em class="fa fa-calendar"></em></span>
                 <!--
                 <input type="text" id="txtMes" name="txtMes" placeholder=""
                  class="form-control input-sm" style=""> -->
@@ -91,7 +91,7 @@
             </div>
             <div class="col-sm-4">
               <button style="margin-top: 27px;" id="btnGuardar" type="submit" class="btn btn-primary btn-sm"> 
-              <i class="fa fa-search"></i> Consultar</button>
+              <em class="fa fa-search"></em> Consultar</button>
             </div>
           </div>
         </div>
@@ -123,20 +123,20 @@
                  
                   <li class="dropdown">
                     <a role="button" tabindex="0" class="dropdown-toggle settings" data-toggle="dropdown">
-                    <i class="fa fa-print"></i><i class="fa fa-print"></i> Imprimir Reporte
+                    <em class="fa fa-print"></em><em class="fa fa-print"></em> Imprimir Reporte
                     </a>
                     <ul class="dropdown-menu pull-right with-arrow animated littleFadeInUp">
                         <li><a id="print_saldos" href="reporte/pdf/documentos/reporte_kardex_todo.php?anio=<?php echo $anio; ?>&mes=<?php echo $me; ?>" target="_blanck"
-								><i class="icon-file-pdf"></i> Saldos y Movimientos</a></li>
+								><em class="icon-file-pdf"></em> Saldos y Movimientos</a></li>
 						<li class="divider"></li>
 						<li><a id="print_entradas" href="reporte/pdf/documentos/reporte_kardex_entrada.php?anio=<?php echo $anio; ?>&mes=<?php echo $me; ?>" target="_blanck">
-						<i class="icon-file-pdf"></i> Entradas del Mes</a></li>
+						<em class="icon-file-pdf"></em> Entradas del Mes</a></li>
 						<li class="divider"></li>
 						<li><a id="print_salidas" href="reporte/pdf/documentos/reporte_kardex_salida.php?anio=<?php echo $anio; ?>&mes=<?php echo $me; ?>" target="_blanck">
-						<i class="icon-file-pdf"></i> Salidas del Mes</a></li>
+						<em class="icon-file-pdf"></em> Salidas del Mes</a></li>
                     </ul>
                   </li>
-                  <li class="remove"><a role="button" tabindex="0" class="tile-close"><i class="fa fa-times"></i></a></li>
+                  <li class="remove"><a role="button" tabindex="0" class="tile-close"><em class="fa fa-times"></em></a></li>
                 </ul>
               </div>
 
@@ -155,13 +155,13 @@
                   <table id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
 
                   <thead style="color: white; background-color: #827e7e;">
-                        <th>Nro</th> 
-                        <th>PRODUCTO</th>
-                        <th>MARCA</th>
-                        <th>SALDO INICIAL</th>
-                        <th>ENTRADAS</th>
-                        <th>SALIDAS</th>
-                        <th>SALDO</th>
+                        <th scope = "col">Nro</th> 
+                        <th scope = "col">PRODUCTO</th>
+                        <th scope = "col">MARCA</th>
+                        <th scope = "col">SALDO INICIAL</th>
+                        <th scope = "col">ENTRADAS</th>
+                        <th scope = "col">SALIDAS</th>
+                        <th scope = "col">SALDO</th>
                         
                   </thead>
                    <?php foreach($productos as $producto):?>

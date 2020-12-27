@@ -2866,10 +2866,10 @@ html.boxed-layout .appWrapper.header-fixed.aside-static #header {
 #header .search:after {
   content: '\f002';
   display: inline-block;
-  font-family: "FontAwesome";
+  font-family: "FontAwesome", "sans-serif";
   font-style: normal;
   font-weight: normal;
-  line-height: 1;
+  /* line-height: 1; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: absolute;
@@ -3855,7 +3855,7 @@ html.boxed-layout .appWrapper.header-fixed.aside-static #header {
 
 .pageheader .page-bar .page-breadcrumb > li:before {
   display: inline-block;
-  font-family: "arial";
+  font-family: "arial" , "sans-serif";
   font-style: normal;
   font-weight: normal;
   line-height: 1; 
@@ -5193,7 +5193,7 @@ label {
   top: 0;
   left: 0;
   display: inline-block;
-  font-family: "FontAwesome";
+  font-family: "FontAwesome" ,"sans-serif";
   font-style: normal;
   font-weight: normal;
   line-height: 1;
@@ -6327,7 +6327,7 @@ fieldset[disabled] .twitter-typeahead .tt-input {
 .breadcrumb > li + li:before {
   content: "\f105";
   display: inline-block;
-  font-family: "FontAwesome";
+  font-family: "FontAwesome", "sans-serif";
   font-style: normal;
   font-weight: normal;
   line-height: 1;
@@ -6426,7 +6426,7 @@ check-toggler:before,
 .check-toggler:before {
   content: "\f00d";
   display: inline-block;
-  font-family: "FontAwesome";
+  font-family: "FontAwesome", "sans-serif";
   font-style: normal;
   font-weight: normal;
   line-height: 1;
@@ -8814,7 +8814,6 @@ button:focus {
 }
 
 .myIcon.icon-ef-5:before {
-  display: block;
   top: -2px;
   left: -2px;
   padding: 2px;
@@ -9778,7 +9777,7 @@ ol.list-type li:before {
   left: -18px;
   margin-top: 3px;
   display: inline-block;
-  font-family: "FontAwesome";
+  font-family: "FontAwesome","sans-serif";
   font-style: normal;
   font-weight: normal;
   line-height: 1;
@@ -13319,7 +13318,7 @@ blockquote p {
   right: 8px;
   display: block;
   display: inline-block;
-  font-family: "FontAwesome";
+  font-family: "FontAwesome","sans-serif";
   font-style: normal;
   font-weight: normal;
   line-height: 1;
@@ -13421,7 +13420,7 @@ table.dataTable thead th.sorting_desc:after {
   right: 8px;
   display: block;
   display: inline-block;
-  font-family: "FontAwesome";
+  font-family: "FontAwesome","sans-serif";
   font-style: normal;
   font-weight: normal;
   line-height: 1;
@@ -13489,7 +13488,7 @@ div.dataTables_paginate a.last:after {
   left: 10px;
   display: block;
   display: inline-block;
-  font-family: "FontAwesome";
+  font-family: "FontAwesome","sans-serif";
   font-style: normal;
   font-weight: normal;
   line-height: 1;

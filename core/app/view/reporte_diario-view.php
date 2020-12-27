@@ -24,7 +24,7 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
         <small>Avance</small>
       </h3> 
       <ol class="breadcrumb">
-        <li><a href="index.php?view=reserva"><i class="fa fa-home"></i> Inicio</a></li>
+        <li><a href="index.php?view=reserva"><em class="fa fa-home"></em> Inicio</a></li>
         <li><a href="#">Reportes</a></li>
         <li class="active">Reporte diario</li>
       </ol>
@@ -77,8 +77,8 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
               <div class="box-body" style="text-align: left;">
 
                 <table>
-                  <th style="width: 50%;"></th>
-                  <th style="width: 45%;"></th>
+                  <th scope = "col" style="width: 50%;"></th>
+                  <th scope = "col" style="width: 45%;"></th>
                   <tr>
                       <td><h5>FECHA:</h5></td>
                       <td><h5 class="control-label text-red"><?php echo $hoy; ?></h5></td>
@@ -108,7 +108,7 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
             <ul class="nav nav-tabs" style="background-color: #d2d6de;">
               <li class="active"><a href="#tab_1" data-toggle="tab">Tabla alquiler</a></li>
               <li><a href="#tab_2" data-toggle="tab">Venta de productos</a></li>
-              <li class="pull-right text-red"><a href="reporte/pdf/documentos/reporte_diario.php" target="_blank" class="text-muted"><i class="fa fa-print"></i> IMPRIMIR</a></li>
+              <li class="pull-right text-red"><a href="reporte/pdf/documentos/reporte_diario.php" target="_blank" class="text-muted"><em class="fa fa-print"></em> IMPRIMIR</a></li>
             </ul>
             <div class="tab-content">
               <div class="tab-pane active" id="tab_1">
@@ -119,15 +119,15 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
                   <table id="example1" class="table table-bordered table-hover">
 
                   <thead style="color: black; background-color: #d2d6de;">
-                        <th>Nº</th> 
-                        <th>Cliente</th> 
-                        <th>Habitación</th>
-                        <th>Precio tarifa</th>
-                        <th>Cantidad</th>
-                        <th>Total</th>
-                        <th>Tipo pago</th>
-                        <th>Hora ingreso</th>
-                        <th>Hora salida</th> 
+                        <th scope = "col">Nº</th> 
+                        <th scope = "col">Cliente</th> 
+                        <th scope = "col">Habitación</th>
+                        <th scope = "col">Precio tarifa</th>
+                        <th scope = "col">Cantidad</th>
+                        <th scope = "col">Total</th>
+                        <th scope = "col">Tipo pago</th>
+                        <th scope = "col">Hora ingreso</th>
+                        <th scope = "col">Hora salida</th> 
                   </thead> 
                    <?php $numero=0;?>
                    <?php $total=0;?>
@@ -137,8 +137,8 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
                         <td><?php echo $numero; ?></td>
                         <td><?php echo $reportediario->getCliente()->documento; ?></td>
                         <td><?php echo $reportediario->getHabitacion()->nombre; ?></td>
-                        <td><b>$  <?php echo number_format($reportediario->precio,2,'.',','); ?></b></td>
-                        <td><b>$   <?php echo number_format($reportediario->cant_noche,2,'.',','); ?></b></td>
+                        <td><strong>$  <?php echo number_format($reportediario->precio,2,'.',','); ?></strong></td>
+                        <td><strong>$   <?php echo number_format($reportediario->cant_noche,2,'.',','); ?></strong></td>
                         <?php $subtotal= $reportediario->cant_noche*$reportediario->precio; ?>
                         <td>$   <?php echo number_format($subtotal,2,'.',','); ?></td>
                         <td><?php if($reportediario->id_tipo_pago=='1'){ echo "EFECTIVO";} ?></td>
@@ -149,10 +149,10 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
                     <?php endforeach; ?>
 
                      <tfoot style="color: black; background-color: #e3e4e6;">
-                        <th colspan="5"><p class="pull-right">Total</p></th>
-                        <th><b>$   <?php echo number_format($total,2,'.',','); ?> </b></th> 
-                        <th></th>
-                        <th></th>
+                        <th scope = "col" colspan="5"><p class="pull-right">Total</p></th>
+                        <th scope = "col"><strong>$   <?php echo number_format($total,2,'.',','); ?> </strong></th> 
+                        <th scope = "col"></th>
+                        <th scope = "col"></th>
                     </tfoot>
 
                   </table>
@@ -172,13 +172,13 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
                   <table id="example2" class="table table-bordered table-hover">
 
                   <thead style="color: black; background-color: #d2d6de;">
-                        <th>Nº</th> 
-                        <th>Habitación</th>
-                        <th>Artículo</th>
-                        <th>Cantidad</th>
-                        <th>Precio unitario</th>
-                        <th>Total</th>
-                        <th>Hora </th> 
+                        <th scope = "col">Nº</th> 
+                        <th scope = "col">Habitación</th>
+                        <th scope = "col">Artículo</th>
+                        <th scope = "col">Cantidad</th>
+                        <th scope = "col">Precio unitario</th>
+                        <th scope = "col">Total</th>
+                        <th scope = "col">Hora </th> 
                   </thead> 
                    <?php $numero=0;?>
                    <?php $subtotal2=0;?>
@@ -189,10 +189,10 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
                         <td><?php echo $numero; ?></td>
                         <td><?php if($reporproduct->id_operacion!=NULL){ echo $reporproduct->getProceso()->getHabitacion()->nombre;}else{echo "Venta libre";} ?></td>
                         <td><?php echo $reporproduct->getProducto()->nombre; ?></td>
-                        <td><b><?php echo $reporproduct->cantidad; ?></b></td>
-                        <td><b>$   <?php echo number_format($reporproduct->precio,2,'.',','); ?></b></td>
+                        <td><strong><?php echo $reporproduct->cantidad; ?></strong></td>
+                        <td><strong>$   <?php echo number_format($reporproduct->precio,2,'.',','); ?></strong></td>
                         <?php $subtotal1=$reporproduct->cantidad*$reporproduct->precio; ?>
-                        <td><b>$   <?php echo number_format($subtotal1,2,'.',','); ?></b></td>
+                        <td><strong>$   <?php echo number_format($subtotal1,2,'.',','); ?></strong></td>
                         <td><?php echo date($reporproduct->fecha_creada); ?></td>
                       </tr> 
                     <?php $subtotal2=$subtotal1+$subtotal2; ?>
@@ -200,9 +200,9 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
                     <?php endforeach; ?>
 
                     <tfoot style="color: black; background-color: #e3e4e6;">
-                        <th colspan="5"><p class="pull-right">Total</p></th>
-                        <th><b>$   <?php echo number_format($subtotal2,2,'.',','); ?></b> </th> 
-                        <th></th>
+                        <th scope = "col" colspan="5"><p class="pull-right">Total</p></th>
+                        <th scope = "col"><strong>$   <?php echo number_format($subtotal2,2,'.',','); ?></strong> </th> 
+                        <th scope = "col"></th>
                     </tfoot>
 
                   </table>

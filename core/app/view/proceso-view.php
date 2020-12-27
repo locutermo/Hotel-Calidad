@@ -60,7 +60,7 @@ $(function() {
 <div class="row">
 <section class="content-header">
     <ol class="breadcrumb">
-      <li><a href="index.php?view=reserva"><i class="fa fa-home"></i> Inicio</a></li>
+      <li><a href="index.php?view=reserva"><em class="fa fa-home"></em> Inicio</a></li>
       <li class="active"><a href="index.php?view=recepcion">recepción</a></li>
       <li class="active">Procesar</li>
     </ol>
@@ -128,7 +128,7 @@ $(function() {
                 <div class="col-md-6">
                 <table class="table no-margin">
                   <tr>
-                    <th colspan="4" style="text-align: center;">DATOS DEL CLIENTE  <div class="col-md-2">
+                    <th scope = "col" colspan="4" style="text-align: center;">DATOS DEL CLIENTE  <div class="col-md-2">
                        
                      </div></th>
                   </tr>
@@ -157,7 +157,7 @@ $(function() {
                               
                               <div class="input-group">
                                 <div class="input-group-addon">
-                                  <i class="fa fa-globe"></i> Tipo Documento:
+                                  <em class="fa fa-globe"></em> Tipo Documento:
                                 </div>
                                 <?php $tipo_documentos = TipoDocumentoData::getAll();?>
                                     <select name="tipo_documento" id="tipo_documento" required class="form-control">
@@ -167,7 +167,7 @@ $(function() {
                                     </select>
 
                                 <div class="input-group-addon">
-                                  <i class="fa  fa-arrow-circle-o-right"></i> E-mail:
+                                  <em class="fa  fa-arrow-circle-o-right"></em> E-mail:
                                 </div>
                                 
                                 <input type="text" class="form-control" name="documento" id="documento" required="required" placeholder="Ingrese e-mail para buscar">
@@ -299,7 +299,7 @@ $(function() {
                  <table class="table no-margin">
                  <thead>
                   <tr>
-                    <th colspan="4" style="text-align: center;">DATOS DEL ALOJAMIENTO</th>
+                    <th scope = "col" colspan="4" style="text-align: center;">DATOS DEL ALOJAMIENTO</th>
                   </tr>
                   </thead>
                   <tbody style="padding: 0px;">
@@ -315,7 +315,7 @@ $(function() {
 
                 <div class="input-group">
                   <div class="input-group-addon">
-                    <i class="fa fa-globe"></i>
+                    <em class="fa fa-globe"></em>
                   </div> 
                   <select class="form-control" onchange="CargarTarifa(this.value);" required name="id_tarifa">
                     <?php $tarifas_ha = TarifaHabitacionData::getAllHabitacion($_GET['id_habitacion']);?>

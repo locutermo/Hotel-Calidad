@@ -12,7 +12,7 @@
                                     <h1 class="custom-font"><strong>diagrama gráfico desde: </strong><?php echo $_POST['start'].' - '. $_POST['end']; ?></h1>
                                     <ul class="controls">
                                         
-                                        <li class="remove"><a href="" onclick="window.print();" ><i class="fa fa-print" style="color: #da0e36"></i> </a></li>
+                                        <li class="remove"><a href="" onclick="window.print();" ><em class="fa fa-print" style="color: #da0e36"></em> </a></li>
                                     </ul>
                                 </div>
                                 <!-- /tile header -->

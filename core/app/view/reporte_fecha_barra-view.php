@@ -12,7 +12,7 @@
                                             </h4>
 
                                             <h4>
-                                              <a href="" onclick="window.print();" ><i class="fa fa-print" style="color: #da0e36"></i> </a>
+                                              <a href="" onclick="window.print();" ><em class="fa fa-print" style="color: #da0e36"></em> </a>
                                             </h4>
 
                                             <div id="bar-example" style="height: 450px;"></div>

@@ -4,7 +4,7 @@
 <div class="row">
 <section class="content-header">
     <ol class="breadcrumb">
-      <li><a href="index.php?view=reserva"><i class="fa fa-home"></i> Inicio</a></li>
+      <li><a href="index.php?view=reserva"><em class="fa fa-home"></em> Inicio</a></li>
       <li class="active"><a href="#">recepción</a></li>
     </ol>
 </section> 
@@ -20,16 +20,16 @@
         <h1 class="custom-font"><strong> VISTA GENERAL</strong> RECEPCIÓN</h1>
         <ul class="controls">
           <li class="remove">
-            <a style="color: #f0ad4e;"><i class="fa fa-arrow-circle-left" style="color: #f0ad4e;"></i> Mantenimiento</a>
+            <a style="color: #f0ad4e;"><em class="fa fa-arrow-circle-left" style="color: #f0ad4e;"></em> Mantenimiento</a>
           </li>
           <li class="remove">
-            <a style="color: #16a085;"><i class="fa fa-arrow-circle-left" style="color: #16a085;"></i> Disponible</a>
+            <a style="color: #16a085;"><em class="fa fa-arrow-circle-left" style="color: #16a085;"></em> Disponible</a>
           </li>
           <li class="remove">
-            <a style="color: #5bc0de;"><i class="fa fa-spinner" style="color: #5bc0de;"></i> Limpieza</a>
+            <a style="color: #5bc0de;"><em class="fa fa-spinner" style="color: #5bc0de;"></em> Limpieza</a>
           </li>
           <li class="remove">
-            <a style="color: #d9534f;"><i class="fa fa-arrow-circle-right" style="color: #d9534f;"></i> Ocupado</a>
+            <a style="color: #d9534f;"><em class="fa fa-arrow-circle-right" style="color: #d9534f;"></em> Ocupado</a>
           </li>
           
         </ul>
@@ -48,7 +48,7 @@
                                     <h1 class="custom-font" style="font-size: 12px;">Ocupado</h1>
                                     <ul class="controls"> 
                                       <li ><a  href="index.php?view=proceso_salida&id=<?php echo $proceso->id; ?>">
-                                            <i class="fa fa-arrow-circle-right"></i>  </a>
+                                            <em class="fa fa-arrow-circle-right"></em>  </a>
                                       </li>
                                     </ul>
                                 </div>
@@ -102,11 +102,11 @@
                                         <?php $tarifas_hab = TarifaHabitacionData::getAllHabitacion($habitacion->id);
                                         if(count($tarifas_hab)>0){ ?>
                                           <a href="index.php?view=proceso&id_habitacion=<?php echo $habitacion->id; ?>">
-                                            <i class="fa fa-arrow-circle-left"></i>  </a>
+                                            <em class="fa fa-arrow-circle-left"></em>  </a>
 
                                         <?php }else{ ?>
                                           <a  data-toggle="modal" data-target="#myModalTarifa<?php echo $habitacion->id; ?>">
-                                            <i class="fa fa-arrow-circle-left"></i>  </a>
+                                            <em class="fa fa-arrow-circle-left"></em>  </a>
                                         <?php }; ?>
 
                                         
@@ -117,7 +117,7 @@
 
                                 <!-- tile body -->
                                 <div class="tile-body" style="padding: 1px;">
-                                   <h4 style="text-align: center;"><i class="fa fa-bed"></i> <?php echo $habitacion->nombre; ?></h4>
+                                   <h4 style="text-align: center;"><em class="fa fa-bed"></em> <?php echo $habitacion->nombre; ?></h4>
                                 </div> 
                                 <!-- /tile body -->
                             <?php } else if($habitacion->estado==2){?>
@@ -127,7 +127,7 @@
                                     <h1 class="custom-font" style="font-size: 12px;">Ocupado: <?php echo $habitacion->nombre; ?><br></h1>
                                     <ul class="controls"> 
                                       <li ><a href="index.php?view=proceso_salida&id=<?php echo $proceso->id; ?>" >
-                                            <i class="fa fa-arrow-circle-right"></i></a>
+                                            <em class="fa fa-arrow-circle-right"></em></a>
                                       </li>
                                     </ul>
                                 </div>  
@@ -176,7 +176,7 @@
                                     <h1 class="custom-font" style="font-size: 12px;">Limpieza<br></h1>
                                     <ul class="controls"> 
                                       <li ><a   data-toggle="modal" data-target="#myModal<?php echo $habitacion->id; ?>">
-                                            <i class="fa fa-spinner"></i>  </a>
+                                            <em class="fa fa-spinner"></em>  </a>
                                       </li>
                                     </ul>
                                 </div>

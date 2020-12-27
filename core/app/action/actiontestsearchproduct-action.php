@@ -7,13 +7,13 @@ if(count($products)>0){
 <h3>Resultados de la Busqueda</h3>
 <table class="table table-bordered table-hover">
 	<thead>
-		<th>Codigo</th>
-		<th>Nombre</th>
-		<th>Unidad</th>
-		<th>Precio unitario</th>
-		<th>En inventario</th>
-		<th>Cantidad</th>
-		<th style="width:100px;"></th>
+		<th scope = "col">Codigo</th>
+		<th scope = "col">Nombre</th>
+		<th scope = "col">Unidad</th>
+		<th scope = "col">Precio unitario</th>
+		<th scope = "col">En inventario</th>
+		<th scope = "col">Cantidad</th>
+		<th scope = "col" style="width:100px;"></th>
 	</thead>
 	<?php
 $products_in_cero=0;
@@ -27,7 +27,7 @@ $q= OperationData::getQYesF($product->id);
 		<td style="width:80px;"><?php echo $product->id; ?></td>
 		<td><?php echo $product->name; ?></td>
 		<td><?php echo $product->unit; ?></td>
-		<td><b>$<?php echo $product->price_out; ?></b></td>
+		<td><strong>$<?php echo $product->price_out; ?></strong></td>
 		<td>
 			<?php echo $q; ?>
 		</td>
@@ -35,7 +35,7 @@ $q= OperationData::getQYesF($product->id);
 		<input type="hidden" name="product_id" value="<?php echo $product->id; ?>">
 		<input type="" class="form-control" required name="q" placeholder="Cantidad de producto ..."></td>
 		<td style="width:183px;">
-		<button type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-shopping-cart"></i> Agregar a la venta</button>
+		<button type="submit" class="btn btn-primary"><em class="glyphicon glyphicon-shopping-cart"></em> Agregar a la venta</button>
 		</td>
 	</tr>
 	</form>
