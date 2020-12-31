@@ -21,7 +21,7 @@
                 if(isset($habitaciones)){
                   // si hay usuarios
                   ?>
-                  <table  class="table table-custom" style="font-size: 11px;" border="1px">
+                  <table summary="Mi tabla" aria-describedby="descripcion"  class="table table-custom" style="font-size: 11px;" border="1px">
 
                   <thead style="color: white; background-color: #827e7e;">
                         <th scope = "col">Nº</th> 

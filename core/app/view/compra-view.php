@@ -39,7 +39,7 @@
 								</div>
 
 								<div class="table-responsive">
-									<table id="tbldetalle" class="table table-xxs">
+									<table summary="Mi tabla" aria-describedby="descripcion" id="tbldetalle" class="table table-xxs">
 										<thead>
 											<tr class="bg-blue">
 												<th scope = "col"></th>

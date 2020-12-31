@@ -100,7 +100,7 @@
                 } ?> 
                 <?php  
                 if(count($compras)>0){  ?>
-                  <table id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
+                  <table summary="Mi tabla" aria-describedby="descripcion" id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
 
                   <thead style="color: black; background-color: #d2d6de;">
          
@@ -141,7 +141,7 @@
                 
                 <div class="row">
                 <div class="col-md-offset-1 col-md-10">
-                      <table id="tbldetalle" class="table table-xxs">
+                      <table summary="Mi tabla" aria-describedby="descripcion" id="tbldetalle" class="table table-xxs">
                                 <thead>
                                   <tr class="bg-blue">
                                     <th scope = "col"></th>

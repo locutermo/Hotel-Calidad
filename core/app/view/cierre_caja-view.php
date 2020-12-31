@@ -27,7 +27,7 @@
             <form method="post"  action="index.php?view=addcierre_caja">
               <div class="tile-body p-0" style="text-align: left;">
 
-                <table>
+                <table summary="Mi tabla" aria-describedby="descripcion">
                   <th scope = "col" style="width: 50%;"></th>
                   <th scope = "col" style="width: 45%;"></th>
                   <tr>
@@ -181,7 +181,7 @@
       <div class="tile-body">
         
          <?php if(count($cajas)>0){?>
-              <table id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 12px;">
+              <table summary="Mi tabla" aria-describedby="descripcion" id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 12px;">
                 <thead style="color: white; background-color: #827e7e;">
                   <th scope = "col">USUARIO APERTURA</th>
                   <th scope = "col">FECHA APERTURA</th>

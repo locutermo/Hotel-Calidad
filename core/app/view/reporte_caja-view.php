@@ -170,7 +170,7 @@ if($id_caja!=0){
                                             <?php $total_ingreso=$total_sin_cerrar+$subtotal3; ?>
                                             <!-- Fin Total ingreso -->
                                             <?php ?>
-                <table class="table mb-0">
+                <table summary="Mi tabla" aria-describedby="descripcion" class="table mb-0">
                  
                   <tr>
                       <td><h5>FECHA:</h5></td>
@@ -238,7 +238,7 @@ if($id_caja!=0){
                 if(count($reportediarios)>0){
                   // si hay usuarios
                   ?>
-                  <table id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
+                  <table summary="Mi tabla" aria-describedby="descripcion" id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
 
                   <thead style="color: black; background-color: #d2d6de;">
                         <th scope = "col">Nº</th> 
@@ -287,7 +287,7 @@ if($id_caja!=0){
                 if(count($reporproducts)>0){
                   // si hay usuarios 
                   ?>
-                  <table  id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
+                  <table summary="Mi tabla" aria-describedby="descripcion"  id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
 
                   <thead style="color: black; background-color: #d2d6de;">
                         <th scope = "col">Nº</th> 

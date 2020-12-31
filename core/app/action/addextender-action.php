@@ -15,7 +15,7 @@ $operacion_n->add();
 
 
 
- 				<table class="table table-bordered">
+ 				<table summary="Mi tabla" aria-describedby="descripcion" class="table table-bordered">
                     <thead>
                       <tr>
                         <th scope = "col">Acción</th>

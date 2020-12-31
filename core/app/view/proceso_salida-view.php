@@ -98,7 +98,7 @@ $cliente = PersonaData::getById($habitacion->id_cliente);
                     </div>
                      <div class="modal-body">
                       
-                      <table id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
+                      <table summary="Mi tabla" aria-describedby="descripcion" id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
                         <thead style="color: white; background-color: #827e7e;">
                             <tr>
                             
@@ -227,7 +227,7 @@ $fecha1 = new DateTime($habitacion->fecha_entrada);//fecha inicial
             
             <!-- /.box-header -->
             <div class="box-body">
-              <table class="table table-bordered">
+              <table summary="Mi tabla" aria-describedby="descripcion" class="table table-bordered">
               	<tr style="background-color: #dcd6d6;">
                   <th scope = "col" style="width: 10px;border-right: 1px solid #a09e9e;"></th>
                   <th scope = "col" colspan="4" style="border-right:1px solid #a09e9e;">Costo del alojamiento</th>

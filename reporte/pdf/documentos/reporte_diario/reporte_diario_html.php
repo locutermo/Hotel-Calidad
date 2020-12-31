@@ -69,7 +69,7 @@ tr:hover td { background: #d0dafd; color: #339; }
 
 <page backtop="15mm" backbottom="28mm" backleft="5mm" backright="5mm" style="font-size: 12pt; font-family: arial" >
         <page_footer>
-        <table class="page_footer" style="padding-bottom:10px;">
+        <table summary="Mi tabla" aria-describedby="descripcion" class="page_footer" style="padding-bottom:10px;">
             <tr>
 
                 <td style="width: 80%; text-align: right; height:3px;" >
@@ -93,7 +93,7 @@ tr:hover td { background: #d0dafd; color: #339; }
         </table>
     </page_footer>
    
-    <table cellspacing="0" style="width: 100%; border: solid 0px #7f8c8d; text-align: center; font-size: 10pt;padding:1mm; padding-top: 0mm !important;">
+    <table summary="Mi tabla" aria-describedby="descripcion" cellspacing="0" style="width: 100%; border: solid 0px #7f8c8d; text-align: center; font-size: 10pt;padding:1mm; padding-top: 0mm !important;">
         <tr >
             
             <th  scope = "col" style="width: 60%"></th>
@@ -117,12 +117,12 @@ tr:hover td { background: #d0dafd; color: #339; }
   
 
 
-<table>
+<table summary="Mi tabla" aria-describedby="descripcion">
 <tr>
     <td>Tabla Alquiler</td>
 </tr>
 </table>
-<table  class="contenido">
+<table summary="Mi tabla" aria-describedby="descripcion"  class="contenido">
 
                   <tr class="tr" style="width: 100%; ">
                         <th scope = "col" style="width: 8%;">Nº</th> 
@@ -182,12 +182,12 @@ tr:hover td { background: #d0dafd; color: #339; }
 
 
 
-<table>
+<table summary="Mi tabla" aria-describedby="descripcion">
 <tr>
     <td>Tabla venta de productos</td>
 </tr>
 </table>
-<table  class="contenido">
+<table summary="Mi tabla" aria-describedby="descripcion"  class="contenido">
 
                   <tr class="tr" style="width: 100%; ">
                         <th scope = "col" style="width: 5%;">Nº</th> 
