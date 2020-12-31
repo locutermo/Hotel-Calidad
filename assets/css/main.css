@@ -2866,7 +2866,8 @@ html.boxed-layout .appWrapper.header-fixed.aside-static #header {
 #header .search:after {
   content: '\f002';
   display: inline-block;
-  font-family: "FontAwesome", "sans-serif";
+  font-family: FontAwesome, sans-serif;
+
   font-style: normal;
   font-weight: normal;
   /* line-height: 1; */
@@ -2882,7 +2883,7 @@ html.boxed-layout .appWrapper.header-fixed.aside-static #header {
 #header .search .underline-input {
   color: rgba(255, 255, 255, 0.7);
   border-color: rgba(255, 255, 255, 0.25);
-  font-family: "Ubuntu Mono", sans-serif;
+  font-family: Ubuntu Mono, sans-serif;
   font-size: 16px;
 }
 
@@ -6327,7 +6328,8 @@ fieldset[disabled] .twitter-typeahead .tt-input {
 .breadcrumb > li + li:before {
   content: "\f105";
   display: inline-block;
-  font-family: "FontAwesome", "sans-serif";
+  font-family: FontAwesome, sans-serif;
+
   font-style: normal;
   font-weight: normal;
   line-height: 1;
@@ -6415,18 +6417,16 @@ fieldset[disabled] .twitter-typeahead .tt-input {
   font-size: 12px;
   color: #95a2a9;
 }
-
-check-toggler,
 .check-toggler {
   cursor: pointer;
   padding: 2px;
 }
 
-check-toggler:before,
 .check-toggler:before {
   content: "\f00d";
   display: inline-block;
-  font-family: "FontAwesome", "sans-serif";
+  font-family: FontAwesome, sans-serif;
+
   font-style: normal;
   font-weight: normal;
   line-height: 1;
@@ -6435,7 +6435,6 @@ check-toggler:before,
   color: #d9534f;
 }
 
-check-toggler.checked:before,
 .check-toggler.checked:before {
   content: "\f00c";
   color: #5cb85c;
@@ -9777,7 +9776,7 @@ ol.list-type li:before {
   left: -18px;
   margin-top: 3px;
   display: inline-block;
-  font-family: "FontAwesome","sans-serif";
+  font-family: FontAwesome, sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 1;
@@ -13318,7 +13317,8 @@ blockquote p {
   right: 8px;
   display: block;
   display: inline-block;
-  font-family: "FontAwesome","sans-serif";
+  font-family: FontAwesome, sans-serif;
+
   font-style: normal;
   font-weight: normal;
   line-height: 1;
@@ -13420,7 +13420,8 @@ table.dataTable thead th.sorting_desc:after {
   right: 8px;
   display: block;
   display: inline-block;
-  font-family: "FontAwesome","sans-serif";
+  font-family: FontAwesome, sans-serif;
+
   font-style: normal;
   font-weight: normal;
   line-height: 1;
@@ -13488,7 +13489,8 @@ div.dataTables_paginate a.last:after {
   left: 10px;
   display: block;
   display: inline-block;
-  font-family: "FontAwesome","sans-serif";
+  font-family: FontAwesome, sans-serif;
+
   font-style: normal;
   font-weight: normal;
   line-height: 1;

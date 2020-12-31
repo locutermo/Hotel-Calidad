@@ -66,7 +66,7 @@ if (isset($_GET['id']))//codigo elimina un elemento del array
 		
 			// si hay usuarios
 			?>
-            <table class="table" border="1">
+            <table summary="Mi tabla" aria-describedby="descripcion" class="table" border="1">
                 <thead>
                     <th scope = "col">Tipo documento</th>
                     <th scope = "col">Documento</th>

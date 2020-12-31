@@ -1,7 +1,7 @@
 
 
  <?php $operacion = ProcesoData::getById($_GET['id']);
-     if(count($operacion)>0){
+     if(isset($operacion)){
  ?>
             <!-- ====================================================
             ================= CONTENT ===============================
@@ -57,7 +57,7 @@
 
                                         <?php 
                         $configuracion = ConfiguracionData::getAllConfiguracion(); 
-                        if(count($configuracion)>0){ 
+                        if(isset($configuracion)){ 
                           $nombre=$configuracion->nombre;
                           $direccion=$configuracion->direccion;
                           $estado=$configuracion->estado;
@@ -182,7 +182,7 @@
                                                     <div class="tile-body p-0">
 
                                                         <div class="table-responsive">
-                                                            <table class="table table-hover table-striped">
+                                                            <table summary="Mi tabla" aria-describedby="descripcion" class="table table-hover table-striped">
                                                                 <thead>
                                                                 <tr>
                                                                     <th scope = "col">CANT.</th>

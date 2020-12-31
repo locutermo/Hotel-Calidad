@@ -35,7 +35,7 @@
                 if(count($categorias)>0){
                   // si hay usuarios
                   ?>
-                  <table id="example1" class="table table-bordered table-hover">
+                  <table summary="Mi tabla" aria-describedby="descripcion" id="example1" class="table table-bordered table-hover">
 
                   <thead style="color: white; background-color: #dd4b39;">
                         <th scope = "col">Nº</th> 

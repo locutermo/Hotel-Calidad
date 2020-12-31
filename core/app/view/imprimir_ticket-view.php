@@ -1,7 +1,7 @@
 
 
  <?php $operacion = ProcesoData::getById($_GET['id']);
-     if(count($operacion)>0){
+     if(isset($operacion)){
  ?>
             <!-- ====================================================
             ================= CONTENT ===============================
@@ -36,7 +36,7 @@
 
                         <?php 
                         $configuracion = ConfiguracionData::getAllConfiguracion(); 
-                        if(count($configuracion)>0){ 
+                        if(isset($configuracion)){ 
                           $nombre=$configuracion->nombre;
                           $direccion=$configuracion->direccion;
                           $estado=$configuracion->estado;
@@ -71,7 +71,7 @@
                                   <!--
                                   <a href="javascript:;" class="btn btn-ef btn-ef-1 btn-ef-1-default btn-ef-1a btn-rounded-20 mr-5" data-toggle="tooltip" title="Send"><i class="fa fa-envelope"></i></a>
                                   -->
-                                  <a href="reporte/ticket.php?id=<?php echo $_GET['id']; ?>" target="_blanck" class="btn btn-ef btn-ef-1 btn-ef-1-default btn-ef-1a btn-rounded-20" data-toggle="tooltip" title="Imprimir"><em class="fa fa-print"></em></a>
+                                  <!-- <a href="reporte/ticket.php?id=<?php echo $_GET['id']; ?>" target="_blanck" class="btn btn-ef btn-ef-1 btn-ef-1-default btn-ef-1a btn-rounded-20" data-toggle="tooltip" title="Imprimir"><em class="fa fa-print"></em></a> -->
                                 </span>
                             </div>
 
@@ -182,7 +182,7 @@
                                                     <div class="tile-body p-0">
 
                                                         <div class="table-responsive">
-                                                            <table class="table table-hover table-striped">
+                                                            <table summary="Mi tabla" aria-describedby="descripcion" class="table table-hover table-striped">
                                                                 <thead>
                                                                 <tr>
                                                                     <th scope = "col">CANT.</th>

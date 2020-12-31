@@ -87,7 +87,7 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
                 if(count($reportediarios)>0){
                   // si hay usuarios 
                   ?>
-                  <table id="example1" class="table table-bordered table-hover">
+                  <table summary="Mi tabla" aria-describedby="descripcion" id="example1" class="table table-bordered table-hover">
 
                   <thead style="color: black; background-color: #d2d6de;">
                         <th scope = "col">Nº</th> 
@@ -121,7 +121,7 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
                               </div>
                                <div class="modal-body">
                                 
-                                <table id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
+                                <table summary="Mi tabla" aria-describedby="descripcion" id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
                                   <thead style="color: white; background-color: #827e7e;">
                                       <tr>
                                       

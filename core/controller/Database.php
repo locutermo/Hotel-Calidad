@@ -9,6 +9,7 @@ class Database
 		$this->user="root";$this->pass="";$this->host="localhost";$this->ddbb="hotel5estrellas";
 	} 
 
+	
 
 	function connect(){
 		$con = new mysqli($this->host,$this->user,$this->pass,$this->ddbb,3308);

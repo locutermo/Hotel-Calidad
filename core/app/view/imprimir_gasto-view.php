@@ -35,7 +35,7 @@ window.location='index.php?view=egreso';
                 if(count($gasto)>0){
                   // si hay usuarios
                   ?>
-                  <table class="table table-bordered table-hover">
+                  <table summary="Mi tabla" aria-describedby="descripcion" class="table table-bordered table-hover">
 
                   <thead style="color: white; background-color: #dd4b39;">
                         <th scope = "col" colspan="2" style="text-align: center;">Nº DE TICKET - <?php echo $gasto->id; ?> -</th> 
