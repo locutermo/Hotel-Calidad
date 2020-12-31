@@ -42,8 +42,11 @@ if (isset($_GET['id']))//codigo elimina un elemento del array
 			// si hay usuarios
 			?>
 			<?php
-			$sumador_total=0;
+            $sumador_total=0;
+            echo var_dump($tmps);
+            
 			foreach($tmps as $tmp): ?>
+
 				<tr>
                 <td></td>
                 <td><?php if($tmp->id_producto!=null){echo $tmp->getProduct()->nombre;}else{ echo "<center>----</center>"; }  ?></td>
