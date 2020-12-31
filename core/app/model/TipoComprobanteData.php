@@ -4,7 +4,7 @@ class TipoComprobanteData {
 
 
 
-	public function TipoComprobanteData(){
+	public function __construct(){
 		$this->nombre = "";
 	
 	}

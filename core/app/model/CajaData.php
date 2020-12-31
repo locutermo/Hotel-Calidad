@@ -2,7 +2,7 @@
 class CajaData {
 	public static $tablename = "caja";
 
-	public function CajaData(){
+	public function __construct(){
 
 	
         $this->fecha_apertura = "";

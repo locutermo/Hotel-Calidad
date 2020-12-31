@@ -3,7 +3,7 @@ class VentaData {
 	public static $tablename = "venta";
 
 
-	public function VentaData(){
+	public function __construct(){
 		$this->nro_comprobante = ""; 
  
 		 
