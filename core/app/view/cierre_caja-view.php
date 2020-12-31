@@ -18,7 +18,7 @@
  
 <?php $caja_abierta = CajaData::getCierreCaja(); ?>
 <section class="tile tile-simple col-md-4 col-md-offset-4">
-            <?php if(count($caja_abierta)>0){?>
+            <?php if(isset($caja_abierta)){?>
             <div class="tile-widget dvd dvd-btm" style="text-align: center;">
               <h3 class="box-title">CIERRE DE CAJA</h3>
               <!-- /.box-tools -->
@@ -27,7 +27,7 @@
             <form method="post"  action="index.php?view=addcierre_caja">
               <div class="tile-body p-0" style="text-align: left;">
 
-                <table>
+                <table summary="Mi tabla" aria-describedby="descripcion">
                   <th scope = "col" style="width: 50%;"></th>
                   <th scope = "col" style="width: 45%;"></th>
                   <tr>
@@ -181,7 +181,7 @@
       <div class="tile-body">
         
          <?php if(count($cajas)>0){?>
-              <table id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 12px;">
+              <table summary="Mi tabla" aria-describedby="descripcion" id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 12px;">
                 <thead style="color: white; background-color: #827e7e;">
                   <th scope = "col">USUARIO APERTURA</th>
                   <th scope = "col">FECHA APERTURA</th>
@@ -189,7 +189,6 @@
                   <th scope = "col">FECHA CIERRE</th>
                   <th scope = "col">MONTO CIERRE</th>
                   <th scope = "col">ESTADO CAJA</th>
-                  <th scope = "col">VOLVER A IMPRIMIR</th>
                 </thead>
                 
                <?php foreach($cajas as $caja):?>
@@ -208,11 +207,7 @@
 
                 <td><?php if($caja->estado==1){ echo "<label class='text-danger'>ABIERTO</label>"; }
                 else {echo "<label class='text-success'>CERRADO</label>";} ?></td>
-                <?php if($caja->estado==1){ ?>
-                <td><label class="form-label text-danger">[RE-IMPRIMIR]</label></td>
-                <?php } else{?>
-                <td><a href="reporte/pdf/documentos/reporte_caja.php?id=<?php echo $caja->id; ?>" target="_blank"><label class="form-label text-success">[RE-IMPRIMIR]</label></a></td>
-                <?php }; ?>
+                
               </tr>
       
                <?php endforeach;?>

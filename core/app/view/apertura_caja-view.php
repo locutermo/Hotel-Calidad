@@ -28,7 +28,7 @@
             <form method="post"  action="index.php?view=agregar_caja" id="addcaja">
               <div class="tile-body p-0" style="text-align: left;">
 
-                <table>
+                <table summary="Mi tabla" aria-describedby="descripcion">
                   <th style="width: 50%;"></th>
                   <th style="width: 45%;"></th>
                   <tr>
@@ -99,7 +99,7 @@
                                 <!-- tile body -->
                                 <div class="tile-body p-0">
                                     <?php if(isset($cajas)){?>
-                                    <table class="table table-condensed" style="font-size: 12px;">
+                                    <table summary="Mi tabla" aria-describedby="descripcion" class="table table-condensed" style="font-size: 12px;">
                                         <thead style="background-color: #16a085;
     color: white;">
                                         <tr>

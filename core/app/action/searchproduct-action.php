@@ -5,7 +5,7 @@ $products = ProductData::getLike($_GET["product"]);
 if(isset($products)){
 	?>
 <h3>Resultados de la Busqueda</h3>
-<table class="table table-bordered table-hover">
+<table summary="Mi tabla" aria-describedby="descripcion" class="table table-bordered table-hover">
 	<thead>
 		<th scope = "col">Codigo</th>
 		<th scope = "col">Nombre</th>

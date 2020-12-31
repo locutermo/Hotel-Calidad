@@ -56,7 +56,7 @@
         <?php 
         $contactos = ContactoData::getAllCliente($_GET['id']); 
         if(count($contactos)>0){  ?>
-        <table id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
+        <table summary="Mi tabla" aria-describedby="descripcion" id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
             <thead style="color: white; background-color: #827e7e;">
                 <tr>
                   <th scope = "col">Nº</th> 
