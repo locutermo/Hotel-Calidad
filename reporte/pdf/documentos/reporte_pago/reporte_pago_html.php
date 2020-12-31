@@ -85,7 +85,7 @@ tr:hover td { background: #d0dafd; color: #339; }
                 <td style="width: 80%; text-align: left">
                 </td>
                 <td style="width: 20%; text-align: right; font-size:12px;" >
-                  WWW.<b>empresa</b>.com<br />
+                  WWW.<strong>empresa</strong>.com<br />
                   Móvil 921355925 <br />Fijo (064) 201773<br />
                 </td>
                 
@@ -96,9 +96,9 @@ tr:hover td { background: #d0dafd; color: #339; }
     <table cellspacing="0" style="width: 100%; border: solid 0px #7f8c8d; text-align: center; font-size: 10pt;padding:1mm; padding-top: 0mm !important;">
         <tr >
             
-            <th  style="width: 60%"></th>
+            <th scope = "col" style="width: 60%"></th>
            
-            <th class="pumpkin" style="width: 40%; border: black 1px solid">INFORME DE PAGOS HASTA </th>
+            <th scope = "col" class="pumpkin" style="width: 40%; border: black 1px solid">INFORME DE PAGOS HASTA </th>
             
             
         </tr>
@@ -122,7 +122,7 @@ tr:hover td { background: #d0dafd; color: #339; }
             ?>
             <td  style="width: 60%; text-align: center"> <img style="width: 30%;" src="../../img/logo1.jpg" alt="Logo"><br /></td>
            
-            <td  style="width: 40%; text-align: center;border:black 1px solid;"><br><b><?php echo $mes; ?></b></td>
+            <td  style="width: 40%; text-align: center;border:black 1px solid;"><br><strong><?php echo $mes; ?></strong></td>
             
         </tr>
    
@@ -144,16 +144,16 @@ tr:hover td { background: #d0dafd; color: #339; }
                   <table  class="contenido">
  
                   <tr class="tr" style="width: 100%; ">
-                        <th>DESDE</th> 
-                        <th>HASTA</th> 
-                        <th>TRABAJADOR</th>
-                        <th>SUELDO POR MES</th>
+                        <th scope = "col">DESDE</th> 
+                        <th scope = "col">HASTA</th> 
+                        <th scope = "col">TRABAJADOR</th>
+                        <th scope = "col">SUELDO POR MES</th>
                        
-                        <th>ACUMULADO</th>
-                        <th>AUMENTO</th> 
-                        <th>DESCUENTO</th>
-                        <th>RESTA</th>
-                        <th>ESTADO</th> 
+                        <th scope = "col">ACUMULADO</th>
+                        <th scope = "col">AUMENTO</th> 
+                        <th scope = "col">DESCUENTO</th>
+                        <th scope = "col">RESTA</th>
+                        <th scope = "col">ESTADO</th> 
                         
                   </tr>
                    <?php foreach($sueldos as $sueldo):?>
@@ -215,7 +215,7 @@ tr:hover td { background: #d0dafd; color: #339; }
                         <?php $resta = ($sueldo->monto-$descuento)-($acumulado); ?>
                         <td>
                           <?php if($resta=='0' or $resta<0){ ?>
-                          <p style="color: green;"><b>Completado</b></p>
+                          <p style="color: green;"><strong>Completado</strong></p>
                           <?php }else{ ?>
                           <?php echo ($sueldo->monto-$descuento)-($acumulado); ?>
                           <?php }; ?>
@@ -224,9 +224,9 @@ tr:hover td { background: #d0dafd; color: #339; }
                         
                         <td>
                           <?php if($resta=='0' or $resta<0){ ?>
-                          <p style="color: green;"><b>Completado</b></p>
+                          <p style="color: green;"><strong>Completado</strong></p>
                           <?php }else{ ?>
-                          <p style="color: orange;"><b>En proceso</b></p>
+                          <p style="color: orange;"><strong>En proceso</strong></p>
                           <?php }; ?>
                           
                         </td>

@@ -18,7 +18,7 @@ date_default_timezone_set('America/Lima');
 <div class="row">
 <section class="content-header">
     <ol class="breadcrumb">
-      <li><a href="index.php?view=reserva"><i class="fa fa-home"></i> Inicio</a></li>
+      <li><a href="index.php?view=reserva"><em class="fa fa-home"></em> Inicio</a></li>
       <li><a href="javascript:;">Pagos</a></li>
       <li class="active"><a href="#">Pagos a trabajador</a></li>
     </ol>
@@ -54,7 +54,7 @@ date_default_timezone_set('America/Lima');
               <input type="hidden" name="view" value="sueldo">
  
 							<div class="input-group">
-  							<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+  							<span class="input-group-addon"><em class="fa fa-calendar"></em></span>
                 <!--
   							<input type="text" id="txtMes" name="txtMes" placeholder=""
   							 class="form-control input-sm" style=""> -->
@@ -81,7 +81,7 @@ date_default_timezone_set('America/Lima');
             <div class="col-sm-3">
               <label>MES PAGO</label>
               <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                <span class="input-group-addon"><em class="fa fa-calendar"></em></span>
                 <!--
                 <input type="text" id="txtMes" name="txtMes" placeholder=""
                  class="form-control input-sm" style=""> -->
@@ -103,7 +103,7 @@ date_default_timezone_set('America/Lima');
             </div>
 						<div class="col-sm-4">
 							<button style="margin-top: 27px;" id="btnGuardar" type="submit" class="btn btn-primary btn-sm"> 
-							<i class="fa fa-search"></i> Consultar</button>
+							<em class="fa fa-search"></em> Consultar</button>
 						</div>
 					</div>
 				</div>
@@ -133,21 +133,21 @@ date_default_timezone_set('America/Lima');
 
                 <ul class="controls">  
                   <li class="remove">
-                    <a  data-toggle="modal" data-target="#myModal"  ><i class="fa fa-money"></i> REGISTRAR NUEVO SUELDO</a>
+                    <a  data-toggle="modal" data-target="#myModal"  ><em class="fa fa-money"></em> REGISTRAR NUEVO SUELDO</a>
                   </li>
                   <li class="dropdown">
                     <a  role="button" tabindex="0" class="dropdown-toggle settings" data-toggle="dropdown">
-                    <i class="fa fa-print"></i><i class="fa fa-print"></i> Imprimir Reporte
+                    <em class="fa fa-print"></em><em class="fa fa-print"></em> Imprimir Reporte
                     </a>
                     <ul class="dropdown-menu pull-right with-arrow animated littleFadeInUp">
                        
 						<li><a id="print_entradas" href="reporte/pdf/documentos/reporte_pago.php?mes=<?php echo $me; ?>&anio=<?php echo $anio; ?>" target="_blanck">
-						<i class="icon-file-pdf"></i> Pagos del Mes</a></li>
+						<em class="icon-file-pdf"></em> Pagos del Mes</a></li>
 						<li class="divider"></li>
 						
                     </ul>
                   </li>
-                  <li class="remove"><a role="button" tabindex="0" class="tile-close"><i class="fa fa-times"></i></a></li>
+                  <li class="remove"><a role="button" tabindex="0" class="tile-close"><em class="fa fa-times"></em></a></li>
                 </ul>
               </div>
 
@@ -166,16 +166,16 @@ date_default_timezone_set('America/Lima');
                   <table id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
 
                   <thead style="color: white; background-color: #827e7e;">
-                        <th>DESDE</th> 
-                        <th>HASTA</th> 
-                        <th>TRABAJADOR</th>
-                        <th>SUELDO POR MES</th>
-                        <th>REMUNERAR</th>
-                        <th>ACUMULADO</th>
-                        <th>AUMENTO</th> 
-                        <th>DESCUENTO</th>
-                        <th>RESTA</th>
-                        <th>ESTADO</th> 
+                        <th scope = "col">DESDE</th> 
+                        <th scope = "col">HASTA</th> 
+                        <th scope = "col">TRABAJADOR</th>
+                        <th scope = "col">SUELDO POR MES</th>
+                        <th scope = "col">REMUNERAR</th>
+                        <th scope = "col">ACUMULADO</th>
+                        <th scope = "col">AUMENTO</th> 
+                        <th scope = "col">DESCUENTO</th>
+                        <th scope = "col">RESTA</th>
+                        <th scope = "col">ESTADO</th> 
                         
                   </thead>
                    <?php foreach($sueldos as $sueldo):?>
@@ -206,7 +206,7 @@ date_default_timezone_set('America/Lima');
                         <td><?php echo $sueldo->getUsuario()->name; ?></td> 
                         <td><?php echo $sueldo->monto; ?></td>  
                         <td>
-                        <a href="index.php?view=proceso_sueldo&id=<?php echo $sueldo->id; ?>&start=<?php echo $start; ?>&end=<?php echo $end; ?>"  class="btn btn-warning btn-xs"><i class="fa fa-money"></i> Remunerar</a>
+                        <a href="index.php?view=proceso_sueldo&id=<?php echo $sueldo->id; ?>&start=<?php echo $start; ?>&end=<?php echo $end; ?>"  class="btn btn-warning btn-xs"><em class="fa fa-money"></em> Remunerar</a>
                         </td>
 
                         <?php $acumulado=0; ?> 
@@ -239,7 +239,7 @@ date_default_timezone_set('America/Lima');
                         <?php $resta = ($sueldo->monto-$descuento)-($acumulado); ?>
                         <td>
                           <?php if($resta=='0' or $resta<0){ ?>
-                          <p style="color: green;"><b>Completado</b></p>
+                          <p style="color: green;"><strong>Completado</strong></p>
                           <?php }else{ ?>
                           <?php echo ($sueldo->monto-$descuento)-($acumulado); ?>
                           <?php }; ?>
@@ -248,9 +248,9 @@ date_default_timezone_set('America/Lima');
                         
                         <td>
                           <?php if($resta=='0' or $resta<0){ ?>
-                          <p style="color: green;"><b>Completado</b></p>
+                          <p style="color: green;"><strong>Completado</strong></p>
                           <?php }else{ ?>
-                          <p style="color: orange;"><b>En proceso</b></p>
+                          <p style="color: orange;"><strong>En proceso</strong></p>
                           <?php }; ?>
                           
                         </td>

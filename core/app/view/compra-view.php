@@ -42,13 +42,12 @@
 									<table id="tbldetalle" class="table table-xxs">
 										<thead>
 											<tr class="bg-blue">
-												<th></th>
-												<th>Producto</th>
-												<th>Cant.</th>
-												<th class="text-center">Precio</th>
-												<th class="text-center">Importe</th>
-												<th class="text-center">Quitar</th>
-												
+												<th scope = "col"></th>
+												<th scope = "col">Producto</th>
+												<th scope = "col">Cant.</th>
+												<th scope = "col" class="text-center">Precio</th>
+												<th scope = "col" class="text-center">Importe</th>
+												<th scope = "col" class="text-center">Quitar</th>												
 											</tr>
 										</thead> 
 										<tbody id="resultados"> 
@@ -63,9 +62,9 @@
 					<div class="form-group">
 						<div class="row">
 							<div class="col-sm-3">
-								<a  href="index.php?view=cancelar_compra" class="btn btn-danger btn-labeled btn-block"><b>
-								<i class="icon-cancel-circle2"></i>
-								</b> Cancelar Compra</a>
+								<a  href="index.php?view=cancelar_compra" class="btn btn-danger btn-labeled btn-block"><strong>
+								<em class="icon-cancel-circle2"></em>
+								</strong> Cancelar Compra</a>
 							</div>
 						</div>
 					</div>
@@ -161,7 +160,7 @@
 										 	class="form-control" style="text-transform:uppercase;"
                                 			onkeyup="javascript:this.value=this.value.toUpperCase();">
 	                                		<div class="form-control-feedback">
-													<i class="icon-certificate text-size-base"></i>
+													<em class="icon-certificate text-size-base"></em>
 											</div>
 	                                	</div>
 
@@ -175,8 +174,8 @@
 								<div class="row">
 									<div class="col-sm-12">
 										<button type="submit"  class="btn btn-success
-										btn-labeled btn-block btn-ladda btn-ladda-spinner"><b><i class="fa fa-money"></i>
-										</b> Guardar Compra</button>
+										btn-labeled btn-block btn-ladda btn-ladda-spinner"><strong><em class="fa fa-money"></em>
+										</strong> Guardar Compra</button>
 									</div>
 								</div>
 							</div>

@@ -85,7 +85,7 @@ tr:hover td { background: #d0dafd; color: #339; }
                 <td style="width: 80%; text-align: left">
                 </td>
                 <td style="width: 20%; text-align: right; font-size:12px;" >
-                  WWW.<b>empresa</b>.com<br />
+                  WWW.<strong>empresa</strong>.com<br />
                   Móvil 921355925 <br />Fijo (064) 201773<br />
                 </td>
                 
@@ -96,9 +96,9 @@ tr:hover td { background: #d0dafd; color: #339; }
     <table cellspacing="0" style="width: 100%; border: solid 0px #7f8c8d; text-align: center; font-size: 10pt;padding:1mm; padding-top: 0mm !important;">
         <tr >
             
-            <th  style="width: 60%"></th>
+            <th scope = "col" style="width: 60%"></th>
            
-            <th class="pumpkin" style="width: 40%; border: black 1px solid">MOVIMIENTOS DE ENTRADAS Y SALIDAS </th>
+            <th scope = "col" class="pumpkin" style="width: 40%; border: black 1px solid">MOVIMIENTOS DE ENTRADAS Y SALIDAS </th>
             
             
         </tr>
@@ -122,7 +122,7 @@ tr:hover td { background: #d0dafd; color: #339; }
             ?>
             <td  style="width: 60%; text-align: center"> <br /></td>
            
-            <td  style="width: 40%; text-align: center;border:black 1px solid;"><br><b><?php echo $mes.' de '. $_GET['anio']; ?> </b></td>
+            <td  style="width: 40%; text-align: center;border:black 1px solid;"><br><strong><?php echo $mes.' de '. $_GET['anio']; ?> </strong></td>
             
         </tr>
    
@@ -144,13 +144,13 @@ tr:hover td { background: #d0dafd; color: #339; }
                   <table class="contenido"> 
 
                   <tr class="tr" style="width: 100%; ">
-                        <th style="width: 30%;">Nro</th> 
-                        <th style="width: 60%;">PRODUCTO</th>
-                        <th style="width: 30%;">MARCA</th>
-                        <th style="width: 30%;">SALDO INICIAL</th>
-                        <th style="width: 20%;">ENTRADAS</th>
-                        <th style="width: 20%;">SALIDAS</th>
-                        <th style="width: 20%;">SALDO</th>
+                        <th scope = "col" style="width: 30%;">Nro</th> 
+                        <th scope = "col" style="width: 60%;">PRODUCTO</th>
+                        <th scope = "col" style="width: 30%;">MARCA</th>
+                        <th scope = "col" style="width: 30%;">SALDO INICIAL</th>
+                        <th scope = "col" style="width: 20%;">ENTRADAS</th>
+                        <th scope = "col" style="width: 20%;">SALIDAS</th>
+                        <th scope = "col" style="width: 20%;">SALDO</th>
                         
                   </tr>
                    <?php foreach($productos as $producto):?>

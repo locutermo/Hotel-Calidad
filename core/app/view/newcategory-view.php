@@ -8,7 +8,7 @@
         <small>Preview</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="#"><em class="fa fa-dashboard"></em> Home</a></li>
         <li><a href="#">Forms</a></li>
         <li class="active">General Elements</li>
       </ol>
@@ -38,16 +38,16 @@
                   <table id="example1" class="table table-bordered table-hover">
 
                   <thead style="color: white; background-color: #dd4b39;">
-                        <th>Nº</th> 
-                        <th>NOMBRE</th>
-                        <th></th> 
+                        <th scope = "col">Nº</th> 
+                        <th scope = "col">NOMBRE</th>
+                        <th scope = "col"></th> 
                   </thead>
                    <?php foreach($categorias as $categoria):?>
                       <tr>
                         <td><?php echo $categoria->id; ?></td>
                         <td><?php echo $categoria->nombre; ?></td>
                         <td>
-                        <a href="index.php?view=edit_vehiculo&id=<?php echo $vehiculo->placa;?>" class="btn btn-warning btn-xs"><i class="glyphicon glyphicon-edit"></i> Editar</a>
+                        <a href="index.php?view=edit_vehiculo&id=<?php echo $vehiculo->placa;?>" class="btn btn-warning btn-xs"><em class="glyphicon glyphicon-edit"></em> Editar</a>
                         </td>
                       </tr> 
                     <?php endforeach; ?>

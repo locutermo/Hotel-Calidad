@@ -2440,33 +2440,7 @@ if (!defined('__CLASS_HTML2PDF__')) {
         protected function _tag_open_PAGE_HEADER_SUB($param)
         {
             if ($this->_isForOneLine) return false;
-
-            // save the current stat
-            $this->_subSTATES = array();
-            $this->_subSTATES['x']  = $this->pdf->getX();
-            $this->_subSTATES['y']  = $this->pdf->getY();
-            $this->_subSTATES['s']  = $this->parsingCss->value;
-            $this->_subSTATES['t']  = $this->parsingCss->table;
-            $this->_subSTATES['ml'] = $this->_margeLeft;
-            $this->_subSTATES['mr'] = $this->_margeRight;
-            $this->_subSTATES['mt'] = $this->_margeTop;
-            $this->_subSTATES['mb'] = $this->_margeBottom;
-            $this->_subSTATES['mp'] = $this->_pageMarges;
-
-            // new stat for the header
-            $this->_pageMarges = array();
-            $this->_margeLeft    = $this->_defaultLeft;
-            $this->_margeRight   = $this->_defaultRight;
-            $this->_margeTop     = $this->_defaultTop;
-            $this->_margeBottom  = $this->_defaultBottom;
-            $this->pdf->SetMargins($this->_margeLeft, $this->_margeTop, $this->_margeRight);
-            $this->pdf->SetAutoPageBreak(false, $this->_margeBottom);
-            $this->pdf->setXY($this->_defaultLeft, $this->_defaultTop);
-
-            $this->parsingCss->initStyle();
-            $this->parsingCss->resetStyle();
-            $this->parsingCss->value['width'] = $this->pdf->getW() - $this->_defaultLeft - $this->_defaultRight;
-            $this->parsingCss->table = array();
+            _tag_open_PAGE_SUB();
 
             $this->parsingCss->save();
             $this->parsingCss->analyse('page_header_sub', $param);
@@ -2485,18 +2459,7 @@ if (!defined('__CLASS_HTML2PDF__')) {
         protected function _tag_close_PAGE_HEADER_SUB($param)
         {
             if ($this->_isForOneLine) return false;
-
-            $this->parsingCss->load();
-
-            // restore the stat
-            $this->parsingCss->value = $this->_subSTATES['s'];
-            $this->parsingCss->table = $this->_subSTATES['t'];
-            $this->_pageMarges       = $this->_subSTATES['mp'];
-            $this->_margeLeft        = $this->_subSTATES['ml'];
-            $this->_margeRight       = $this->_subSTATES['mr'];
-            $this->_margeTop         = $this->_subSTATES['mt'];
-            $this->_margeBottom      = $this->_subSTATES['mb'];
-            $this->pdf->SetMargins($this->_margeLeft, $this->_margeTop, $this->_margeRight);
+            _tag_close_PAGE_SUB();
             $this->pdf->setbMargin($this->_margeBottom);
             $this->pdf->SetAutoPageBreak(false, $this->_margeBottom);
             $this->pdf->setXY($this->_subSTATES['x'], $this->_subSTATES['y']);
@@ -2516,34 +2479,7 @@ if (!defined('__CLASS_HTML2PDF__')) {
         protected function _tag_open_PAGE_FOOTER_SUB($param)
         {
             if ($this->_isForOneLine) return false;
-
-            // save the current stat
-            $this->_subSTATES = array();
-            $this->_subSTATES['x']    = $this->pdf->getX();
-            $this->_subSTATES['y']    = $this->pdf->getY();
-            $this->_subSTATES['s']    = $this->parsingCss->value;
-            $this->_subSTATES['t']    = $this->parsingCss->table;
-            $this->_subSTATES['ml']    = $this->_margeLeft;
-            $this->_subSTATES['mr']    = $this->_margeRight;
-            $this->_subSTATES['mt']    = $this->_margeTop;
-            $this->_subSTATES['mb']    = $this->_margeBottom;
-            $this->_subSTATES['mp']    = $this->_pageMarges;
-
-            // new stat for the footer
-            $this->_pageMarges  = array();
-            $this->_margeLeft   = $this->_defaultLeft;
-            $this->_margeRight  = $this->_defaultRight;
-            $this->_margeTop    = $this->_defaultTop;
-            $this->_margeBottom = $this->_defaultBottom;
-            $this->pdf->SetMargins($this->_margeLeft, $this->_margeTop, $this->_margeRight);
-            $this->pdf->SetAutoPageBreak(false, $this->_margeBottom);
-            $this->pdf->setXY($this->_defaultLeft, $this->_defaultTop);
-
-            $this->parsingCss->initStyle();
-            $this->parsingCss->resetStyle();
-            $this->parsingCss->value['width']    = $this->pdf->getW() - $this->_defaultLeft - $this->_defaultRight;
-            $this->parsingCss->table                = array();
-
+            _tag_open_PAGE_SUB();
             // we create a sub HTML2PFDF, and we execute on it the content of the footer, to get the height of it
             $sub = null;
             $this->_createSubHTML($sub);
@@ -2570,17 +2506,7 @@ if (!defined('__CLASS_HTML2PDF__')) {
         protected function _tag_close_PAGE_FOOTER_SUB($param)
         {
             if ($this->_isForOneLine) return false;
-
-            $this->parsingCss->load();
-
-            $this->parsingCss->value                = $this->_subSTATES['s'];
-            $this->parsingCss->table                = $this->_subSTATES['t'];
-            $this->_pageMarges                 = $this->_subSTATES['mp'];
-            $this->_margeLeft                = $this->_subSTATES['ml'];
-            $this->_margeRight                = $this->_subSTATES['mr'];
-            $this->_margeTop                    = $this->_subSTATES['mt'];
-            $this->_margeBottom                = $this->_subSTATES['mb'];
-            $this->pdf->SetMargins($this->_margeLeft, $this->_margeTop, $this->_margeRight);
+            _tag_close_PAGE_SUB();
             $this->pdf->SetAutoPageBreak(false, $this->_margeBottom);
             $this->pdf->setXY($this->_subSTATES['x'], $this->_subSTATES['y']);
 
@@ -6483,6 +6409,45 @@ if (!defined('__CLASS_HTML2PDF__')) {
                 $this->_setNewPage();
                 return null;
             }
+        }
+        /*Bloque para evitar duplicidad */
+        private function _tag_open_PAGE_SUB(){
+            // save the current stat
+            $this->_subSTATES = array();
+            $this->_subSTATES['x']  = $this->pdf->getX();
+            $this->_subSTATES['y']  = $this->pdf->getY();
+            $this->_subSTATES['s']  = $this->parsingCss->value;
+            $this->_subSTATES['t']  = $this->parsingCss->table;
+            $this->_subSTATES['ml'] = $this->_margeLeft;
+            $this->_subSTATES['mr'] = $this->_margeRight;
+            $this->_subSTATES['mt'] = $this->_margeTop;
+            $this->_subSTATES['mb'] = $this->_margeBottom;
+            $this->_subSTATES['mp'] = $this->_pageMarges;
+            // new stat for the header and footer
+            $this->_pageMarges = array();
+            $this->_margeLeft    = $this->_defaultLeft;
+            $this->_margeRight   = $this->_defaultRight;
+            $this->_margeTop     = $this->_defaultTop;
+            $this->_margeBottom  = $this->_defaultBottom;
+            $this->pdf->SetMargins($this->_margeLeft, $this->_margeTop, $this->_margeRight);
+            $this->pdf->SetAutoPageBreak(false, $this->_margeBottom);
+            $this->pdf->setXY($this->_defaultLeft, $this->_defaultTop);
+            $this->parsingCss->initStyle();
+            $this->parsingCss->resetStyle();
+            $this->parsingCss->value['width'] = $this->pdf->getW() - $this->_defaultLeft - $this->_defaultRight;
+            $this->parsingCss->table = array();
+        }
+        private function _tag_close_PAGE_SUB(){
+            $this->parsingCss->load();
+            // restore the stat
+            $this->parsingCss->value = $this->_subSTATES['s'];
+            $this->parsingCss->table = $this->_subSTATES['t'];
+            $this->_pageMarges       = $this->_subSTATES['mp'];
+            $this->_margeLeft        = $this->_subSTATES['ml'];
+            $this->_margeRight       = $this->_subSTATES['mr'];
+            $this->_margeTop         = $this->_subSTATES['mt'];
+            $this->_margeBottom      = $this->_subSTATES['mb'];
+            $this->pdf->SetMargins($this->_margeLeft, $this->_margeTop, $this->_margeRight);
         }
 
     }

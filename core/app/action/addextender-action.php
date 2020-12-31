@@ -18,11 +18,11 @@ $operacion_n->add();
  				<table class="table table-bordered">
                     <thead>
                       <tr>
-                        <th>Acción</th>
-                        <th>Fecha ocup.</th>
-                        <th>Descripción</th>
-                        <th>Habitación</th>
-                        <th>Precio</th>
+                        <th scope = "col">Acción</th>
+                        <th scope = "col">Fecha ocup.</th>
+                        <th scope = "col">Descripción</th>
+                        <th scope = "col">Habitación</th>
+                        <th scope = "col">Precio</th>
                       </tr> 
                     </thead> 
                     <tbody>
@@ -36,7 +36,7 @@ $operacion_n->add();
                         <td><?php echo $operacion->fecha_entrada; ?></td>
                         <td><?php echo $salida->getHabitacion()->getCategoria()->nombre; ?></td>
                         <td><?php echo $salida->getHabitacion()->nombre; ?></td>
-                        <td><b>$  <?php echo number_format($operacion->total,2,'.',','); ?></b></td>
+                        <td><strong>$  <?php echo number_format($operacion->total,2,'.',','); ?></strong></td>
                       </tr> 
                     <?php $sub=$operacion->dinero_dejado+$sub; $total=$operacion->total+$total; ?>
                     <?php endforeach; ?>
@@ -45,8 +45,8 @@ $operacion_n->add();
 
                     </tbody> 
                     <tfoot>
-                      <th colspan="4"><b class="pull-right">Sub-total</b></th>
-                      <th><b><button class="btn btn-primary"> <b>$  <?php echo number_format($total,2,'.',','); ?></b></button></b></th>
+                      <th colspan="4"><strong class="pull-right">Sub-total</strong></th>
+                      <th><strong><button class="btn btn-primary"> <strong>$  <?php echo number_format($total,2,'.',','); ?></strong></button></strong></th>
                     </tfoot>
                    
                   </table>

@@ -13,11 +13,11 @@
 
  <section class="content-header"> 
       <h1 >
-        <i class='fa fa-sign-out'></i> CHECK OUT
+        <em class='fa fa-sign-out'></em> CHECK OUT
         <small>Avance</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="index.php?view=reserva"><i class="fa fa-home"></i> Inicio</a></li>
+        <li><a href="index.php?view=reserva"><em class="fa fa-home"></em> Inicio</a></li>
         <li><a class="active">Check out</a></li>
         
       </ol>
@@ -52,10 +52,10 @@
                           <p><?php echo $habitacion->getHabitacion()->getCategoria()->nombre; ?></p>
                         </div>
                         <div class="icon">
-                          <i class="fa fa-ocupado1" style="color:#e3e3e3;"></i>
+                          <em class="fa fa-ocupado1" style="color:#e3e3e3;"></em>
                         </div>
 
-                       <a href="index.php?view=proceso_salida&id=<?php echo $habitacion->id; ?>"  data-target="#myModal<?php echo $habitacion->id; ?>" class="small-box-footer">Procesar Venta <i class="fa fa-spinner"></i></a>
+                       <a href="index.php?view=proceso_salida&id=<?php echo $habitacion->id; ?>"  data-target="#myModal<?php echo $habitacion->id; ?>" class="small-box-footer">Procesar Venta <em class="fa fa-spinner"></em></a>
                         
                       </div>
                     </div>
