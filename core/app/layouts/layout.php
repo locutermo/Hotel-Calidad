@@ -168,7 +168,7 @@
                                                 <a href="index.php?view=cliente"><i class="fa fa-users"></i> <span>Clientes</span></a>
                                             </li>
                                         <?php endif;?>
-                                        <li>
+                                        <!-- <li>
                                             <a  role="button" tabindex="0"><i class='fa fa-file-text-o'></i> <span>Reportes</span></a>
                                             <ul>
                                                 <li><a href="./?view=pre_reporte_rango"><i class="fa fa-caret-right"></i> Reporte detallado cliente</a></li>
@@ -178,15 +178,15 @@
                                                 <li><a href="./?view=reporte_estado"><i class="fa fa-caret-right"></i> Reporte estado habitación</a></li>
                                                 <li><a href="./?view=reporte_mensual"><i class="fa fa-caret-right"></i> Reporte de mensual</a></li>
                                             </ul>
-                                        </li>
-                                        <li>
+                                        </li> -->
+                                        <!-- <li>
                                             <a  role="button" tabindex="0"><i class='fa fa-bar-chart-o'></i> <span>Gráficos</span></a>
                                             <ul>
                                                 <li><a href="./?view=pre_reporte_fecha_barra"><i class="fa fa-caret-right"></i> Reporte por fecha</a></li>
                                                 <li><a href="./?view=pre_reporte_fecha_circular"><i class="fa fa-caret-right"></i> Reporte Circular</a></li>
                                                 <li><a href="./?view=pre_reporte_anio_barra"><i class="fa fa-caret-right"></i> Reporte Anual</a></li>
                                             </ul>
-                                        </li>
+                                        </li> -->
                                         <?php
                                             $u=null; 
                                             $u = UserData::getById(Session::getUID());
@@ -197,7 +197,7 @@
                                                 <ul>
                                                     <li><a href="./?view=users"><i class="fa fa-caret-right"></i> Usuarios</a></li>
                                                     <li><a href="./?view=configuracion"><i class="fa fa-caret-right"></i> Configuración</a></li>
-                                                    <li><a href="./?view=backup"><i class="fa fa-database"></i> Respaldo base de datos</a></li>
+                                                    <!-- <li><a href="./?view=backup"><i class="fa fa-database"></i> Respaldo base de datos</a></li> -->
                                                     <!--
                                                      <li><a href="./?view=configuracion"><i class="fa fa-caret-right"></i> Configurar</a></li>
                                                     -->

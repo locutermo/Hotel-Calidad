@@ -150,7 +150,6 @@
 
               <?php $productos = ProductoData::getAll();
                 if(count($productos)>0){
-                  // si hay usuarios
                   ?>
                   <table id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
 
