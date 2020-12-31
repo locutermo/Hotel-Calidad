@@ -6,7 +6,7 @@ class Database
 	public static $con;
 
 	function Database(){
-		$this->user="root";$this->pass="";$this->host="localhost";$this->ddbb="hotel";
+		$this->user="root";$this->pass="secret";$this->host="localhost";$this->ddbb="homestead";
 	} 
 
 
@@ -16,11 +16,6 @@ class Database
 		return $con;
 	}
 
-	function connect1(){
-		$db = new PDO("mysql:host=$this->host;",$this->user,$this->pass);
-		$db->exec("use `$this->ddbb`");
-		return $db;	
-	} 
 
 	public static function getCon(){
 		if(self::$con==null && self::$db==null){
