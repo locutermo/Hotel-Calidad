@@ -1,6 +1,4 @@
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
+  <div class="content-wrapper">    
     <section class="content-header">
       <h1>
         CONFIGURACIÓN
@@ -11,8 +9,7 @@
         <li class="active">Configuración</li>
       </ol>
     </section>
-
-    <!-- Main content --> 
+    
     <section class="content">
       <div class="row">
         <div class="col-md-3">
@@ -37,19 +34,11 @@
             </ul>
 
 
-            </div>
-            <!-- /.box-body -->
+            </div>            
           </div>
-          <!-- /. box -->
-       
         </div>
-        <!-- /.col -->
-
-
-
        
         <div class="col-md-9">
-          <!-- Custom Tabs --> 
           <div class="nav-tabs-custom">
             
             <div class="tab-content">
@@ -62,7 +51,7 @@
             </div>
             <?php 
             $configuracion = ConfiguracionData::getAllConfiguracion(); 
-            if(count($configuracion)>0){ 
+            if(isset($configuracion)){ 
               $nombre=$configuracion->nombre;
               $direccion=$configuracion->direccion;
               $estado=$configuracion->estado;
@@ -222,7 +211,7 @@
             </div>
             <?php 
             $config = ConfiguracionData::getAllConfiguracion(); 
-            if(count($config)>0){ 
+            if(isset($config)){ 
               $logo=$config->logo;
               $id_config=$config->id; ?>
              

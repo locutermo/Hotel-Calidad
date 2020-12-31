@@ -3,7 +3,7 @@ class ProcesoData {
 	public static $tablename = "proceso";
 
 
-	public function ProcesoData(){
+	public function __construct(){
 		$this->dinero_dejado = ""; 
 		$this->fecha_entrada = "";
 		$this->fecha_salida = "";

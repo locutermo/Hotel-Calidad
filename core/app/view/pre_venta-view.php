@@ -24,7 +24,7 @@
       <div class="tile-body">
         <div class="row">
           <?php $habitaciones = ProcesoData::getProceso();
-                          if(count($habitaciones)>0){
+                          if(isset($habitaciones)){
                             // si hay usuarios
                             ?>
                  

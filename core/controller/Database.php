@@ -6,21 +6,16 @@ class Database
 	public static $con;
 
 	function Database(){
-		$this->user="root";$this->pass="";$this->host="localhost";$this->ddbb="hotel";
+		$this->user="root";$this->pass="";$this->host="localhost";$this->ddbb="hotel5estrellas";
 	} 
 
 
 	function connect(){
-		$con = new mysqli($this->host,$this->user,$this->pass,$this->ddbb);
+		$con = new mysqli($this->host,$this->user,$this->pass,$this->ddbb,3308);
 		$con->query("set sql_mode=''");
 		return $con;
 	}
 
-	function connect1(){
-		$db = new PDO("mysql:host=$this->host;",$this->user,$this->pass);
-		$db->exec("use `$this->ddbb`");
-		return $db;	
-	} 
 
 	public static function getCon(){
 		if(self::$con==null && self::$db==null){
