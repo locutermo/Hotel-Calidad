@@ -31,7 +31,7 @@
                 </div>
               </div>
 
-<?php }else if (isset($_POST['id_mostrar_cliente']) and $_POST['id_mostrar_cliente']=='2') { ?>
+<?php }else if (isset($_POST['id_mostrar_cliente']) && $_POST['id_mostrar_cliente']=='2') { ?>
               <div class="form-group">
                 <div class="row">
                   <div class="col-sm-12"> 

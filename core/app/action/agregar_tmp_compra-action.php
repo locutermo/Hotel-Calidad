@@ -11,7 +11,7 @@ if (isset($_POST['precio_venta'])){$precio_venta=$_POST['precio_venta'];}
 
 if(isset($_POST['cantidad']) and isset($_POST['precio_venta'])){
 $producto= TmpData::getByIdProducto($_POST['id']);
-if(count($producto)>0){
+if(isset($producto)){
  
     $temporal = TmpData::getById($producto->id_tmp);
     $temporal->cantidad_tmp = $producto->cantidad_tmp+$_POST['cantidad'];

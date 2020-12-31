@@ -204,7 +204,7 @@
 
                                                             <?php $total=0;?>
                                                             <?php $productos = ProcesoVentaData::getByAll($operacion->id);
-                                                                  if(count($productos)>0){ ?>
+                                                                  if(isset($productos)){ ?>
                                                                
                                                                <?php foreach($productos as $producto):?>
 

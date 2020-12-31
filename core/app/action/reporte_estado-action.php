@@ -18,7 +18,7 @@
                
 
               <?php $habitaciones = HabitacionData::getAll();
-                if(count($habitaciones)>0){
+                if(isset($habitaciones)){
                   // si hay usuarios
                   ?>
                   <table  class="table table-custom" style="font-size: 11px;" border="1px">

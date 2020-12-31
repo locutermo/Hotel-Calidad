@@ -294,7 +294,7 @@ $fecha1 = new DateTime($habitacion->fecha_entrada);//fecha inicial
 
                 <?php $total=0;?>
                 <?php $productos = ProcesoVentaData::getByAll($_GET['id']);
-                      if(count($productos)>0){ ?>
+                      if(isset($productos)){ ?>
                  	
                    <?php foreach($productos as $producto):?>
 

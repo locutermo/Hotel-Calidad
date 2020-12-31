@@ -4,7 +4,7 @@
 <?php $action = (isset($_REQUEST['action'])&& $_REQUEST['action'] !=NULL)?$_REQUEST['action']:'';?>
 
 <?php $productos = ProductoData::getAll();
-                if(count($productos)>0){ 
+                if(isset($productos)){ 
                   // si hay usuarios 
                   ?>
                   <div class="form-group">
@@ -29,7 +29,7 @@
 
                         <?php $entrada_producto=0; ?>
                         <?php $entradas = ProcesoVentaData::getAllEntradas($producto->id);
-                        if(count($entradas)>0){ ?>
+                        if(isset($entradas)){ ?>
                             <?php foreach($entradas as $entrada): $entrada_producto=$entrada->cantidad+$entrada_producto;  endforeach; ?>
                         <?php }else{ $entrada_producto=0; }; ?>
 
@@ -39,7 +39,7 @@
 
                         <?php $salida_producto=0; ?>
                         <?php $salidas = ProcesoVentaData::getAllSalidas($producto->id);
-                        if(count($salidas)>0){ ?>
+                        if(isset($salidas)){ ?>
                             <?php foreach($salidas as $salida): $salida_producto=$salida->cantidad+$salida_producto;  endforeach; ?>
                         <?php }else{ $salida_producto=0; }; ?>
 

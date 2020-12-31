@@ -4,7 +4,7 @@ class ReservaData {
 
 
 
-	public function ReservaData(){
+	public function __construct(){
 		$this->name = ""; 
 		$this->start = "";
 		$this->end = "";

@@ -3,9 +3,6 @@ class TarifaHabitacionData {
 	public static $tablename = "tarifa_habitacion";
 
 
-	public function TarifaHabitacionData(){
-		
-	} 
  
 	public function getTarifa(){ return TarifaData::getById($this->id_tarifa);}
 	public function getHabitacion(){ return HabitacionData::getById($this->id_habitacion);}

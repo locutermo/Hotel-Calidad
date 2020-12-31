@@ -4,7 +4,7 @@ class CategoriaData {
 
 
 
-	public function CategoriaData(){
+	public function __construct(){
 		$this->nombre = "";
 		$this->fecha_creada = "NOW()";
 	}
