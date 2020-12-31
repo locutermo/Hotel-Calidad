@@ -142,7 +142,7 @@ $operacion = ProcesoData::getById($_GET['id']);
 		$get_Y = $pdf->GetY();
 		$productos = ProcesoVentaData::getByAll($operacion->id);
 		$total=0;
-        if(count($productos)>0){
+        if(isset($productos)){
 		foreach($productos as $producto):
 		 $item = $item + 1;
 			$pdf->setX(1.1);

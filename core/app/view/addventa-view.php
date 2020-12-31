@@ -10,7 +10,7 @@ foreach($tmps as $te):
 
 $entrada_producto=0; 
 $entradas = ProcesoVentaData::getAllEntradas($te->id_producto);
-if(count($entradas)>0){ 
+if(isset($entradas)){ 
 	foreach($entradas as $entrada): $entrada_producto=$entrada->cantidad+$entrada_producto; 
 	endforeach; 
 }else{ $entrada_producto=0; }; 
@@ -18,7 +18,7 @@ if(count($entradas)>0){
 
 $salida_producto=0; 
 $salidas = ProcesoVentaData::getAllSalidas($te->id_producto);
-if(count($salidas)>0){
+if(isset($salidas)){
 	foreach($salidas as $salida): $salida_producto=$salida->cantidad+$salida_producto; 
 		endforeach;
 }else{ $salida_producto=0; };   

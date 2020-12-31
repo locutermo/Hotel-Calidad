@@ -69,7 +69,7 @@
 
             <?php }else{ ?>
             <?php $habitaciones = HabitacionData::getAll();
-                          if(count($habitaciones)>0){ 
+                          if(isset($habitaciones)){ 
                             // si hay usuarios 
                             ?>
                    <?php foreach($habitaciones as $habitacion):?>

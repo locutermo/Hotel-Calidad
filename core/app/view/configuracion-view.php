@@ -211,7 +211,7 @@
             </div>
             <?php 
             $config = ConfiguracionData::getAllConfiguracion(); 
-            if(count($config)>0){ 
+            if(isset($config)){ 
               $logo=$config->logo;
               $id_config=$config->id; ?>
              

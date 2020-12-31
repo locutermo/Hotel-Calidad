@@ -29,7 +29,7 @@ $operacion_n->add();
                     <?php $salida = ProcesoData::getById($_POST['id_proceso']); ?>
                     <?php $sub=0; $total=0; ?>
                     <?php $operaciones = OperacionData::getAllProceso($salida->id);
-                    if(count($operaciones)>0){ ?>
+                    if(isset($operaciones)){ ?>
                     <?php foreach($operaciones as $operacion):?> 
                       <tr> 
                         <td></td>

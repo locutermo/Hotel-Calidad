@@ -18,7 +18,7 @@ if(count($_POST)>0){
 
 
     $productos = ProcesoVentaData::getByAll($_POST['id_operacion']);
-    if(count($productos)>0){           	
+    if(isset($productos)){           	
     foreach($productos as $producto):
     if($producto->fecha_creada!=NULL){ 
 

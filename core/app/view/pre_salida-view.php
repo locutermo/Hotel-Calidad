@@ -34,7 +34,7 @@
             <div class="box-body">
 
           <?php $habitaciones = ProcesoData::getProceso();
-                          if(count($habitaciones)>0){
+                          if(isset($habitaciones)){
                             // si hay usuarios 
                             ?>
                  

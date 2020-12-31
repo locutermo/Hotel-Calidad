@@ -138,7 +138,7 @@ tr:hover td { background: #d0dafd; color: #339; }
 </tr>  
 </table>
 <?php $productos = ProductoData::getAll();
-                if(count($productos)>0){
+                if(isset($productos)){
                   // si hay usuarios
                   ?>
                   <table class="contenido"> 
@@ -160,7 +160,7 @@ tr:hover td { background: #d0dafd; color: #339; }
 
                                     $entrada_producto=0; 
                                     $entradas = ProcesoVentaData::getAllEntradasMes($producto->id,$_GET['mes'],$_GET['anio']);
-                                    if(count($entradas)>0){ 
+                                    if(isset($entradas)){ 
                                       foreach($entradas as $entrada): $entrada_producto=$entrada->cantidad+$entrada_producto;  
                                       endforeach;
                                     }else{ $entrada_producto=0; }; 
@@ -168,7 +168,7 @@ tr:hover td { background: #d0dafd; color: #339; }
 
                                      $salida_producto=0;
                                      $salidas = ProcesoVentaData::getAllSalidasMes($producto->id,$_GET['mes'],$_GET['anio']);
-                                     if(count($salidas)>0){ 
+                                     if(isset($salidas)){ 
                                      foreach($salidas as $salida): $salida_producto=$salida->cantidad+$salida_producto;  
                                       endforeach; 
                                      }else{ $salida_producto=0; }; 
@@ -178,7 +178,7 @@ tr:hover td { background: #d0dafd; color: #339; }
 
                                     $entrada_producto=0; 
                                     $entradas = ProcesoVentaData::getAllEntradas($producto->id);
-                                    if(count($entradas)>0){ 
+                                    if(isset($entradas)){ 
                                       foreach($entradas as $entrada): $entrada_producto=$entrada->cantidad+$entrada_producto;  
                                       endforeach;
                                     }else{ $entrada_producto=0; }; 
@@ -187,7 +187,7 @@ tr:hover td { background: #d0dafd; color: #339; }
 
                                     $salida_producto=0;
                                      $salidas = ProcesoVentaData::getAllSalidas($producto->id);
-                                     if(count($salidas)>0){ 
+                                     if(isset($salidas)){ 
                                      foreach($salidas as $salida): $salida_producto=$salida->cantidad+$salida_producto;  
                                       endforeach; 
                                      }else{ $salida_producto=0; }; 

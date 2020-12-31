@@ -2,7 +2,7 @@
 <?php if(isset($_GET["product"])):?>
 	<?php
 $products = ProductData::getLike($_GET["product"]);
-if(count($products)>0){
+if(isset($products)){
 	?>
 <h3>Resultados de la Busqueda</h3>
 <table class="table table-bordered table-hover">
