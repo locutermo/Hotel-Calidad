@@ -119,7 +119,7 @@
 
 
 
-                <ul class="controls">
+                <!-- <ul class="controls">
                  
                   <li class="dropdown">
                     <a role="button" tabindex="0" class="dropdown-toggle settings" data-toggle="dropdown">
@@ -137,7 +137,7 @@
                     </ul>
                   </li>
                   <li class="remove"><a role="button" tabindex="0" class="tile-close"><i class="fa fa-times"></i></a></li>
-                </ul>
+                </ul> -->
               </div>
 
 
