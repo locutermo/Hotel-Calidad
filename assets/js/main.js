@@ -329,7 +329,7 @@ $(function() {
 
         $app.removeClass('sidebar-sm-forced sidebar-xs-forced');
         $app.parent().removeClass('sidebar-sm sidebar-xs');
-        MINOVATE.navbar.removeRipple;
+        MINOVATE.navbar.removeRipple();
         //$window.trigger('resize');
         e.preventDefault();
       });
