@@ -43,7 +43,7 @@ $hora = date("H:i:s");
 
               
               <?php $operacion = ProcesoData::getById($_GET['id']);
-                if(count($operacion)>0){
+                if(isset($operacion)){
                   // si hay usuarios
                   ?>
                    <div class="col-md-5">

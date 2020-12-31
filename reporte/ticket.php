@@ -15,7 +15,7 @@ include "../core/app/model/ConfiguracionData.php";
 
 
 $operacion = ProcesoData::getById($_GET['id']);
-     if(count($operacion)>0){
+     if(isset($operacion)){
     
 	$pdf = new TICKET('P','mm',array(76,297));
 	$pdf->AddPage();
@@ -23,7 +23,7 @@ $operacion = ProcesoData::getById($_GET['id']);
 	 
 
     $configuracion = ConfiguracionData::getAllConfiguracion(); 
-    if(count($configuracion)>0){ 
+    if(isset($configuracion)){ 
                           $nombre=$configuracion->nombre;
                           $direccion=$configuracion->direccion;
                           $estado=$configuracion->estado;

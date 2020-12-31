@@ -1,7 +1,7 @@
 
 
  <?php $operacion = ProcesoData::getById($_GET['id']);
-     if(count($operacion)>0){
+     if(isset($operacion)){
  ?>
             <!-- ====================================================
             ================= CONTENT ===============================
@@ -57,7 +57,7 @@
 
                                         <?php 
                         $configuracion = ConfiguracionData::getAllConfiguracion(); 
-                        if(count($configuracion)>0){ 
+                        if(isset($configuracion)){ 
                           $nombre=$configuracion->nombre;
                           $direccion=$configuracion->direccion;
                           $estado=$configuracion->estado;
