@@ -29,8 +29,8 @@
               <div class="tile-body p-0" style="text-align: left;">
 
                 <table summary="Mi tabla" aria-describedby="descripcion">
-                  <th style="width: 50%;"></th>
-                  <th style="width: 45%;"></th>
+                  <th id="1" style="width: 50%;"></th>
+                  <th id="2" style="width: 45%;"></th>
                   <tr>
                       <td><h5>FECHA APERTURA:</h5></td>
                       <td><h5 class="control-label text-red"><?php echo $hoy.' '. $hora; ?></h5></td>
