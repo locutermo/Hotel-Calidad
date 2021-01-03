@@ -1,6 +1,6 @@
-projectKey=hotelv3
+projectKey=hotel
 serverUrl=http://localhost:9000
 serverVersion=8.2.0.32929
-dashboardUrl=http://localhost:9000/dashboard?id=hotelv3
-ceTaskId=AXbFzNSIc_qVA2-d35n2
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AXbFzNSIc_qVA2-d35n2
+dashboardUrl=http://localhost:9000/dashboard?id=hotel
+ceTaskId=AXbF1tGWc_qVA2-d35n4
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXbF1tGWc_qVA2-d35n4
