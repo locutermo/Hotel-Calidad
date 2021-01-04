@@ -2941,6 +2941,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            switch (yystate) {
 	                case 1:
 	                    return $$[$0 - 1];
+	                    break;
 	                case 2:
 	                    this.$ = new yy.Program($$[$0], null, {}, yy.locInfo(this._$));
 	                    break;
@@ -3259,6 +3260,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                        return true;
 	                }
 	            }
+	            return true;
 	        }
 	    };
 	    /* Jison generated lexer */
@@ -3448,46 +3450,68 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    }break;
 	                case 1:
 	                    return 14;
+	                    break;
 	                case 2:
 	                    this.popState();
 	                    return 14;
+
+	                    break;
 	                case 3:
 	                    yy_.yytext = yy_.yytext.substr(5, yy_.yyleng - 9);
 	                    this.popState();
 	                    return 16;
+
+	                    break;
 	                case 4:
 	                    return 14;
+	                    break;
 	                case 5:
 	                    this.popState();
 	                    return 13;
+
+	                    break;
 	                case 6:
 	                    return 59;
+	                    break;
 	                case 7:
 	                    return 62;
+	                    break;
 	                case 8:
 	                    return 17;
+	                    break;
 	                case 9:
 	                    this.popState();
 	                    this.begin("raw");
 	                    return 21;
+
+	                    break;
 	                case 10:
 	                    return 53;
+	                    break;
 	                case 11:
 	                    return 27;
+	                    break;
 	                case 12:
 	                    return 45;
+	                    break;
 	                case 13:
 	                    this.popState();return 42;
+	                    break;
 	                case 14:
 	                    this.popState();return 42;
+	                    break;
 	                case 15:
 	                    return 32;
+	                    break;
 	                case 16:
 	                    return 37;
+	                    break;
 	                case 17:
 	                    return 49;
+	                    break;
 	                case 18:
 	                    return 46;
+	                    break;
 	                case 19:
 	                    this.unput(yy_.yytext);
 	                    this.popState();
@@ -3497,50 +3521,74 @@ return /******/ (function(modules) { // webpackBootstrap
 	                case 20:
 	                    this.popState();
 	                    return 13;
+
+	                    break;
 	                case 21:
 	                    return 46;
+	                    break;
 	                case 22:
 	                    return 67;
+	                    break;
 	                case 23:
 	                    return 66;
+	                    break;
 	                case 24:
 	                    return 66;
+	                    break;
 	                case 25:
 	                    return 81;
+	                    break;
 	                case 26:
+	                    // ignore whitespace
 	                    break;
 	                case 27:
 	                    this.popState();return 52;
+	                    break;
 	                case 28:
 	                    this.popState();return 31;
+	                    break;
 	                case 29:
 	                    yy_.yytext = strip(1, 2).replace(/\\"/g, "\"");return 74;
+	                    break;
 	                case 30:
 	                    yy_.yytext = strip(1, 2).replace(/\\'/g, "'");return 74;
+	                    break;
 	                case 31:
 	                    return 79;
+	                    break;
 	                case 32:
 	                    return 76;
+	                    break;
 	                case 33:
 	                    return 76;
+	                    break;
 	                case 34:
 	                    return 77;
+	                    break;
 	                case 35:
 	                    return 78;
+	                    break;
 	                case 36:
 	                    return 75;
+	                    break;
 	                case 37:
 	                    return 69;
+	                    break;
 	                case 38:
 	                    return 71;
+	                    break;
 	                case 39:
 	                    return 66;
+	                    break;
 	                case 40:
 	                    return 66;
+	                    break;
 	                case 41:
 	                    return "INVALID";
+	                    break;
 	                case 42:
 	                    return 5;
+	                    break;
 	            }
 	        };
 	        lexer.rules = [/^(?:[^\x00]*?(?=(\{\{)))/, /^(?:[^\x00]+)/, /^(?:[^\x00]{2,}?(?=(\{\{|\\\{\{|\\\\\{\{|$)))/, /^(?:\{\{\{\{\/[^\s!"#%-,\.\/;->@\[-\^`\{-~]+(?=[=}\s\/.])\}\}\}\})/, /^(?:[^\x00]*?(?=(\{\{\{\{\/)))/, /^(?:[\s\S]*?--(~)?\}\})/, /^(?:\()/, /^(?:\))/, /^(?:\{\{\{\{)/, /^(?:\}\}\}\})/, /^(?:\{\{(~)?>)/, /^(?:\{\{(~)?#)/, /^(?:\{\{(~)?\/)/, /^(?:\{\{(~)?\^\s*(~)?\}\})/, /^(?:\{\{(~)?\s*else\s*(~)?\}\})/, /^(?:\{\{(~)?\^)/, /^(?:\{\{(~)?\s*else\b)/, /^(?:\{\{(~)?\{)/, /^(?:\{\{(~)?&)/, /^(?:\{\{(~)?!--)/, /^(?:\{\{(~)?![\s\S]*?\}\})/, /^(?:\{\{(~)?)/, /^(?:=)/, /^(?:\.\.)/, /^(?:\.(?=([=~}\s\/.)|])))/, /^(?:[\/.])/, /^(?:\s+)/, /^(?:\}(~)?\}\})/, /^(?:(~)?\}\})/, /^(?:"(\\["]|[^"])*")/, /^(?:'(\\[']|[^'])*')/, /^(?:@)/, /^(?:true(?=([~}\s)])))/, /^(?:false(?=([~}\s)])))/, /^(?:undefined(?=([~}\s)])))/, /^(?:null(?=([~}\s)])))/, /^(?:-?[0-9]+(?:\.[0-9]+)?(?=([~}\s)])))/, /^(?:as\s+\|)/, /^(?:\|)/, /^(?:([^\s!"#%-,\.\/;->@\[-\^`\{-~]+(?=([=~}\s\/.)|]))))/, /^(?:\[[^\]]*\])/, /^(?:.)/, /^(?:$)/];
@@ -4026,58 +4074,4 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return this.wrap([fn, type ? '.' + type + '(' : '(', params, ')']);
 	  },
 
-	  quotedString: function quotedString(str) {
-	    return '"' + (str + '').replace(/\\/g, '\\\\').replace(/"/g, '\\"').replace(/\n/g, '\\n').replace(/\r/g, '\\r').replace(/\u2028/g, '\\u2028') // Per Ecma-262 7.3 + 7.8.4
-	    .replace(/\u2029/g, '\\u2029') + '"';
-	  },
-
-	  objectLiteral: function objectLiteral(obj) {
-	    var pairs = [];
-
-	    for (var key in obj) {
-	      if (obj.hasOwnProperty(key)) {
-	        var value = castChunk(obj[key], this);
-	        if (value !== 'undefined') {
-	          pairs.push([this.quotedString(key), ':', value]);
-	        }
-	      }
-	    }
-
-	    var ret = this.generateList(pairs);
-	    ret.prepend('{');
-	    ret.add('}');
-	    return ret;
-	  },
-
-	  generateList: function generateList(entries, loc) {
-	    var ret = this.empty(loc);
-
-	    for (var i = 0, len = entries.length; i < len; i++) {
-	      if (i) {
-	        ret.add(',');
-	      }
-
-	      ret.add(castChunk(entries[i], this, loc));
-	    }
-
-	    return ret;
-	  },
-
-	  generateArray: function generateArray(entries, loc) {
-	    var ret = this.generateList(entries, loc);
-	    ret.prepend('[');
-	    ret.add(']');
-
-	    return ret;
-	  }
-	};
-
-	exports['default'] = CodeGen;
-	module.exports = exports['default'];
-
-	/* NOP */
-
-/***/ }
-/******/ ])
-});
-;
+	  quotedString: function qu
