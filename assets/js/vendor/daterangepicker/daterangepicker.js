@@ -1068,7 +1068,7 @@
         renderCalendar: function (calendar, selected, minDate, maxDate, side) {
 
             var html = '<div class="calendar-date">';
-            html += '<table summary="Mi tabla" aria-describedby="descripcion" class="table-condensed">';
+            html += '<table class="table-condensed">';
             html += '<thead>';
             html += '<tr>';
 

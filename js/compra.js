@@ -561,7 +561,7 @@ jquery.ui.monthpicker/jquery.ui.monthpicker.js
         html += '<div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all">' +
           prev + next + 
           this._generateYearHeader(inst, drawYear, monthNames, monthNamesShort) + // draw month headers
-          '</div><table summary="Mi tabla" aria-describedby="descripcion" class="ui-datepicker-calendar"><tbody>';
+          '</div><table class="ui-datepicker-calendar"><tbody>';
       
       // mount months table
       for(var i=0; i<=11; i++){
