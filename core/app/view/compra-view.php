@@ -174,7 +174,7 @@
 								<div class="row">
 									<div class="col-sm-12">
 										<button type="submit"  class="btn btn-success
-										btn-labeled btn-block btn-ladda btn-ladda-spinner"><strong><em class="fa fa-money"></em>
+										btn-labeled btn-block btn-ladda btn-ladda-spinner"><strong><i class="fa fa-money"></i>
 										</strong> Guardar Compra</button>
 									</div>
 								</div>

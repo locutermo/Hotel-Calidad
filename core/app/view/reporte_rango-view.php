@@ -24,7 +24,7 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
         <small>Avance</small>
       </h3> 
       <ol class="breadcrumb">
-        <li><a href="index.php?view=reserva"><em class="fa fa-home"></em> Inicio</a></li>
+        <li><a href="index.php?view=reserva"><i class="fa fa-home"></i> Inicio</a></li>
         <li><a href="#">Reportes</a></li>
         <li class="active">Reporte Por rango</li>
       </ol>
@@ -79,7 +79,7 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
             <ul class="nav nav-tabs" style="background-color: #d2d6de;">
               <li class="active"><a href="#tab_1" data-toggle="tab">Tabla alquiler</a></li>
               
-              <li class="pull-right text-red"><a href="javascript:print();"  class="text-muted"><em class="fa fa-print"></em> IMPRIMIR</a></li>
+              <li class="pull-right text-red"><a href="javascript:print();"  class="text-muted"><i class="fa fa-print"></i> IMPRIMIR</a></li>
             </ul>
             <div class="tab-content">
               <div class="tab-pane active" id="tab_1"> 

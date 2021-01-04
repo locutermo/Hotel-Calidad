@@ -13,7 +13,7 @@
  <section class="content-header">
       
       <ol class="breadcrumb">
-        <li><a href="index.php?view=reserva"><em class="fa fa-home"></em> Inicio</a></li>
+        <li><a href="index.php?view=reserva"><i class="fa fa-home"></i> Inicio</a></li>
         <li><a href="#">Reportes</a></li>
         <li class="active">Reporte compras</li>
       </ol>
@@ -44,7 +44,7 @@
                 <div class="row">
                   <div class="form-group">
                     <div class="input-group">
-                      <span class="input-group-addon text-green"><em class="fa fa-calendar"></em> Fecha inicio</span>
+                      <span class="input-group-addon text-green"><i class="fa fa-calendar"></i> Fecha inicio</span>
                       <input type="date" name="start" class="form-control" value="<?php if(isset($_GET['start'])){ echo $_GET['start']; } ?>">
                     </div>
                   </div>
@@ -54,7 +54,7 @@
               <div class="col-md-3">
                   <div class="form-group">
                     <div class="input-group">
-                      <span class="input-group-addon text-green" ><em class="fa fa-calendar"></em> Fecha fin</span>
+                      <span class="input-group-addon text-green" ><i class="fa fa-calendar"></i> Fecha fin</span>
                       <input type="date" name="end" class="form-control" value="<?php if(isset($_GET['end'])){ echo $_GET['end']; } ?>">  
                     </div>
                   </div>  

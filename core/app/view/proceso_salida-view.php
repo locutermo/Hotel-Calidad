@@ -32,7 +32,7 @@ $hora = date("H:i:s");
         <small>Avance</small>
       </h3>
       <ol class="breadcrumb">
-        <li><a href="index.php?view=reserva"><em class="fa fa-home"></em> Inicio</a></li>
+        <li><a href="index.php?view=reserva"><i class="fa fa-home"></i> Inicio</a></li>
         <li><a href="#">Check out</a></li>
         <li class="active">Proceso check out</li>
       </ol>

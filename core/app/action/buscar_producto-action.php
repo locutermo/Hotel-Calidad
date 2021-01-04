@@ -63,7 +63,7 @@
               					</td> 
                          
                         <?php if($stock<=0){ ?>
-                         <td><span class="pull-right"><a href="#" class="btn btn-danger" data-dismiss="modal"><em class="fa fa-warning"></em> Sin stock</a></span></td>
+                         <td><span class="pull-right"><a href="#" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-warning"></i> Sin stock</a></span></td>
                         <?php }else{ ?>
                         <td><span class="pull-right"><a href="#" onclick="agregar('<?php echo $producto->id; ?>')" class="btn btn-success" data-dismiss="modal"><em class="glyphicon glyphicon-plus-sign"></em> Agregar</a></span></td>
                         <?php }; ?>
