@@ -42,9 +42,7 @@ if (isset($_GET['id']))//codigo elimina un elemento del array
 			// si hay usuarios
 			?>
 			<?php
-            $sumador_total=0;
-            echo var_dump($tmps);
-            
+            $sumador_total=0;            
 			foreach($tmps as $tmp): ?>
 
 				<tr>
