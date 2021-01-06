@@ -2217,12 +2217,12 @@ html.boxed-layout .appWrapper.header-fixed.aside-static #header {
   left: 21px;
 }
 
-.appWrapper.rtl .onoffswitch.small {
+.appWrapper.rtl .onoffswitch .small {
   left: -5px;
   right: auto;
 }
 
-.appWrapper.rtl .onoffswitch.small .onoffswitch-switch {
+.appWrapper.rtl .onoffswitch .small .onoffswitch-switch {
   left: 6px;
   right: auto;
 }
@@ -3856,7 +3856,7 @@ html.boxed-layout .appWrapper.header-fixed.aside-static #header {
 
 .pageheader .page-bar .page-breadcrumb > li:before {
   display: inline-block;
-  font-family: "arial" , "sans-serif";
+  font-family: arial , sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 1; 
@@ -5194,7 +5194,7 @@ label {
   top: 0;
   left: 0;
   display: inline-block;
-  font-family: "FontAwesome" ,"sans-serif";
+  font-family: FontAwesome ,sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 1;
@@ -5322,43 +5322,43 @@ label {
   right: 21px;
 }
 
-.onoffswitch.small {
+.onoffswitch .small {
   width: 20px;
   height: 15px;
   margin-top: 3px;
   right: -5px;
 }
 
-.onoffswitch.small .onoffswitch-switch {
+.onoffswitch .small .onoffswitch-switch {
   right: 6px;
 }
 
-.onoffswitch.small .onoffswitch-inner:before, .onoffswitch.small .onoffswitch-inner:after {
+.onoffswitch .small .onoffswitch-inner:before, .onoffswitch .small .onoffswitch-inner:after {
   height: 15px;
   line-height: 15px;
 }
 
-.onoffswitch.small .onoffswitch-switch {
+.onoffswitch .small .onoffswitch-switch {
   width: 10px;
 }
 
-.onoffswitch.medium {
+.onoffswitch .medium {
   width: 30px;
   height: 20px;
   margin-top: 3px;
   right: -5px;
 }
 
-.onoffswitch.medium .onoffswitch-switch {
+.onoffswitch .medium .onoffswitch-switch {
   right: 11px;
 }
 
-.onoffswitch.medium .onoffswitch-inner:before, .onoffswitch.medium .onoffswitch-inner:after {
+.onoffswitch .medium .onoffswitch-inner:before, .onoffswitch .medium .onoffswitch-inner:after {
   height: 20px;
   line-height: 20px;
 }
 
-.onoffswitch.medium .onoffswitch-switch {
+.onoffswitch .medium .onoffswitch-switch {
   width: 15px;
 }
 
