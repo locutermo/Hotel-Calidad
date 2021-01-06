@@ -4,14 +4,14 @@
                 
                 <div class="input-group"> 
                   <div class="input-group-addon">
-                    <em class="fa fa-money"></em> Precio&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <i class="fa fa-money"></i> Precio&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   </div>
                   <input type="number" class="form-control monto" name="precio" placeholder="Ingrese precio" value="<?php echo $tarifa->precio; ?>" onkeyup="sumar();" onchange="sumar();" id="precio" disabled>
 
                   <div class="input-group-addon">
                     Cant. noches
                   </div>
-                  <input type="number" class="form-control monto" name="cant_noche" id="cant_noche" min="1" value="<?php echo $_POST['cant']; ?>" onkeyup="sumar();" onchange="sumar();" disabled>
+                  <input type="number" class="form-control monto" name="cant_noche" id="cant_noche" min="1" value="<?php echo htmlspecialchars($_POST['cant']); ?>" onkeyup="sumar();" onchange="sumar();" disabled>
                 </div>
                 <!-- /.input group -->
                 <div class="input-group"> 

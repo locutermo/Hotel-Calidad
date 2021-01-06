@@ -23,7 +23,7 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
 <div class="row">
 <section class="content-header">
     <ol class="breadcrumb">
-      <li><a href="index.php?view=reserva"><em class="fa fa-home"></em> Inicio</a></li>
+      <li><a href="index.php?view=reserva"><i class="fa fa-home"></i> Inicio</a></li>
       <li><a href="#">Reportes</a></li>
       <li class="active">Reporte de caja</li>
     </ol>
@@ -170,7 +170,7 @@ if($id_caja!=0){
                                             <?php $total_ingreso=$total_sin_cerrar+$subtotal3; ?>
                                             <!-- Fin Total ingreso -->
                                             <?php ?>
-                <table class="table mb-0">
+                <table summary="Mi tabla" aria-describedby="descripcion" class="table mb-0">
                  
                   <tr>
                       <td><h5>FECHA:</h5></td>
@@ -230,7 +230,7 @@ if($id_caja!=0){
             <ul class="nav nav-tabs" style="background-color: #d2d6de;">
               <li class="active"><a href="#tab_1" data-toggle="tab">Tabla alquiler</a></li>
               <li><a href="#tab_2" data-toggle="tab">Tabla servicio a la habitación</a></li>
-              <li class="pull-right text-red"><a href="reporte/pdf/documentos/reporte_diario_caja.php" target="_blank" class="text-muted"><em class="fa fa-print"></em> IMPRIMIR</a></li>
+              <li class="pull-right text-red"><a href="reporte/pdf/documentos/reporte_diario_caja.php" target="_blank" class="text-muted"><i class="fa fa-print"></i> IMPRIMIR</a></li>
             </ul>
             <div class="tab-content">
               <div class="tab-pane active" id="tab_1">
@@ -238,7 +238,7 @@ if($id_caja!=0){
                 if(count($reportediarios)>0){
                   // si hay usuarios
                   ?>
-                  <table id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
+                  <table summary="Mi tabla" aria-describedby="descripcion" id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
 
                   <thead style="color: black; background-color: #d2d6de;">
                         <th scope = "col">Nº</th> 
@@ -287,7 +287,7 @@ if($id_caja!=0){
                 if(count($reporproducts)>0){
                   // si hay usuarios 
                   ?>
-                  <table  id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
+                  <table summary="Mi tabla" aria-describedby="descripcion"  id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
 
                   <thead style="color: black; background-color: #d2d6de;">
                         <th scope = "col">Nº</th> 

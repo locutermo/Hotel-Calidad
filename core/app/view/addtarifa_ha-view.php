@@ -3,7 +3,7 @@
 if(count($_POST)>0){
 
 	$tarifa = new TarifaHabitacionData();
-	$tarifa->id_habitacion = $_POST["id_habitacion"];
+	$tarifa->id_habitacion = htmlspecialchars($_POST["id_habitacion"]);
 	$tarifa->id_tarifa = $_POST["id_tarifa"];
 	$tarifa->precio = $_POST["precio"];
 	$tarifa->add();

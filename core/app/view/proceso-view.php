@@ -60,7 +60,7 @@ $(function() {
 <div class="row">
 <section class="content-header">
     <ol class="breadcrumb">
-      <li><a href="index.php?view=reserva"><em class="fa fa-home"></em> Inicio</a></li>
+      <li><a href="index.php?view=reserva"><i class="fa fa-home"></i> Inicio</a></li>
       <li class="active"><a href="index.php?view=recepcion">recepción</a></li>
       <li class="active">Procesar</li>
     </ol>
@@ -86,7 +86,7 @@ $(function() {
             <!-- /.box-header -->
             <div class="box-body">
               <div class="table-responsive">
-                <table class="table no-margin">
+                <table summary="Mi tabla" aria-describedby="descripcion" class="table no-margin">
                   <tbody style="padding: 0px;">
                   <tr style="padding: 0px;">
                     <td><h4 class="text-primary" style="margin-top: 0px !important;">Nombre:</h4></td>
@@ -126,7 +126,7 @@ $(function() {
               <div class="table-responsive">
 
                 <div class="col-md-6">
-                <table class="table no-margin">
+                <table summary="Mi tabla" aria-describedby="descripcion" class="table no-margin">
                   <tr>
                     <th scope = "col" colspan="4" style="text-align: center;">DATOS DEL CLIENTE  <div class="col-md-2">
                        
@@ -296,7 +296,7 @@ $(function() {
               </div>
               <div class="col-md-1"></div>
               <div class="col-md-5">
-                 <table class="table no-margin">
+                 <table summary="Mi tabla" aria-describedby="descripcion" class="table no-margin">
                  <thead>
                   <tr>
                     <th scope = "col" colspan="4" style="text-align: center;">DATOS DEL ALOJAMIENTO</th>

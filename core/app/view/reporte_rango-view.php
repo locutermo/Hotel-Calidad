@@ -24,7 +24,7 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
         <small>Avance</small>
       </h3> 
       <ol class="breadcrumb">
-        <li><a href="index.php?view=reserva"><em class="fa fa-home"></em> Inicio</a></li>
+        <li><a href="index.php?view=reserva"><i class="fa fa-home"></i> Inicio</a></li>
         <li><a href="#">Reportes</a></li>
         <li class="active">Reporte Por rango</li>
       </ol>
@@ -79,7 +79,7 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
             <ul class="nav nav-tabs" style="background-color: #d2d6de;">
               <li class="active"><a href="#tab_1" data-toggle="tab">Tabla alquiler</a></li>
               
-              <li class="pull-right text-red"><a href="javascript:print();"  class="text-muted"><em class="fa fa-print"></em> IMPRIMIR</a></li>
+              <li class="pull-right text-red"><a href="javascript:print();"  class="text-muted"><i class="fa fa-print"></i> IMPRIMIR</a></li>
             </ul>
             <div class="tab-content">
               <div class="tab-pane active" id="tab_1"> 
@@ -87,7 +87,7 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
                 if(count($reportediarios)>0){
                   // si hay usuarios 
                   ?>
-                  <table id="example1" class="table table-bordered table-hover">
+                  <table summary="Mi tabla" aria-describedby="descripcion" id="example1" class="table table-bordered table-hover">
 
                   <thead style="color: black; background-color: #d2d6de;">
                         <th scope = "col">Nº</th> 
@@ -121,7 +121,7 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
                               </div>
                                <div class="modal-body">
                                 
-                                <table id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
+                                <table summary="Mi tabla" aria-describedby="descripcion" id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
                                   <thead style="color: white; background-color: #827e7e;">
                                       <tr>
                                       

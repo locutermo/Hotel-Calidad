@@ -1,0 +1,13 @@
+{
+    "name": "vagrant/hotel",
+    "type": "project",
+    "description": "Sistema de administracion de hoteles",
+    "autoload": {
+        "classmap": [
+            "core/app/model/"
+        ]
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}

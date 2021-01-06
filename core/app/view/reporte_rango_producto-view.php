@@ -24,7 +24,7 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
         <small>Avance</small>
       </h3> 
       <ol class="breadcrumb">
-        <li><a href="index.php?view=reserva"><em class="fa fa-home"></em> Inicio</a></li>
+        <li><a href="index.php?view=reserva"><i class="fa fa-home"></i> Inicio</a></li>
         <li><a href="#">Reportes</a></li>
         <li class="active">Reporte productos</li>
       </ol>
@@ -76,7 +76,7 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
            
               <div class="box-body" style="text-align: left;">
 
-                <table>
+                <table summary="Mi tabla" aria-describedby="descripcion">
                   <th scope = "col"style="width: 50%;"></th>
                   <th scope = "col"style="width: 45%;"></th>
                   <tr>
@@ -122,7 +122,7 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
                 if(count($reporproducts)>0){
                   // si hay usuarios
                   ?>
-                  <table id="example2" class="table table-bordered table-hover">
+                  <table summary="Mi tabla" aria-describedby="descripcion" id="example2" class="table table-bordered table-hover">
 
                   <thead style="color: black; background-color: #d2d6de;">
                         <th scope = "col">Nº</th> 

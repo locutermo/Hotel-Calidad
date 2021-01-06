@@ -13,7 +13,7 @@
  <section class="content-header">
       
       <ol class="breadcrumb">
-        <li><a href="index.php?view=reserva"><em class="fa fa-home"></em> Inicio</a></li>
+        <li><a href="index.php?view=reserva"><i class="fa fa-home"></i> Inicio</a></li>
         <li><a href="#">Reportes</a></li>
         <li class="active">Reporte compras</li>
       </ol>
@@ -44,8 +44,9 @@
                 <div class="row">
                   <div class="form-group">
                     <div class="input-group">
-                      <span class="input-group-addon text-green"><em class="fa fa-calendar"></em> Fecha inicio</span>
-                      <input type="date" name="start" class="form-control" value="<?php if(isset($_GET['start'])){ echo $_GET['start']; } ?>">
+                      <span class="input-group-addon text-green"><i class="fa fa-calendar"></i> Fecha inicio</span>
+                      <input type="date" name="start" class="form-control" 
+                      value="<?php $safestart= htmlspecialchars($_GET['start']); if(isset($safestart)){ echo $safestart; } ?>">
                     </div>
                   </div>
                  </div>
@@ -54,8 +55,9 @@
               <div class="col-md-3">
                   <div class="form-group">
                     <div class="input-group">
-                      <span class="input-group-addon text-green" ><em class="fa fa-calendar"></em> Fecha fin</span>
-                      <input type="date" name="end" class="form-control" value="<?php if(isset($_GET['end'])){ echo $_GET['end']; } ?>">  
+                      <span class="input-group-addon text-green" ><i class="fa fa-calendar"></i> Fecha fin</span>
+                      <input type="date" name="end" class="form-control" 
+                      value="<?php $safeend= htmlspecialchars($_GET['end']);if(isset($safeend)){ echo $safeend; } ?>">  
                     </div>
                   </div>  
               </div>
@@ -100,7 +102,7 @@
                 } ?> 
                 <?php  
                 if(count($compras)>0){  ?>
-                  <table id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
+                  <table summary="Mi tabla" aria-describedby="descripcion" id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
 
                   <thead style="color: black; background-color: #d2d6de;">
          
@@ -141,7 +143,7 @@
                 
                 <div class="row">
                 <div class="col-md-offset-1 col-md-10">
-                      <table id="tbldetalle" class="table table-xxs">
+                      <table summary="Mi tabla" aria-describedby="descripcion" id="tbldetalle" class="table table-xxs">
                                 <thead>
                                   <tr class="bg-blue">
                                     <th scope = "col"></th>
