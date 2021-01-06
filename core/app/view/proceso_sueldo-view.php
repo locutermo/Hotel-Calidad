@@ -16,7 +16,9 @@
 
   <!-- col -->
   <div class="col-md-12">
-    <?php if(isset($_GET['id']) and $_GET['id']!=""){ ?>
+    <?php 
+      $safeid= htmlspecialchars($_GET['id']);
+      if(isset($safeid) and $safeid!=""){ ?>
     <section class="tile">
       <div class="tile-header dvd dvd-btm">    
         <?php $sueldo = SueldoData::getById($_GET["id"]); ?>
@@ -50,7 +52,7 @@
         </div>
 
 
-              <?php $procesos = ProcesoSueldoData::getAllSueldos($_GET['id'],$_GET['start'],$_GET['end']); 
+              <?php $procesos = ProcesoSueldoData::getAllSueldos($safeid,$_GET['start'],$_GET['end']); 
 
                 if(count($procesos)>0){
                   // si hay usuarios
@@ -148,7 +150,7 @@
                     </div>
                   </div>
 
-                  <input type="hidden" name="id_sueldo" value="<?php echo $_GET['id']; ?>">
+                  <input type="hidden" name="id_sueldo" value="<?php echo $safeid; ?>">
 
                   <input type="hidden" name="start" value="<?php echo $_GET['start']; ?>">
                   <input type="hidden" name="end" value="<?php echo $_GET['end']; ?>">

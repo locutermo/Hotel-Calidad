@@ -22,8 +22,9 @@ if(count($_POST)>0){
 
 	$contacto->add();
 	$id = $_POST["id_persona"];
+	$safeid= htmlspecialchars($id);
 
-print "<script>window.location='index.php?view=contacto&id=$id';</script>";
+print "<script>window.location='index.php?view=contacto&id=$safeid';</script>";
 
 
 }

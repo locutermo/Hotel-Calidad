@@ -13,7 +13,7 @@ if(count($_POST)>0){
  	}else{$id_caja='NULL';}
 
 	$proceso = new ProcesoSueldoData();
-	$proceso->id_sueldo = $_POST['id_sueldo'];
+	$proceso->id_sueldo = htmlspecialchars($_POST['id_sueldo']);
     $proceso->id_caja = $id_caja;
     $proceso->monto = $_POST['monto'];
     $proceso->fecha = $_POST['end'];

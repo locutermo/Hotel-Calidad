@@ -16,10 +16,12 @@
 
   <!-- col -->
   <div class="col-md-12">
-    <?php if(isset($_GET['id']) and $_GET['id']!=""){ ?>
+    <?php 
+      $safeid= htmlspecialchars($_GET['id']);
+      if(isset($safeid) and $safeid!=""){ ?>
     <section class="tile">
       <div class="tile-header dvd dvd-btm">    
-        <?php $habitacion = HabitacionData::getById($_GET["id"]); ?>
+        <?php $habitacion = HabitacionData::getById($safeid); ?>
         <h1 class="custom-font"><strong>TARIFAS DE LA HABITACIÓN</strong> <?php echo $habitacion->nombre; ?></h1>
         <ul class="controls">
           <li class="remove">
@@ -59,7 +61,7 @@
         </div>
 
 
-              <?php $tarifas_ha = TarifaHabitacionData::getAllHabitacion($_GET['id']);
+              <?php $tarifas_ha = TarifaHabitacionData::getAllHabitacion($safeid);
                 if(count($tarifas_ha)>0){
                   // si hay usuarios
                   ?>
@@ -134,7 +136,7 @@
                     </div>
                   </div>
 
-                  <input type="hidden" name="id_habitacion" value="<?php echo $_GET['id']; ?>">
+                  <input type="hidden" name="id_habitacion" value="<?php echo $safeid; ?>">
 
                     
                     
