@@ -1,6 +1,6 @@
 <?php 
 $safeid= htmlspecialchars($_GET['id']);
-if(isset($safeid) and $safeid!=""){ ?>
+if(isset($safeid) && $safeid!=""){ ?>
 <link rel="stylesheet" href="assets/js/vendor/footable/css/footable.core.min.css">
 <body id="minovate" class="appWrapper sidebar-sm-forced">
 <div class="row">
