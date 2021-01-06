@@ -43,7 +43,7 @@
                     <a class="brand" href="./">
                         <span><strong>HOTEL</strong></span>
                     </a>
-                    <a href="#" class="offcanvas-toggle visible-xs-inline"><em class="fa fa-bars"></em></a>
+                    <a href="#" class="offcanvas-toggle visible-xs-inline"><i class="fa fa-bars"></i></a>
                 </div>
                 <!-- Branding end -->
                 <!-- Left-side navigation -->
@@ -68,7 +68,7 @@
                     <li class="dropdown nav-profile">
                         <a href class="dropdown-toggle" data-toggle="dropdown">
                             <img src="assets/images/profile-photo.jpg" alt="" class="img-circle size-30x30">
-                            <span><?php if(isset($_SESSION["user_id"])) { echo UserData::getById($_SESSION["user_id"])->name; }?><em class="fa fa-angle-down"></em></span>
+                            <span><?php if(isset($_SESSION["user_id"])) { echo UserData::getById($_SESSION["user_id"])->name; }?><i class="fa fa-angle-down"></i></span>
                         </a>
 
                         <ul class="dropdown-menu animated littleFadeInRight" role="menu">
@@ -96,7 +96,7 @@
                             <div class="panel-heading" role="tab">
                                 <h4 class="panel-title">
                                     <a data-toggle="collapse" href="#sidebarNav">
-                                        Navegación <em class="fa fa-angle-up"></em>
+                                        Navegación <i class="fa fa-angle-up"></i>
                                     </a>
                                 </h4>
                             </div>
@@ -107,36 +107,36 @@
                                         $u = UserData::getById(Session::getUID());
                                     ?>
                                     <ul id="navigation">
-                                        <li class="<?php if($_GET['view']=='reserva'){ echo 'active';} ?>"><a href="./?view=reserva"><em class="fa fa-calendar"></em> <span>Reserva</span></a></li>
+                                        <li class="<?php if($_GET['view']=='reserva'){ echo 'active';} ?>"><a href="./?view=reserva"><i class="fa fa-calendar"></i> <span>Reserva</span></a></li>
                                         <li class="<?php if($_GET['view']=='recepcion'){ echo 'active';} ?>">
-                                            <a href="index.php?view=recepcion"><em class="fa fa-sign-in"></em> <span>Recepción</span> <span class="badge bg-lightred">6</span></a>
+                                            <a href="index.php?view=recepcion"><i class="fa fa-sign-in"></i> <span>Recepción</span> <span class="badge bg-lightred">6</span></a>
                                                
                                         </li>
                                         <li class="<?php if($_GET['view']=='productos' or $_GET['view']=='venta' ){ echo 'active';} ?>">
                                             <a role="button" tabindex="0"><em class="fa fa-arrow-circle-right"></em> <span>Punto de venta</span></a>
                                             <ul>
-                                                <li><a href="./?view=venta"><em class="fa fa-caret-right"></em> Vender</a></li>
-                                                <li><a href="./?view=productos"><em class="fa fa-caret-right"></em> Productos</a></li>
-                                                 <li><a href="./?view=pre_reporte_rango_producto"><em class="fa fa-caret-right"></em> Reporte por rango productos</a></li>
+                                                <li><a href="./?view=venta"><i class="fa fa-caret-right"></i> Vender</a></li>
+                                                <li><a href="./?view=productos"><i class="fa fa-caret-right"></i> Productos</a></li>
+                                                 <li><a href="./?view=pre_reporte_rango_producto"><i class="fa fa-caret-right"></i> Reporte por rango productos</a></li>
                                                 <!--
                                                 <li><a href="./?view=proveedores"><i class="fa fa-caret-right"></i> Proveedores</a></li>
                                             -->
                                             </ul>
                                         </li>
                                         <li class="<?php if($_GET['view']=='kardex' or $_GET['view']=='compra' or $_GET['view']=='lista_compra'  ){ echo 'active';} ?> ">
-                                            <a role="button" tabindex="0"><em class="fa fa-edit"></em> <span>Inventario</span></a>
+                                            <a role="button" tabindex="0"><i class="fa fa-edit"></i> <span>Inventario</span></a>
                                             <ul>
-                                                <li><a href="./?view=kardex"><em class="fa fa-caret-right"></em> Kardex</a></li>
-                                                <li><a href="./?view=compra"><em class="fa fa-caret-right"></em> Reabastecer</a></li>
-                                                <li><a href="./?view=lista_compra"><em class="fa fa-caret-right"></em> Consulta compra por fecha</a></li>
+                                                <li><a href="./?view=kardex"><i class="fa fa-caret-right"></i> Kardex</a></li>
+                                                <li><a href="./?view=compra"><i class="fa fa-caret-right"></i> Reabastecer</a></li>
+                                                <li><a href="./?view=lista_compra"><i class="fa fa-caret-right"></i> Consulta compra por fecha</a></li>
                                             </ul>
                                         </li>
                                         <li class="<?php if($_GET['view']=='apertura_caja'){ echo 'active';} ?>">
                                             <a role="button" tabindex="0"><em class="fa fa-cube"></em> <span>Módulo caja</span></a>
                                             <ul>
-                                                <li><a href="./?view=apertura_caja"><em class="fa fa-caret-right"></em> Apertura caja</a></li>
-                                                <li><a href="./?view=cierre_caja"><em class="fa fa-caret-right"></em> Cierre caja</a></li>
-                                                <li><a href="./?view=reporte_caja"><em class="fa fa-caret-right"></em> Resumen liquidación</a></li>
+                                                <li><a href="./?view=apertura_caja"><i class="fa fa-caret-right"></i> Apertura caja</a></li>
+                                                <li><a href="./?view=cierre_caja"><i class="fa fa-caret-right"></i> Cierre caja</a></li>
+                                                <li><a href="./?view=reporte_caja"><i class="fa fa-caret-right"></i> Resumen liquidación</a></li>
                                             </ul>
                                         </li>
                                         <li class="<?php if($_GET['view']=='egreso' or $_GET['view']=='egresos' or $_GET['view']=='reporte_gasto'){ echo 'active';} ?>">
@@ -144,7 +144,7 @@
                                           <ul>
                                             <li><a href="index.php?view=egreso"><em class="fa fa-table"></em> <span>Nuevo egreso</span></a></li>
                                             <li><a href="./?view=egresos"> <emclass="fa fa-caret-right"></em>  Lista egresos</a></li>
-                                            <li><a href="./?view=reporte_gasto"> <em class="fa fa-caret-right"></em>  Reportes por fechas</a></li>
+                                            <li><a href="./?view=reporte_gasto"> <i class="fa fa-caret-right"></i>  Reportes por fechas</a></li>
                                           </ul>
                                         </li>
                                             <!--
@@ -159,32 +159,32 @@
                                             <li class="<?php if($_GET['view']=='habitacion' or $_GET['view']=='categoria' or $_GET['view']=='tarifa'){ echo 'active';} ?>">
                                               <a role="button" tabindex="0"><em class='fa fa-database'></em> <span>Configuración</span> </a>
                                               <ul>
-                                                <li><a href="./?view=habitacion"> <em class="fa fa-caret-right"></em>  Habitaciones</a></li>
-                                                <li><a href="./?view=categoria"> <em class="fa fa-caret-right"></em>  Categorías</a></li>
-                                                <li><a href="./?view=tarifa"> <em class="fa fa-caret-right"></em>  Tarifas</a></li>
+                                                <li><a href="./?view=habitacion"> <i class="fa fa-caret-right"></i>  Habitaciones</a></li>
+                                                <li><a href="./?view=categoria"> <i class="fa fa-caret-right"></i>  Categorías</a></li>
+                                                <li><a href="./?view=tarifa"> <i class="fa fa-caret-right"></i>  Tarifas</a></li>
                                               </ul>
                                             </li>
                                             <li class="<?php if($_GET['view']=='cliente'){ echo 'active';} ?>">
-                                                <a href="index.php?view=cliente"><em class="fa fa-users"></em> <span>Clientes</span></a>
+                                                <a href="index.php?view=cliente"><i class="fa fa-users"></i> <span>Clientes</span></a>
                                             </li>
                                         <?php endif;?>
                                         <!-- <li>
                                             <a  role="button" tabindex="0"><i class='fa fa-file-text-o'></i> <span>Reportes</span></a>
                                             <ul>
-                                                <li><a href="./?view=pre_reporte_rango"><em class="fa fa-caret-right"></em> Reporte detallado cliente</a></li>
-                                                <li><a href="./?view=reporte_diario"><em class="fa fa-caret-right"></em> Reporte diario</a></li>
-                                                <li><a href="./?view=reporte_user"><em class="fa fa-caret-right"></em> Reporte Recepcionista</a></li>
-                                                <li><a href="./?view=reporte_caja"><em class="fa fa-caret-right"></em> Reporte de caja</a></li>
-                                                <li><a href="./?view=reporte_estado"><em class="fa fa-caret-right"></em> Reporte estado habitación</a></li>
-                                                <li><a href="./?view=reporte_mensual"><em class="fa fa-caret-right"></em> Reporte de mensual</a></li>
+                                                <li><a href="./?view=pre_reporte_rango"><i class="fa fa-caret-right"></i> Reporte detallado cliente</a></li>
+                                                <li><a href="./?view=reporte_diario"><i class="fa fa-caret-right"></i> Reporte diario</a></li>
+                                                <li><a href="./?view=reporte_user"><i class="fa fa-caret-right"></i> Reporte Recepcionista</a></li>
+                                                <li><a href="./?view=reporte_caja"><i class="fa fa-caret-right"></i> Reporte de caja</a></li>
+                                                <li><a href="./?view=reporte_estado"><i class="fa fa-caret-right"></i> Reporte estado habitación</a></li>
+                                                <li><a href="./?view=reporte_mensual"><i class="fa fa-caret-right"></i> Reporte de mensual</a></li>
                                             </ul>
                                         </li> -->
                                         <!-- <li>
                                             <a  role="button" tabindex="0"><i class='fa fa-bar-chart-o'></i> <span>Gráficos</span></a>
                                             <ul>
-                                                <li><a href="./?view=pre_reporte_fecha_barra"><em class="fa fa-caret-right"></em> Reporte por fecha</a></li>
-                                                <li><a href="./?view=pre_reporte_fecha_circular"><em class="fa fa-caret-right"></em> Reporte Circular</a></li>
-                                                <li><a href="./?view=pre_reporte_anio_barra"><em class="fa fa-caret-right"></em> Reporte Anual</a></li>
+                                                <li><a href="./?view=pre_reporte_fecha_barra"><i class="fa fa-caret-right"></i> Reporte por fecha</a></li>
+                                                <li><a href="./?view=pre_reporte_fecha_circular"><i class="fa fa-caret-right"></i> Reporte Circular</a></li>
+                                                <li><a href="./?view=pre_reporte_anio_barra"><i class="fa fa-caret-right"></i> Reporte Anual</a></li>
                                             </ul>
                                         </li> -->
                                         <?php

@@ -12,7 +12,7 @@
          title="Solo puede ingresar 8 números">
                   <input type="hidden" id="id">
                   <div class="input-group-addon">
-                      <em class="fa fa-search-plus"></em>
+                      <i class="fa fa-search-plus"></i>
                     </div>
                 </div>
                 <!-- /.input group -->
@@ -30,7 +30,7 @@
                   <input type="text" class="form-control" name="documento" id="documento" required="required" placeholder="Ingrese documento para buscar">
                   <input type="hidden" id="id">
                   <div class="input-group-addon">
-                      <em class="fa fa-search-plus"></em>
+                      <i class="fa fa-search-plus"></i>
                     </div>
                 </div>
                 <!-- /.input group -->
@@ -47,7 +47,7 @@
                   <input type="text" class="form-control" name="documento" id="documento" required="required" placeholder="Ingrese documento para buscar">
                   <input type="hidden" id="id">
                   <div class="input-group-addon">
-                      <em class="fa fa-search-plus"></em>
+                      <i class="fa fa-search-plus"></i>
                     </div>
                 </div>
                 <!-- /.input group -->
@@ -64,7 +64,7 @@
                   <input type="text" class="form-control" name="documento" id="documento" required="required" placeholder="Ingrese documento para buscar">
                   <input type="hidden" id="id">
                   <div class="input-group-addon">
-                      <em class="fa fa-search-plus"></em>
+                      <i class="fa fa-search-plus"></i>
                     </div>
                 </div>
                 <!-- /.input group -->

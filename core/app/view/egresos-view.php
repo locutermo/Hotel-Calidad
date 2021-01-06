@@ -4,7 +4,7 @@
 <div class="row">
 <section class="content-header">
     <ol class="breadcrumb">
-      <li><a href="index.php?view=reserva"><em class="fa fa-home"></em> Inicio</a></li>
+      <li><a href="index.php?view=reserva"><i class="fa fa-home"></i> Inicio</a></li>
       <li class="active"><a href="#">Egresos</a></li>
     </ol>
 </section> 
@@ -36,7 +36,7 @@
                 } ?> 
                 <?php  
                 if(count($gastos)>0){  ?>
-                  <table id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
+                  <table summary="Mi tabla" aria-describedby="descripcion" id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
 
                   <thead style="color: black; background-color: #d2d6de;">
                         <th scope = "col">Nº</th> 
@@ -147,7 +147,7 @@
                 } ?> 
                 <?php  
                 if(count($gastos)>0){  ?>
-                  <table id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
+                  <table summary="Mi tabla" aria-describedby="descripcion" id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
 
                   <thead style="color: black; background-color: #d2d6de;">
                         <th scope = "col">Nº</th> 

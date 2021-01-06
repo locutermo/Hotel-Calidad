@@ -1,10 +1,12 @@
-<?php if(isset($_GET['id']) and $_GET['id']!=""){ ?>
+<?php 
+$safeid= htmlspecialchars($_GET['id']);
+if(isset($safeid) and $safeid!=""){ ?>
 <link rel="stylesheet" href="assets/js/vendor/footable/css/footable.core.min.css">
 <body id="minovate" class="appWrapper sidebar-sm-forced">
 <div class="row">
 <section class="content-header">
     <ol class="breadcrumb">
-      <li><a href="index.php?view=reserva"><em class="fa fa-home"></em> Inicio</a></li>
+      <li><a href="index.php?view=reserva"><i class="fa fa-home"></i> Inicio</a></li>
       <li class="active"><a href="#">Contactos</a></li>
     </ol>
 </section> 
@@ -28,8 +30,8 @@
             <ul class="dropdown-menu pull-right with-arrow animated littleFadeInUp">
                 <li>
                   <a role="button" tabindex="0" class="tile-toggle">
-                  <span class="minimize"><em class="fa fa-angle-down"></em>&nbsp;&nbsp;&nbsp;Minimize</span>
-                  <span class="expand"><em class="fa fa-angle-up"></em>&nbsp;&nbsp;&nbsp;Expand</span>
+                  <span class="minimize"><i class="fa fa-angle-down"></i>&nbsp;&nbsp;&nbsp;Minimize</span>
+                  <span class="expand"><i class="fa fa-angle-up"></i>&nbsp;&nbsp;&nbsp;Expand</span>
                   </a>
                 </li>
                 <li>
@@ -44,7 +46,7 @@
                 </li>
             </ul>
           </li>
-          <li class="remove"><a role="button" tabindex="0" class="tile-close"><em class="fa fa-times"></em></a></li>
+          <li class="remove"><a role="button" tabindex="0" class="tile-close"><i class="fa fa-times"></i></a></li>
         </ul>
       </div>
       <!-- tile body -->
@@ -54,9 +56,9 @@
           <input id="filter" type="text" class="form-control input-sm w-sm mb-12 inline-block"/>
         </div>
         <?php 
-        $contactos = ContactoData::getAllCliente($_GET['id']); 
+        $contactos = ContactoData::getAllCliente($safeid); 
         if(count($contactos)>0){  ?>
-        <table id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
+        <table summary="Mi tabla" aria-describedby="descripcion" id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
             <thead style="color: white; background-color: #827e7e;">
                 <tr>
                   <th scope = "col">Nº</th> 
@@ -140,7 +142,7 @@
               </div>
               <div class="modal-footer">
                 <input type="hidden" name="id_contacto" value="<?php echo $cliente->id; ?>">
-                <input type="hidden" name="id_persona" value="<?php echo $_GET['id']; ?>">
+                <input type="hidden" name="id_persona" value="<?php echo $safeid; ?>">
                 <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Cerrar</button>
                 <button type="submit" class="btn btn-outline">Actualizar Datos</button>
               </div>

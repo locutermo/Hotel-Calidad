@@ -1,7 +1,7 @@
 
 
  <?php $operacion = ProcesoData::getById($_GET['id']);
-     if(count($operacion)>0){
+     if(isset($operacion)){
  ?>
             <!-- ====================================================
             ================= CONTENT ===============================
@@ -18,7 +18,7 @@
 
                             <ul class="page-breadcrumb">
                                 <li>
-                                    <a href="index.php?view=reserva"><em class="fa fa-home"></em> Inicio</a>
+                                    <a href="index.php?view=reserva"><i class="fa fa-home"></i> Inicio</a>
                                 </li>
                                 <li>
                                     <a href="#">Check out</a>
@@ -36,7 +36,7 @@
 
                         <?php 
                         $configuracion = ConfiguracionData::getAllConfiguracion(); 
-                        if(count($configuracion)>0){ 
+                        if(isset($configuracion)){ 
                           $nombre=$configuracion->nombre;
                           $direccion=$configuracion->direccion;
                           $estado=$configuracion->estado;
@@ -67,11 +67,7 @@
                             <div class="nav-heading">
                                 <h3>TICKET NRO : <strong class="text-greensea">#0000<?php echo $operacion->id; ?></strong></h3>
                                 <span class="controls pull-right">
-                                  <a href="index.php?view=recepcion" class="btn btn-ef btn-ef-1 btn-ef-1-default btn-ef-1a btn-rounded-20 mr-5" data-toggle="tooltip" title="Recepción"><em class="fa fa-times"></em></a>
-                                  <!--
-                                  <a href="javascript:;" class="btn btn-ef btn-ef-1 btn-ef-1-default btn-ef-1a btn-rounded-20 mr-5" data-toggle="tooltip" title="Send"><i class="fa fa-envelope"></i></a>
-                                  -->
-                                  <a href="reporte/ticket.php?id=<?php echo $_GET['id']; ?>" target="_blanck" class="btn btn-ef btn-ef-1 btn-ef-1-default btn-ef-1a btn-rounded-20" data-toggle="tooltip" title="Imprimir"><em class="fa fa-print"></em></a>
+                                  <a href="index.php?view=recepcion" class="btn btn-ef btn-ef-1 btn-ef-1-default btn-ef-1a btn-rounded-20 mr-5" data-toggle="tooltip" title="Recepción"><i class="fa fa-times"></i></a>
                                 </span>
                             </div>
 
@@ -182,7 +178,7 @@
                                                     <div class="tile-body p-0">
 
                                                         <div class="table-responsive">
-                                                            <table class="table table-hover table-striped">
+                                                            <table summary="Mi tabla" aria-describedby="descripcion" class="table table-hover table-striped">
                                                                 <thead>
                                                                 <tr>
                                                                     <th scope = "col">CANT.</th>

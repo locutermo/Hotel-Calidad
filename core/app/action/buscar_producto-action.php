@@ -12,7 +12,7 @@
                     <input id="filter" type="text" class="form-control input-sm w-sm mb-12 inline-block"/>
                   </div>
 
-                  <table id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
+                  <table summary="Mi tabla" aria-describedby="descripcion" id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
 
                   <thead style="color: white; background-color: #dd4b39;">
                         <th scope = "col">CÓDIGO</th> 
@@ -63,7 +63,7 @@
               					</td> 
                          
                         <?php if($stock<=0){ ?>
-                         <td><span class="pull-right"><a href="#" class="btn btn-danger" data-dismiss="modal"><em class="fa fa-warning"></em> Sin stock</a></span></td>
+                         <td><span class="pull-right"><a href="#" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-warning"></i> Sin stock</a></span></td>
                         <?php }else{ ?>
                         <td><span class="pull-right"><a href="#" onclick="agregar('<?php echo $producto->id; ?>')" class="btn btn-success" data-dismiss="modal"><em class="glyphicon glyphicon-plus-sign"></em> Agregar</a></span></td>
                         <?php }; ?>

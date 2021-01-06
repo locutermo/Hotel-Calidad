@@ -43,7 +43,7 @@ $hora = date("H:i:s");
 
               
               <?php $operacion = ProcesoData::getById($_GET['id']);
-                if(count($operacion)>0){
+                if(isset($operacion)){
                   // si hay usuarios
                   ?>
                    <div class="col-md-5">
@@ -52,7 +52,7 @@ $hora = date("H:i:s");
                   </tr> 
                 </div>
                   <div class="col-md-5 pull-right">
-                        <table class="table table-bordered table-hover">
+                        <table summary="Mi tabla" aria-describedby="descripcion" class="table table-bordered table-hover">
                               <tr>
                                 <td>R.U.C 101010101010</td>
                               </tr> 
@@ -74,7 +74,7 @@ $hora = date("H:i:s");
                   <h4>DIRECCIÓN: <?php echo $operacion->getCliente()->direccion; ?></h4>
                   <h4>DOCUMENTO: <?php echo $operacion->getCliente()->documento; ?></h4>
 
-                  <table class="table table-bordered table-hover">
+                  <table summary="Mi tabla" aria-describedby="descripcion" class="table table-bordered table-hover">
 
                   <thead style="color: white; background-color: #dd4b39;">
                         <th scope = "col">CANT.</th>
