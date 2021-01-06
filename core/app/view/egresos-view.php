@@ -4,7 +4,7 @@
 <div class="row">
 <section class="content-header">
     <ol class="breadcrumb">
-      <li><a href="index.php?view=reserva"><i class="fa fa-home"></i> Inicio</a></li>
+      <li><a href="index.php?view=reserva"><span class="fa fa-home"></span> Inicio</a></li>
       <li class="active"><a href="#">Egresos</a></li>
     </ol>
 </section> 
@@ -24,7 +24,7 @@
               <li class="active"><a href="#tab_1" data-toggle="tab">Lista de egresos</a></li>
               <li><a href="#tab_2" data-toggle="tab">Egresos anulados</a></li>
               <!--
-              <li class="pull-right text-red"><a href="reporte/pdf/documentos/reporte_diario.php" target="_blank" class="text-muted"><i class="fa fa-print"></i> IMPRIMIR</a></li>
+              <li class="pull-right text-red"><a href="reporte/pdf/documentos/reporte_diario.php" target="_blank" class="text-muted"><span class="fa fa-print"></span> IMPRIMIR</a></li>
             -->
             </ul>
             <div class="tab-content">

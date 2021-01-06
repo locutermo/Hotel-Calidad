@@ -4,7 +4,7 @@
 <div class="row">
 <section class="content-header">
     <ol class="breadcrumb">
-      <li><a href="index.php?view=reserva"><i class="fa fa-home"></i> Inicio</a></li>
+      <li><a href="index.php?view=reserva"><span class="fa fa-home"></span> Inicio</a></li>
       <li class="active"><a href="#">Proveedores</a></li>
     </ol>
 </section> 
@@ -28,8 +28,8 @@
             <ul class="dropdown-menu pull-right with-arrow animated littleFadeInUp">
                 <li>
                   <a role="button" tabindex="0" class="tile-toggle">
-                  <span class="minimize"><i class="fa fa-angle-down"></i>&nbsp;&nbsp;&nbsp;Minimize</span>
-                  <span class="expand"><i class="fa fa-angle-up"></i>&nbsp;&nbsp;&nbsp;Expand</span>
+                  <span class="minimize"><span class="fa fa-angle-down"></span>&nbsp;&nbsp;&nbsp;Minimize</span>
+                  <span class="expand"><span class="fa fa-angle-up"></span>&nbsp;&nbsp;&nbsp;Expand</span>
                   </a>
                 </li>
                 <li>
@@ -44,7 +44,7 @@
                 </li>
             </ul>
           </li>
-          <li class="remove"><a role="button" tabindex="0" class="tile-close"><i class="fa fa-times"></i></a></li>
+          <li class="remove"><a role="button" tabindex="0" class="tile-close"><span class="fa fa-times"></span></a></li>
         </ul>
       </div>
       <!-- tile body -->

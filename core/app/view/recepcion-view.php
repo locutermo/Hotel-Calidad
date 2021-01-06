@@ -4,7 +4,7 @@
 <div class="row">
 <section class="content-header">
     <ol class="breadcrumb">
-      <li><a href="index.php?view=reserva"><i class="fa fa-home"></i> Inicio</a></li>
+      <li><a href="index.php?view=reserva"><span class="fa fa-home"></span> Inicio</a></li>
       <li class="active"><a href="#">recepción</a></li>
     </ol>
 </section> 

@@ -18,7 +18,7 @@
 
                             <ul class="page-breadcrumb">
                                 <li>
-                                    <a href="index.php?view=reserva"><i class="fa fa-home"></i> Inicio</a>
+                                    <a href="index.php?view=reserva"><span class="fa fa-home"></span> Inicio</a>
                                 </li>
                                 <li>
                                     <a href="#">Check out</a>
@@ -39,11 +39,11 @@
                             <div class="nav-heading">
                                 <h3>FACTURA NRO : <strong class="text-greensea">#0000<?php echo $operacion->id; ?></strong></h3>
                                 <span class="controls pull-right">
-                                  <a href="index.php?view=recepcion" class="btn btn-ef btn-ef-1 btn-ef-1-default btn-ef-1a btn-rounded-20 mr-5" data-toggle="tooltip" title="Recepción"><i class="fa fa-times"></i></a>
+                                  <a href="index.php?view=recepcion" class="btn btn-ef btn-ef-1 btn-ef-1-default btn-ef-1a btn-rounded-20 mr-5" data-toggle="tooltip" title="Recepción"><span class="fa fa-times"></span></a>
                                   <!--
-                                  <a href="javascript:;" class="btn btn-ef btn-ef-1 btn-ef-1-default btn-ef-1a btn-rounded-20 mr-5" data-toggle="tooltip" title="Send"><i class="fa fa-envelope"></i></a>
+                                  <a href="javascript:;" class="btn btn-ef btn-ef-1 btn-ef-1-default btn-ef-1a btn-rounded-20 mr-5" data-toggle="tooltip" title="Send"><span class="fa fa-envelope"></span></a>
                                   -->
-                                  <a href="javascript:window.print()" class="btn btn-ef btn-ef-1 btn-ef-1-default btn-ef-1a btn-rounded-20" data-toggle="tooltip" title="Imprimir"><i class="fa fa-print"></i></a>
+                                  <a href="javascript:window.print()" class="btn btn-ef btn-ef-1 btn-ef-1-default btn-ef-1a btn-rounded-20" data-toggle="tooltip" title="Imprimir"><span class="fa fa-print"></span></a>
                                 </span>
                             </div>
 

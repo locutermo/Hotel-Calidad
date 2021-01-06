@@ -24,7 +24,7 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
         <small>Avance</small>
       </h3> 
       <ol class="breadcrumb">
-        <li><a href="index.php?view=reserva"><i class="fa fa-home"></i> Inicio</a></li>
+        <li><a href="index.php?view=reserva"><span class="fa fa-home"></span> Inicio</a></li>
         <li><a href="#">Reportes</a></li>
         <li class="active">Reporte productos</li>
       </ol>
