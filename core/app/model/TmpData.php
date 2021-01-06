@@ -4,7 +4,7 @@ class TmpData {
 
 
 
-	public function TmpData(){
+	public function __construct(){
 		$this->cantidad_tmp = "";
 		$this->precio_tmp = "";
 		

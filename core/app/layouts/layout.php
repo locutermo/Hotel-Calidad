@@ -168,8 +168,8 @@
                                                 <a href="index.php?view=cliente"><em class="fa fa-users"></em> <span>Clientes</span></a>
                                             </li>
                                         <?php endif;?>
-                                        <li>
-                                            <a  role="button" tabindex="0"><em class='fa fa-file-text-o'></em> <span>Reportes</span></a>
+                                        <!-- <li>
+                                            <a  role="button" tabindex="0"><i class='fa fa-file-text-o'></i> <span>Reportes</span></a>
                                             <ul>
                                                 <li><a href="./?view=pre_reporte_rango"><em class="fa fa-caret-right"></em> Reporte detallado cliente</a></li>
                                                 <li><a href="./?view=reporte_diario"><em class="fa fa-caret-right"></em> Reporte diario</a></li>
@@ -178,15 +178,15 @@
                                                 <li><a href="./?view=reporte_estado"><em class="fa fa-caret-right"></em> Reporte estado habitación</a></li>
                                                 <li><a href="./?view=reporte_mensual"><em class="fa fa-caret-right"></em> Reporte de mensual</a></li>
                                             </ul>
-                                        </li>
-                                        <li>
-                                            <a  role="button" tabindex="0"><em class='fa fa-bar-chart-o'></em> <span>Gráficos</span></a>
+                                        </li> -->
+                                        <!-- <li>
+                                            <a  role="button" tabindex="0"><i class='fa fa-bar-chart-o'></i> <span>Gráficos</span></a>
                                             <ul>
                                                 <li><a href="./?view=pre_reporte_fecha_barra"><em class="fa fa-caret-right"></em> Reporte por fecha</a></li>
                                                 <li><a href="./?view=pre_reporte_fecha_circular"><em class="fa fa-caret-right"></em> Reporte Circular</a></li>
                                                 <li><a href="./?view=pre_reporte_anio_barra"><em class="fa fa-caret-right"></em> Reporte Anual</a></li>
                                             </ul>
-                                        </li>
+                                        </li> -->
                                         <?php
                                             $u=null; 
                                             $u = UserData::getById(Session::getUID());
@@ -195,9 +195,9 @@
                                             <li class="<?php if($_GET['view']=='users'){ echo 'active';} ?>">
                                                 <a href="#"><em class='fa fa-cog'></em> <span>Administracion</span> </a>
                                                 <ul>
-                                                    <li><a href="./?view=users"><em class="fa fa-caret-right"></em> Usuarios</a></li>
-                                                    <li><a href="./?view=configuracion"><em class="fa fa-caret-right"></em> Configuración</a></li>
-                                                    <li><a href="./?view=backup"><em class="fa fa-database"></em> Respaldo base de datos</a></li>
+                                                    <li><a href="./?view=users"><i class="fa fa-caret-right"></i> Usuarios</a></li>
+                                                    <li><a href="./?view=configuracion"><i class="fa fa-caret-right"></i> Configuración</a></li>
+                                                    <!-- <li><a href="./?view=backup"><i class="fa fa-database"></i> Respaldo base de datos</a></li> -->
                                                     <!--
                                                      <li><a href="./?view=configuracion"><i class="fa fa-caret-right"></i> Configurar</a></li>
                                                     -->

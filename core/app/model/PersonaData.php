@@ -3,7 +3,7 @@ class PersonaData {
 
 	public static $tablename = "persona";
 
-	public function PersonaData()
+	public function __construct()
     {
         $this->id = '';
 		$this->documento = ""; 

@@ -4,7 +4,7 @@ class HabitacionData {
 
 
 
-	public function HabitacionData(){
+	public function __construct(){
 		$this->nombre = ""; 
 		$this->descripcion = "";
 		$this->fecha_creada = "NOW()";

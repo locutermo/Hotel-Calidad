@@ -69,9 +69,7 @@ $(function() {
           defaultNavbarScheme = 'scheme-default',
           defaultBrandingScheme = 'scheme-default',
           defaultColorScheme = 'default-scheme-color',
-          defaultHeaderPosition = 'header-fixed',
           defaultNavbarPosition = 'aside-fixed',
-          defaultRightbarVisibility = 'rightbar-hidden',
           defaultAppClasses = 'scheme-default default-scheme-color header-fixed aside-fixed rightbar-hidden';
 
       $body.addClass(defaultAppClasses);
@@ -384,9 +382,6 @@ $(function() {
         tile.addClass('refreshing');
         dropdown.trigger('click');
 
-        var t = setTimeout( function(){
-          tile.removeClass('refreshing');
-        }, 3000 );
       });
     },
 
@@ -629,7 +624,7 @@ $(function() {
 		},
 
     popover: function() {
-      $popoverEl = $('[data-toggle="popover"]');
+      var $popoverEl = $('[data-toggle="popover"]');
       if ($popoverEl.length > 0) {
         $popoverEl.each(function() {
           var element = $(this);
@@ -640,7 +635,7 @@ $(function() {
     },
 
     tooltip: function() {
-      $tooltipEl = $('[data-toggle="tooltip"]');
+      var $tooltipEl = $('[data-toggle="tooltip"]');
       if ($tooltipEl.length > 0) {
         $tooltipEl.each(function() {
           var element = $(this);
@@ -761,13 +756,6 @@ $(function() {
 
 		init: function(){
 
-      var t = setTimeout( function(){
-
-        MINOVATE.documentOnReady.setSidebar();
-        MINOVATE.navbar.removeRipple();
-
-			}, 500 );
-
 		}
 
 	};
@@ -806,7 +794,7 @@ $(function() {
 
     setSidebar: function() {
 
-      width = $window.width();
+      var width = $window.width();
 
       if (width < 992) {
         $app.addClass('sidebar-sm');
@@ -891,7 +879,6 @@ $(function() {
       $toggleRightbarEl = $('.toggle-right-sidebar'),
       $pickDateEl = $('.pickDate'),
 
-      $tileEl = $('.tile'),
       $tileToggleEl = $('.tile .tile-toggle'),
       $tileRefreshEl = $('.tile .tile-refresh'),
       $tileFullscreenEl = $('.tile .tile-fullscreen'),
