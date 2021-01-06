@@ -9543,7 +9543,7 @@ button:focus {
 .myIcon.icon-success.icon-color {
   color: #5cb85c;
 }
-
+  
 .myIcon.icon-success:before {
   background-color: #5cb85c;
 }
