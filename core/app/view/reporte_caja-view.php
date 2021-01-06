@@ -174,8 +174,6 @@ if($id_caja!=0){
                 <tr>
                     <th scope="col" id="1">_</th>
                     <th scope="col" id="2">_</th>
-                    <th scope="col" id="3">_</th>
-                    <th scope="col" id="4">_</th>
                 </tr>
                   <tr>
                       <td><h5>FECHA:</h5></td>

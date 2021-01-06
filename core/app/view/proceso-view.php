@@ -87,6 +87,14 @@ $(function() {
             <div class="box-body">
               <div class="table-responsive">
                 <table summary="Mi tabla" aria-describedby="descripcion" class="table no-margin">
+                  <thead>
+                    <tr> 
+                      <th scope="col" id="1">_</th>
+                      <th scope="col" id="2">_</th>
+                      <th scope="col" id="3">_</th>
+                      <th scope="col" id="4">_</th>
+                    </tr>                    
+                </thead>
                   <tbody style="padding: 0px;">
                   <tr style="padding: 0px;">
                     <td><h4 class="text-primary" style="margin-top: 0px !important;">Nombre:</h4></td>
