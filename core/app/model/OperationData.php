@@ -113,6 +113,7 @@ class OperationData {
 
 	public static function getAllByProductIdCutIdYesF($product_id,$cut_id){
 		$sql = "select * from ".self::$tablename." where product_id=$product_id and cut_id=$cut_id order by created_at desc";
+		$query = Executor::doit($sql);
 		return Model::many($query[0],new OperationData());
 	}
 

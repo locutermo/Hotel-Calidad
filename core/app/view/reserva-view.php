@@ -3,7 +3,7 @@
 <head>
 
 <meta charset='utf-8' />
-
+  <title>HOTEL</title>
 <script src='lib/locale/es.js'></script>
 <!-- jQuery 2.2.3 -->
 <script src="js/jquery-2.2.3.min.js"></script>
