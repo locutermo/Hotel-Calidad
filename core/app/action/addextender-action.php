@@ -45,8 +45,8 @@ $operacion_n->add();
 
                     </tbody> 
                     <tfoot>
-                      <th colspan="4"><strong class="pull-right">Sub-total</strong></th>
-                      <th><strong><button class="btn btn-primary"> <strong>$  <?php echo number_format($total,2,'.',','); ?></strong></button></strong></th>
+                      <th id="subtotal" colspan="4"><strong class="pull-right">Sub-total</strong></th>
+                      <th id="boton"><strong><button class="btn btn-primary"> <strong>$  <?php echo number_format($total,2,'.',','); ?></strong></button></strong></th>
                     </tfoot>
                    
                   </table>
