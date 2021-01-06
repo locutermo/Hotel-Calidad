@@ -12,7 +12,6 @@ if(isset($safeid) && $safeid!=""){ ?>
 </section> 
 </div> 
 
- <!-- row --> 
 <div class="row">
   <!-- col -->
   <div class="col-md-12">
