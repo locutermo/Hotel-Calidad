@@ -233,7 +233,7 @@ $(function() {
         var $submenus = $dropdowns.find('ul >.dropdown');
         $submenus.addClass('submenu');
 
-        $a.append('<i class="fa fa-plus"></i>');
+        $a.append('<span class="fa fa-plus"></span>');
 
         $a.on('click', function(event) {
           if ($app.hasClass('sidebar-sm') || $app.hasClass('sidebar-xs') || $app.hasClass('hz-menu')) {

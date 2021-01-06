@@ -18,7 +18,7 @@ date_default_timezone_set('America/Lima');
 <div class="row">
 <section class="content-header">
     <ol class="breadcrumb">
-      <li><a href="index.php?view=reserva"><i class="fa fa-home"></i> Inicio</a></li>
+      <li><a href="index.php?view=reserva"><span class="fa fa-home"></span> Inicio</a></li>
       <li><a href="javascript:;">Pagos</a></li>
       <li class="active"><a href="#">Pagos a trabajador</a></li>
     </ol>
@@ -54,7 +54,7 @@ date_default_timezone_set('America/Lima');
               <input type="hidden" name="view" value="sueldo">
  
 							<div class="input-group">
-  							<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+  							<span class="input-group-addon"><span class="fa fa-calendar"></span></span>
                 <!--
   							<input type="text" id="txtMes" name="txtMes" placeholder=""
   							 class="form-control input-sm" style=""> -->
@@ -83,7 +83,7 @@ date_default_timezone_set('America/Lima');
             <div class="col-sm-3">
               <label>MES PAGO</label>
               <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
                 <!--
                 <input type="text" id="txtMes" name="txtMes" placeholder=""
                  class="form-control input-sm" style=""> -->
@@ -105,7 +105,7 @@ date_default_timezone_set('America/Lima');
             </div>
 						<div class="col-sm-4">
 							<button style="margin-top: 27px;" id="btnGuardar" type="submit" class="btn btn-primary btn-sm"> 
-							<i class="fa fa-search"></i> Consultar</button>
+							<span class="fa fa-search"></span> Consultar</button>
 						</div>
 					</div>
 				</div>
@@ -135,11 +135,11 @@ date_default_timezone_set('America/Lima');
 
                 <ul class="controls">  
                   <li class="remove">
-                    <a  data-toggle="modal" data-target="#myModal"  ><i class="fa fa-money"></i> REGISTRAR NUEVO SUELDO</a>
+                    <a  data-toggle="modal" data-target="#myModal"  ><span class="fa fa-money"></span> REGISTRAR NUEVO SUELDO</a>
                   </li>
                   <li class="dropdown">
                     <a  role="button" tabindex="0" class="dropdown-toggle settings" data-toggle="dropdown">
-                    <i class="fa fa-print"></i><i class="fa fa-print"></i> Imprimir Reporte
+                    <span class="fa fa-print"></span><span class="fa fa-print"></span> Imprimir Reporte
                     </a>
                     <ul class="dropdown-menu pull-right with-arrow animated littleFadeInUp">
                        
@@ -149,7 +149,7 @@ date_default_timezone_set('America/Lima');
 						
                     </ul>
                   </li>
-                  <li class="remove"><a role="button" tabindex="0" class="tile-close"><i class="fa fa-times"></i></a></li>
+                  <li class="remove"><a role="button" tabindex="0" class="tile-close"><span class="fa fa-times"></span></a></li>
                 </ul>
               </div>
 
@@ -208,7 +208,7 @@ date_default_timezone_set('America/Lima');
                         <td><?php echo $sueldo->getUsuario()->name; ?></td> 
                         <td><?php echo $sueldo->monto; ?></td>  
                         <td>
-                        <a href="index.php?view=proceso_sueldo&id=<?php echo $sueldo->id; ?>&start=<?php echo $start; ?>&end=<?php echo $end; ?>"  class="btn btn-warning btn-xs"><i class="fa fa-money"></i> Remunerar</a>
+                        <a href="index.php?view=proceso_sueldo&id=<?php echo $sueldo->id; ?>&start=<?php echo $start; ?>&end=<?php echo $end; ?>"  class="btn btn-warning btn-xs"><span class="fa fa-money"></span> Remunerar</a>
                         </td>
 
                         <?php $acumulado=0; ?> 

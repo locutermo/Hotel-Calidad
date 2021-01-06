@@ -5,7 +5,7 @@
 <div class="row">
 <section class="content-header">
     <ol class="breadcrumb">
-      <li><a href="index.php?view=reserva"><i class="fa fa-home"></i> Inicio</a></li>
+      <li><a href="index.php?view=reserva"><span class="fa fa-home"></span> Inicio</a></li>
       <li><a href="javascript:;">Inventario</a></li>
       <li class="active"><a href="#">Kardex de Productos</a></li>
     </ol>
@@ -41,7 +41,7 @@
               <input type="hidden" name="view" value="kardex">
  
               <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
                 <!--
                 <input type="text" id="txtMes" name="txtMes" placeholder=""
                  class="form-control input-sm" style=""> -->
@@ -68,7 +68,7 @@
             <div class="col-sm-3">
               <label>MES PAGO</label>
               <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
                 <!--
                 <input type="text" id="txtMes" name="txtMes" placeholder=""
                  class="form-control input-sm" style=""> -->
@@ -91,7 +91,7 @@
             </div>
             <div class="col-sm-4">
               <button style="margin-top: 27px;" id="btnGuardar" type="submit" class="btn btn-primary btn-sm"> 
-              <i class="fa fa-search"></i> Consultar</button>
+              <span class="fa fa-search"></span> Consultar</button>
             </div>
           </div>
         </div>
@@ -123,7 +123,7 @@
                  
                   <li class="dropdown">
                     <a role="button" tabindex="0" class="dropdown-toggle settings" data-toggle="dropdown">
-                    <i class="fa fa-print"></i><i class="fa fa-print"></i> Imprimir Reporte
+                    <span class="fa fa-print"></span><span class="fa fa-print"></span> Imprimir Reporte
                     </a>
                     <ul class="dropdown-menu pull-right with-arrow animated littleFadeInUp">
                         <li><a id="print_saldos" href="reporte/pdf/documentos/reporte_kardex_todo.php?anio=<?php echo $anio; ?>&mes=<?php echo $me; ?>" target="_blanck"
@@ -136,7 +136,7 @@
 						<em class="icon-file-pdf"></em> Salidas del Mes</a></li>
                     </ul>
                   </li>
-                  <li class="remove"><a role="button" tabindex="0" class="tile-close"><i class="fa fa-times"></i></a></li>
+                  <li class="remove"><a role="button" tabindex="0" class="tile-close"><span class="fa fa-times"></span></a></li>
                 </ul> -->
               </div>
 

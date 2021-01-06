@@ -13,7 +13,7 @@
  <section class="content-header">
       
       <ol class="breadcrumb">
-        <li><a href="index.php?view=reserva"><i class="fa fa-home"></i> Inicio</a></li>
+        <li><a href="index.php?view=reserva"><span class="fa fa-home"></span> Inicio</a></li>
         <li><a href="#">Reportes</a></li>
         <li class="active">Reporte gastos</li>
       </ol>
@@ -44,7 +44,7 @@
                 <div class="row">
                   <div class="form-group">
                     <div class="input-group">
-                      <span class="input-group-addon text-green"><i class="fa fa-calendar"></i> Fecha inicio</span>
+                      <span class="input-group-addon text-green"><span class="fa fa-calendar"></span> Fecha inicio</span>
                       <input type="date" name="start" class="form-control" value="<?php if(isset($_GET['start'])){ echo $_GET['start']; } ?>">
                     </div>
                   </div>
@@ -54,7 +54,7 @@
               <div class="col-md-3">
                   <div class="form-group">
                     <div class="input-group">
-                      <span class="input-group-addon text-green" ><i class="fa fa-calendar"></i> Fecha fin</span>
+                      <span class="input-group-addon text-green" ><span class="fa fa-calendar"></span> Fecha fin</span>
                       <input type="date" name="end" class="form-control" value="<?php if(isset($_GET['end'])){ echo $_GET['end']; } ?>">  
                     </div>
                   </div>  
@@ -96,7 +96,7 @@
               <li class="active"><a href="#tab_1" data-toggle="tab">Lista de egresos</a></li>
               <li><a href="#tab_2" data-toggle="tab">Egresos anulados</a></li>
               <!--
-              <li class="pull-right text-red"><a href="reporte/pdf/documentos/reporte_diario.php" target="_blank" class="text-muted"><i class="fa fa-print"></i> IMPRIMIR</a></li>
+              <li class="pull-right text-red"><a href="reporte/pdf/documentos/reporte_diario.php" target="_blank" class="text-muted"><span class="fa fa-print"></span> IMPRIMIR</a></li>
             -->
             </ul>
             <div class="tab-content">
