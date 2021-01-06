@@ -6,3 +6,5 @@
 * INGRESAR EN UN NAVEGADOR: localhost/nombre_carpeta.
 * USUARIO: admin
 * PASSWORD: admin2018
+
+* Grupo 1
