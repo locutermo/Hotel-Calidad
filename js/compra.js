@@ -219,7 +219,7 @@ jquery.ui.monthpicker/jquery.ui.monthpicker.js
       if (showOn == 'button' || showOn == 'both') { // pop-up month picker when button clicked
         var buttonText = this._get(inst, 'buttonText');
         var buttonImage = this._get(inst, 'buttonImage');
-        inst.trigger = $('<img/>').addClass(this._triggerClass).
+        inst.trigger = $('<img alt="imagen"/>').addClass(this._triggerClass).
             attr({ src: buttonImage, alt: buttonText, title: buttonText });
         input['after'](inst.trigger);
         inst.trigger.click(function() {

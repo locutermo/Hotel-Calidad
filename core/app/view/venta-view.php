@@ -243,7 +243,7 @@
         url:'./?action=buscar_producto', 
         data: parametros, 
          beforeSend: function(objeto){
-         $('#loader').html('<img src="core/pedidos/img/ajax-loader.gif"> Cargando...');
+         $('#loader').html('<img alt="imagen" src="core/pedidos/img/ajax-loader.gif"> Cargando...');
         },
         success:function(data){
           $(".outer_div").html(data).fadeIn('slow');

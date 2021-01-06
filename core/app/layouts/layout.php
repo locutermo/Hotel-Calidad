@@ -251,7 +251,7 @@
                             $logo = '';
                         ?>
                         <?php } ?>
-                        <center><h1><strong>SISTEMA HOTEL</strong></h1><br><?php if($logo!='') { ?><img width="50%" src="img/<?php echo $logo; ?>"><?php }; ?></center>
+                        <div><h1><strong>SISTEMA HOTEL</strong></h1><br><?php if($logo!='') { ?><img alt="Logo" width="50%" src="img/<?php echo $logo; ?>"><?php }; ?></div>
                     </div>
                     <div class="tile-body">
                         <form role="form" action="./?action=processlogin" method="post">

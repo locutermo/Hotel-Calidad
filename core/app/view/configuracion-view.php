@@ -240,7 +240,7 @@
                 <div class="col-md-offset-1 col-md-10">
 
                    <?php if($logo!="" and $logo!="NULL" and $logo!=NULL):?>
-                            <img src="img/<?php echo $configuracion->logo;?>" style="width:74px;">
+                            <img  alt="imagen" src="img/<?php echo $configuracion->logo;?>" style="width:74px;">
                   <?php endif;?>
                   
                 </div>

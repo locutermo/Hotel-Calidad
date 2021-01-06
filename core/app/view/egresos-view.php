@@ -39,14 +39,14 @@
                   <table summary="Mi tabla" aria-describedby="descripcion" id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
 
                   <thead style="color: black; background-color: #d2d6de;">
-                        <th scope = "col">Nº</th> 
-                        <th scope = "col">Descripción</th>
-                        <th data-hide="phone">Precio</th>
-                        <th data-hide='phone, tablet'>Fecha</th>
-                        <th data-hide='phone, tablet'>Responsable</th>
+                        <th id="1" scope = "col">Nº</th> 
+                        <th id="2" scope = "col">Descripción</th>
+                        <th id="3" data-hide="phone">Precio</th>
+                        <th id="4" data-hide='phone, tablet'>Fecha</th>
+                        <th id="5" data-hide='phone, tablet'>Responsable</th>
 
-                        <th scope = "col"></th>
-                        <th scope = "col"></th>
+                        <th id="6" scope = "col"></th>
+                        <th id="7" scope = "col"></th>
                   </thead> 
                    <?php foreach($gastos as $gasto):?> 
                       <tr>
@@ -150,13 +150,13 @@
                   <table summary="Mi tabla" aria-describedby="descripcion" id="searchTextResults" data-filter="#filter" data-page-size="7" class="footable table table-custom" style="font-size: 11px;">
 
                   <thead style="color: black; background-color: #d2d6de;">
-                        <th scope = "col">Nº</th> 
-                        <th scope = "col">Descripción</th>
-                        <th scope = "col" data-hide="phone">Precio</th>
-                        <th scope = "col" data-hide='phone, tablet'>Fecha</th>
-                        <th scope = "col" data-hide='phone, tablet'>Responsable</th> 
+                        <th id="01" scope = "col">Nº</th> 
+                        <th id="02" scope = "col">Descripción</th>
+                        <th id="03" scope = "col" data-hide="phone">Precio</th>
+                        <th id="04" scope = "col" data-hide='phone, tablet'>Fecha</th>
+                        <th id="05" scope = "col" data-hide='phone, tablet'>Responsable</th> 
 
-                        <th scope = "col">Estado</th>
+                        <th id="06" scope = "col">Estado</th>
                       
                   </thead> 
                    <?php foreach($gastos as $gasto):?> 

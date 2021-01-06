@@ -12,7 +12,7 @@ if(isset($_SESSION["user_id"]) && $_SESSION["user_id"]!=""){
     	<div class="col-md-4 col-md-offset-4">
     	<?php if(isset($_COOKIE['password_updated'])):?>
     		<div class="alert alert-success">
-    		<p><em class='glyphicon glyphicon-off'></em> Se ha cambiado la contraseña exitosamente !!</p>
+    		<p><span class='glyphicon glyphicon-off'></span> Se ha cambiado la contraseña exitosamente !!</p>
     		
 
     		</div> 
@@ -32,6 +32,7 @@ if(isset($_SESSION["user_id"]) && $_SESSION["user_id"]!=""){
  
  <form accept-charset="UTF-8" role="form" method="post" action="index.php?view=processlogin">
                     <fieldset>
+						<legend >Datos del usuario</legend>
 			    	  	<div class="form-group">
 			    		    <input class="form-control" placeholder="Usuario" name="mail" type="text">
 			    		</div>

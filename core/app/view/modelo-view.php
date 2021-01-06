@@ -1,9 +1,3 @@
-
-
-
-
-
-
 <script type="text/javascript">
       window.onload = function() { window.print(); 
 
@@ -53,6 +47,11 @@ $hora = date("H:i:s");
                 </div>
                   <div class="col-md-5 pull-right">
                         <table summary="Mi tabla" aria-describedby="descripcion" class="table table-bordered table-hover">
+                            <tr>
+                              <th id="1" scope="col">RUC</th>
+                              <th id="2" scope="col">TIPO</th>
+                              <th id="3" scope="col">COMPROBANTE</th>
+                            </tr>
                               <tr>
                                 <td>R.U.C 101010101010</td>
                               </tr> 

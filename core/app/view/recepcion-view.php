@@ -153,11 +153,11 @@
                                               </div>
                                                
                                               <div class="modal-footer"> 
-                                                <center>
+                                                <div>
                                                 <a href="index.php?view=proceso_cambiar&id=<?php echo $proceso->id; ?>" class="btn btn-outline btn-warning pull-left"> CAMBIAR HABITACIÓN?</a>
 
                                                 <a href="index.php?view=proceso_salida&id=<?php echo $proceso->id; ?>" class="btn btn-outline btn-primary pull-left">IR A PRE-CUENTA</a>
-                                                </center>
+                            </div>
                                                
                                               </div>
                                            

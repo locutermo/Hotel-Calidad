@@ -73,7 +73,7 @@
                         <td><?php echo $categoria->id; ?></td>
                         <td>
                           <?php if($categoria->imagen!=""):?>
-                            <img src="img/categoria/<?php echo $categoria->imagen;?>" style="width:74px;">
+                            <img alt="imagen" src="img/categoria/<?php echo $categoria->imagen;?>" style="width:74px;">
                           <?php endif;?>
                         </td>
                         <td><?php echo $categoria->nombre; ?></td>
@@ -112,7 +112,7 @@
                       <input type="file" name="imagen" id="imagen" placeholder="" accept="image/x-png,image/gif,image/jpeg" >
 
                       <?php if($categoria->imagen!=""):?>
-                        <br> <img src="img/categoria/<?php echo $categoria->imagen;?>" class="img-responsive">
+                        <br> <img alt="imagen-categoria" src="img/categoria/<?php echo $categoria->imagen;?>" class="img-responsive">
                       <?php endif;?>
                     </div>
                   </div>

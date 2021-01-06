@@ -2235,7 +2235,7 @@ NodeParser.prototype.paintElement = function(container) {
             if (imageContainer) {
                 this.renderer.renderImage(container, bounds, container.borders, imageContainer);
             } else {
-                log("Error loading <img>", container.node.src);
+                log("Error loading", container.node.src);
             }
             break;
         case "CANVAS":

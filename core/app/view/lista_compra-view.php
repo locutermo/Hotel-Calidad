@@ -161,7 +161,7 @@
                                   <?php foreach($detalles as $detalle): ?>
                                   <tr> 
                                           <td></td>
-                                          <td><?php if($detalle->id_producto!=null){echo $detalle->getProducto()->nombre;}else{ echo "<center>----</center>"; }  ?></td>
+                                          <td><?php if($detalle->id_producto!=null){echo $detalle->getProducto()->nombre;}else{ echo "<div>----</div>"; }  ?></td>
                                           <td><?php echo $detalle->cantidad; ?></td>
                                           <td>$  <?php echo number_format($detalle->precio,2,'.',','); ?></td>
                                           <?php $sumar_t=$detalle->cantidad*$detalle->precio; ?>
