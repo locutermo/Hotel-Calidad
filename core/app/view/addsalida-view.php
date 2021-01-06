@@ -2,7 +2,7 @@
 
 if(count($_POST)>0){
 
-    $id_ope=$_POST['id_operacion'];
+    $id_ope=htmlspecialchars($_POST['id_operacion']);
 	$cajas = CajaData::getAllAbierto(); 
  	if(count($cajas)>0){ $id_caja=$cajas->id;
  	}else{$id_caja='NULL';}

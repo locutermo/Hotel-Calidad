@@ -11,7 +11,7 @@
                   <div class="input-group-addon">
                     Cant. noches
                   </div>
-                  <input type="number" class="form-control monto" name="cant_noche" id="cant_noche" min="1" value="<?php echo $_POST['cant']; ?>" onkeyup="sumar();" onchange="sumar();" disabled>
+                  <input type="number" class="form-control monto" name="cant_noche" id="cant_noche" min="1" value="<?php echo htmlspecialchars($_POST['cant']); ?>" onkeyup="sumar();" onchange="sumar();" disabled>
                 </div>
                 <!-- /.input group -->
                 <div class="input-group"> 

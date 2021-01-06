@@ -45,7 +45,8 @@
                   <div class="form-group">
                     <div class="input-group">
                       <span class="input-group-addon text-green"><i class="fa fa-calendar"></i> Fecha inicio</span>
-                      <input type="date" name="start" class="form-control" value="<?php if(isset($_GET['start'])){ echo $_GET['start']; } ?>">
+                      <input type="date" name="start" class="form-control" 
+                      value="<?php $safestart= htmlspecialchars($_GET['start']); if(isset($safestart)){ echo $safestart; } ?>">
                     </div>
                   </div>
                  </div>
@@ -55,7 +56,8 @@
                   <div class="form-group">
                     <div class="input-group">
                       <span class="input-group-addon text-green" ><i class="fa fa-calendar"></i> Fecha fin</span>
-                      <input type="date" name="end" class="form-control" value="<?php if(isset($_GET['end'])){ echo $_GET['end']; } ?>">  
+                      <input type="date" name="end" class="form-control" 
+                      value="<?php $safeend= htmlspecialchars($_GET['end']);if(isset($safeend)){ echo $safeend; } ?>">  
                     </div>
                   </div>  
               </div>

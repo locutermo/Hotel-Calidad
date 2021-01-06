@@ -59,9 +59,11 @@ date_default_timezone_set('America/Lima');
   							<input type="text" id="txtMes" name="txtMes" placeholder=""
   							 class="form-control input-sm" style=""> -->
                  <?php  
-                    if(isset($_GET['anio']) and isset($_GET['mes']) and $_GET['anio']!=''){
-                        $me= $_GET['mes'];
-                        $anio= $_GET['anio'];
+                    $safemes= htmlspecialchars($_GET['mes']);
+                    $safeanio= htmlspecialchars($_GET['anio']);
+                    if(isset($safeanio) and isset($safemes) and $safeanio!=''){
+                        $me= $safemes;
+                        $anio= $safeanio;
                     }else{
                         $me= date("m");
                         $anio= date("Y");
@@ -182,12 +184,12 @@ date_default_timezone_set('America/Lima');
                       <tr>
 
                         <?php  
-                            if(isset($_GET['anio']) and isset($_GET['mes']) and $_GET['anio']!=''){
+                            if(isset($safeanio) and isset($safemes) and $safeanio!=''){
 
                               $dia= date("d", strtotime($sueldo->fecha_comienzo));
-                              $anio=$_GET['anio'];
-                              $mes=$_GET['mes'];
-                              $mes_1=$_GET['mes']-1;
+                              $anio=$safeanio;
+                              $mes=$safemes;
+                              $mes_1=$safemes-1;
 
                               $start = date("$anio-0$mes_1-$dia");
                               $end= date("$anio-$mes-$dia");
