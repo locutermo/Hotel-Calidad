@@ -46,7 +46,7 @@
                         <th id="5" data-hide='phone, tablet'>Responsable</th>
 
                         <th id="6" scope = "col"></th>
-                        <th id="7" scope = "col"></th>
+                       
                   </thead> 
                    <?php foreach($gastos as $gasto):?> 
                       <tr>
@@ -59,9 +59,7 @@
                         <td>
                         <a href=""  data-toggle="modal" data-target="#myModal<?php echo $gasto->id; ?>" class="btn btn-warning btn-xs"><em class="glyphicon glyphicon-trash"></em> Anular</a>
                         </td>
-                        <td>
-                        <a href="index.php?view=imprimir_gasto&id=<?php echo $gasto->id;?>"  class="btn btn-success btn-xs"><em class="glyphicon glyphicon-print"></em> Imprimir</a>
-                        </td>
+                      
                       </tr> 
                   
 
