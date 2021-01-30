@@ -2193,7 +2193,7 @@ html.boxed-layout .appWrapper.header-fixed.aside-static #header {
   float: left;
 }
 
-.appWrapper.rtl #sidebar .accordion .panel-group .panel > .panel-heading .panel-title > a > i {
+.appWrapper.rtl #sidebar accordion .panel-group .panel > .panel-heading .panel-title > a > i {
   right: auto;
   left: 0;
 }
@@ -16621,6 +16621,56 @@ hr.line-full {
   background-image: url(../images/minovate-logo-color.png);
 }
 
+#sidebar.scheme-light,
+#sidebar.scheme-light #sidebar-wrap:before {
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+#sidebar.scheme-light accordion .panel-group .panel > .panel-heading .panel-title,
+#sidebar.scheme-light #sidebar-wrap:before accordion .panel-group .panel > .panel-heading .panel-title {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#sidebar.scheme-light accordion .panel-group .panel > .panel-heading .panel-title > a,
+#sidebar.scheme-light #sidebar-wrap:before accordion .panel-group .panel > .panel-heading .panel-title > a {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#sidebar.scheme-light accordion .panel-group .panel > .panel-heading .panel-title > a:hover,
+#sidebar.scheme-light #sidebar-wrap:before accordion .panel-group .panel > .panel-heading .panel-title > a:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#sidebar.scheme-light accordion .panel-group .panel.closed > .panel-heading,
+#sidebar.scheme-light #sidebar-wrap:before accordion .panel-group .panel.closed > .panel-heading {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+#sidebar.scheme-light accordion .panel-group .panel.closed > .panel-heading .panel-title > a,
+#sidebar.scheme-light #sidebar-wrap:before accordion .panel-group .panel.closed > .panel-heading .panel-title > a {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#sidebar.scheme-light accordion .panel-group .panel.closed > .panel-heading .panel-title > a:hover,
+#sidebar.scheme-light #sidebar-wrap:before accordion .panel-group .panel.closed > .panel-heading .panel-title > a:hover {
+  color: black;
+}
+
+#sidebar.scheme-light accordion .panel-group .panel .panel-body,
+#sidebar.scheme-light #sidebar-wrap:before accordion .panel-group .panel .panel-body {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#sidebar.scheme-light .summary .media .media-body,
+#sidebar.scheme-light #sidebar-wrap:before .summary .media .media-body {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+#sidebar.scheme-light .summary .media .media-body .media-heading,
+#sidebar.scheme-light #sidebar-wrap:before .summary .media .media-body .media-heading {
+  color: rgba(0, 0, 0, 0.5);
+}
+
 #sidebar.scheme-light #navigation > li.open > a,
 #sidebar.scheme-light #navigation > li:hover > a {
   background-color: rgba(0, 0, 0, 0.05);
@@ -16720,7 +16770,7 @@ hr.line-full {
 @media print {
   body,
   .custom-font {
-    font-family: "Times New Roman", Times, serif,sans-serif;
+    font-family: "Times New Roman", Times, serif;
     font-size: 12px;
   }
   h1, h2, h3, h4, h5, h6 {
