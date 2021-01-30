@@ -6,7 +6,7 @@ class Database
 	public static $con;
 
 	function Database(){
-		$this->user="root";$this->pass="";$this->host="localhost";$this->ddbb="hotel";
+		$this->user="root";$this->pass="secret";$this->host="homestead";$this->ddbb="homestead";
 	} 
 
 
