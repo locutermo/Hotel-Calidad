@@ -1,0 +1,543 @@
+[33mcommit e748bcf641c2580a04c4be61b0153c72d5ab3522[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: daniel715 <danielmontellanosllamoca@gmail.com>
+Date:   Fri Jan 29 22:23:33 2021 -0500
+
+    sacando boton imprimir
+
+[33mcommit 5c2d50001b556b3d7652063c54b7494dd127758d[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Wed Jan 6 16:57:12 2021 -0500
+
+    Update README.md
+
+[33mcommit 52137ec60fc484e504aeffdc469f5b76826dea64[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Wed Jan 6 16:55:49 2021 -0500
+
+    Update README.md
+
+[33mcommit 446fbff4538852f8cb17238757d90c0941175ae2[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Wed Jan 6 16:26:49 2021 -0500
+
+    Update README.md
+
+[33mcommit feda612b7444bd6706ca642cbd7b1d801f4e0b81[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Wed Jan 6 15:27:47 2021 -0500
+
+    Corregir bugs
+
+[33mcommit 31d801fe5ac367d322786d4c5c410856f44ba4b5[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Wed Jan 6 15:21:12 2021 -0500
+
+    Corregir bugs
+
+[33mcommit bc78293e36c8bd5c495a9b74aa7b9fa806274469[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Wed Jan 6 15:19:17 2021 -0500
+
+    Corregir bug 5
+
+[33mcommit d61c876d471e93acc71eeb9b5e357ddd41aad1a2[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Wed Jan 6 15:17:34 2021 -0500
+
+    Corregir bug 6
+
+[33mcommit c5f8a628173f7e11b72dedd8b9941a5fbc0c0c12[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Wed Jan 6 15:16:06 2021 -0500
+
+    Corregir bug 7
+
+[33mcommit 34ac85014fea22ad6ff6d859ba0d326d320b63df[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Wed Jan 6 15:12:47 2021 -0500
+
+    Corregir bugs
+
+[33mcommit 875860492d61df93e1268c2f44ce6bcc9de5196e[m
+Merge: fbd8003 d796efb
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Wed Jan 6 14:58:49 2021 -0500
+
+    Merge branch 'jose'
+
+[33mcommit d796efbdd16202794ffa004ac97c521565a28daf[m[33m ([m[1;31morigin/jose[m[33m)[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Wed Jan 6 14:56:29 2021 -0500
+
+    Update addextender-action.php
+
+[33mcommit fbd80034ed8d6c170e53fb823fb03d56aff5d9b3[m
+Merge: ce09614 55c5b92
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Wed Jan 6 14:55:19 2021 -0500
+
+    Merge pull request #14 from locutermo/jose
+    
+    Cambiar i por span
+
+[33mcommit 55c5b92f69b4b0fed1de37906aebd980123e04e1[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Wed Jan 6 14:54:37 2021 -0500
+
+    Cambiar i por span
+
+[33mcommit ce09614c203ebc89f8471960ab7da7ba731ba44a[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Wed Jan 6 14:20:15 2021 -0500
+
+    Update README.md
+
+[33mcommit 23834d8f021a2650900040067709b0a4ec2fe386[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Wed Jan 6 14:18:46 2021 -0500
+
+    Update README.md
+
+[33mcommit 8d4fe49b8a96a78f98a01aa76be082bd1cc1408b[m
+Merge: b6770e8 24f73d8
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Wed Jan 6 13:38:56 2021 -0500
+
+    Merge pull request #12 from locutermo/daniel
+    
+    Daniel
+
+[33mcommit b6770e8899c52967d9e6dd25992baf506d26242a[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Wed Jan 6 13:36:31 2021 -0500
+
+    Update contacto-view.php
+
+[33mcommit 66493424e3a63f8544042ae35583b5daa56aaf01[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Wed Jan 6 13:27:18 2021 -0500
+
+    Update contacto-view.php
+
+[33mcommit 24f73d89d1b25afde3c34bade5fea654577a8b7d[m[33m ([m[1;31morigin/daniel[m[33m, [m[1;32mdaniel[m[33m)[m
+Merge: 0542034 c65dcc6
+Author: daniel715 <danielmontellanosllamoca@gmail.com>
+Date:   Wed Jan 6 13:20:49 2021 -0500
+
+    Merge branch 'daniel' of https://github.com/locutermo/Hotel-Calidad into daniel
+
+[33mcommit 05420346663b5f522feebe549acb2db1d0b2393b[m
+Author: daniel715 <danielmontellanosllamoca@gmail.com>
+Date:   Wed Jan 6 13:20:00 2021 -0500
+
+    carpeta assets css main.css corregido
+
+[33mcommit 28d78e336bb9165b7b06e113738ad1bbbab283fd[m
+Merge: 956411b c65dcc6
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Wed Jan 6 13:04:35 2021 -0500
+
+    Merge pull request #11 from locutermo/daniel
+    
+    Daniel
+
+[33mcommit c65dcc62a931cd9ecf47b636e9013694e113d5de[m
+Merge: 0a5f35e 956411b
+Author: Daniel <58403872+daniel715@users.noreply.github.com>
+Date:   Wed Jan 6 13:00:31 2021 -0500
+
+    Merge branch 'master' into daniel
+
+[33mcommit 0a5f35e611a686f528a2ea6714a069574a96f677[m
+Merge: c14dbc8 40d344f
+Author: daniel715 <danielmontellanosllamoca@gmail.com>
+Date:   Wed Jan 6 12:58:15 2021 -0500
+
+    Merge branch 'correct' into daniel
+
+[33mcommit 40d344febaa1024723a53f3cd9336f3dfb19ff97[m
+Author: daniel715 <danielmontellanosllamoca@gmail.com>
+Date:   Wed Jan 6 12:53:04 2021 -0500
+
+    agrgando espacio prueba
+
+[33mcommit b04516652b36821aa97c9b8ba5f255e37403e46c[m
+Author: daniel715 <danielmontellanosllamoca@gmail.com>
+Date:   Wed Jan 6 12:50:32 2021 -0500
+
+    corrigiendo clases css
+
+[33mcommit 956411bd9eef7f69a5887b0da267fafeeee35ab0[m
+Merge: 22d7bc7 9a843d8
+Author: Ynafets <58225925+Ynafets@users.noreply.github.com>
+Date:   Wed Jan 6 12:13:36 2021 -0500
+
+    Combinar la solicitud de extracción #10 de locutermo/Stefany
+    
+    los elementos de la parte 1
+
+[33mcommit 9a843d80dea3d0445b8203bab25d66a468f02363[m[33m ([m[1;31morigin/Stefany[m[33m)[m
+Author: Ynafets <stefanyj1609@gmail.com>
+Date:   Wed Jan 6 01:25:42 2021 -0500
+
+    vulnerabilidades part 1
+    
+    Scripting entre sitios XSS
+
+[33mcommit 22d7bc770cf0a266b272799790341b96cc2f9282[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Mon Jan 4 13:48:49 2021 -0500
+
+    Delete gmaps.js
+
+[33mcommit faeda056e7ca2ea1ec1f8f81ac2f79c05e59441b[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Mon Jan 4 13:44:52 2021 -0500
+
+    Actualizar iconos . em por i
+    
+    Se ha actualizado la etiqueta <i> por <em> para los íconos, la etiqueta i no está haciendo referencia a italic, sino a icon
+
+[33mcommit 8fdfac58ee759655bfddf22709ce168d6d0e87c3[m
+Merge: b1ebb3c 48fc4a1
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Mon Jan 4 13:35:37 2021 -0500
+
+    Merge branch 'correct' into jose
+
+[33mcommit 48fc4a123f204d566ef963ccc3dcd2fd5fe9ddc6[m[33m ([m[1;31morigin/correct[m[33m)[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Mon Jan 4 13:34:51 2021 -0500
+
+    Corrección de bugs
+    
+    Corrige los errores ocasionados al modificar archivos minificados
+
+[33mcommit b1ebb3c885c2b8b9d05555750b0e53fb2bec24eb[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Mon Jan 4 13:15:51 2021 -0500
+
+    Revert "test"
+    
+    This reverts commit 15f8374ac10e9f95ca2203eb64a5421b867b8cb8.
+
+[33mcommit 15f8374ac10e9f95ca2203eb64a5421b867b8cb8[m
+Author: vagrant <vagrant@homestead>
+Date:   Mon Jan 4 18:14:57 2021 +0000
+
+    test
+
+[33mcommit 1ec3da3d2aebe859f83109e198afa90ae8b665fc[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Mon Jan 4 12:46:44 2021 -0500
+
+    Delete class.phpmailer.php
+
+[33mcommit 9a9f074dafb70b3186862e59fa1491f888493718[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Mon Jan 4 12:20:56 2021 -0500
+
+    Update agregar_tmp-action.php
+
+[33mcommit 6373ae7819c751bd15f8114194dcf64dbe137d02[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Sat Jan 2 21:27:24 2021 -0500
+
+    Update OperationData.php
+
+[33mcommit d20883301953dbd2e52deadaa0f0935ad66a582c[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Sat Jan 2 21:12:35 2021 -0500
+
+    Update imprimir_ticket-view.php
+
+[33mcommit 0e938ae09733910246f25e5959e04c26373ccb7b[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Sat Jan 2 21:05:33 2021 -0500
+
+    Update proveedores-view.php
+
+[33mcommit b8e9d4c6aadeba3adb580443a3926599ffebaa40[m
+Merge: 717e450 679c08d
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Sat Jan 2 21:03:57 2021 -0500
+
+    Merge branch 'jose'
+
+[33mcommit 679c08d736b9ccf8bb45a9988a38af360a5c289b[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Sat Jan 2 21:03:23 2021 -0500
+
+    Agregar ejemplo de unit test
+
+[33mcommit 717e450e2f44f8b619016ad9039a99f606ddf2a3[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Sat Jan 2 20:28:09 2021 -0500
+
+    ignore report task
+
+[33mcommit 596c3703ae5e1a2b1851011e755140a1dfd90435[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Sat Jan 2 20:19:07 2021 -0500
+
+    Agregar id al th
+
+[33mcommit 60024606c87bd8b209851e0384ddfd520bfd04fb[m
+Merge: 1b47856 3ba64e3
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Thu Dec 31 13:14:38 2020 -0500
+
+    Merge branch 'dev'
+
+[33mcommit 3ba64e3c767a8069b7988934ec93b17a01ba80fd[m
+Merge: c767796 75fc433
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Thu Dec 31 13:14:27 2020 -0500
+
+    Merge branch 'jose' into dev
+
+[33mcommit 75fc43316303236228405742adb2dbd2e3cda34d[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Thu Dec 31 13:14:15 2020 -0500
+
+    agregar correcciones
+
+[33mcommit 09b00db798b9e19d6f329aef12aed6ca5647c713[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Thu Dec 31 13:13:54 2020 -0500
+
+    agregar correcciones
+
+[33mcommit 1b478566d57abe3b9b84355ac18180a330687b0d[m
+Merge: c29f990 c767796
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Thu Dec 31 12:07:41 2020 -0500
+
+    Merge branch 'dev'
+
+[33mcommit c767796933a303bc6dfe30b78c55fdee34f4524e[m
+Merge: cf00eb2 5a25315
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Thu Dec 31 12:07:14 2020 -0500
+
+    Merge branch 'jose' into dev
+
+[33mcommit 5a2531534cf1e665d267db75b2a90f59d19af093[m[33m ([m[1;33mtag: bugs[m[33m)[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Thu Dec 31 12:06:27 2020 -0500
+
+    Corregir bugs
+
+[33mcommit 307130b7929301201cb30c6e56ef499c56c53258[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Thu Dec 31 11:48:52 2020 -0500
+
+    Fix : corregir punto de seguridad
+
+[33mcommit c29f990feadfaeda7cee4223ded112bc425af1ec[m
+Merge: 1806eb6 cf00eb2
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Thu Dec 31 11:17:39 2020 -0500
+
+    Merge branch 'dev'
+
+[33mcommit cf00eb2f7aec08992ecd647df8d1ccc96d8fcac0[m
+Merge: 0646ace e29afe7
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Thu Dec 31 11:17:14 2020 -0500
+
+    Merge branch 'jose' into dev
+
+[33mcommit e29afe74acca6139adae566c5996002eae04b1f2[m
+Merge: efd70e2 2af0dcb
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Thu Dec 31 11:13:43 2020 -0500
+
+    Merge branch 'dev' into jose
+
+[33mcommit efd70e24174879703871164abf420085b3c40605[m[33m ([m[1;33mtag: good[m[33m)[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Thu Dec 31 11:09:01 2020 -0500
+
+    fix : Corregir count por isset en los demas archivos
+
+[33mcommit 011408f4648ebfc2070476aa48527a821cf5bb46[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Thu Dec 31 11:02:11 2020 -0500
+
+    fix: Corregir count por isset
+    
+    Se ha cambiado count()>0 por isset()
+
+[33mcommit fc986f48c0f19a1744a1b80f79d9ab056835a293[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Thu Dec 31 11:00:24 2020 -0500
+
+    Ocultar opciones del menu de navegacion que no se usan
+
+[33mcommit 6d301d8bb03e645d1eae230364f06a1599a506c3[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Thu Dec 31 10:52:03 2020 -0500
+
+    Deshabilitar opcion de impresion en kardex
+
+[33mcommit 60cbd2c3e1c5c10cf12564d9cccfa448c4f7a67a[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Thu Dec 31 10:49:32 2020 -0500
+
+    Actualizar constructores a los odelos
+
+[33mcommit 93db689ebf064d2e584befe2c77f88eb15fda822[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Thu Dec 31 10:45:38 2020 -0500
+
+    Eliminar coneccion a db duplicado
+
+[33mcommit 0646ace84bff02a380a748cb17c4e22ef7896470[m[33m ([m[1;33mtag: ultimo-calendario[m[33m)[m
+Merge: 2af0dcb 74a4c88
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Thu Dec 31 10:31:29 2020 -0500
+
+    Merge pull request #8 from locutermo/jyoti
+    
+    fix: correccion de algunos code smells
+
+[33mcommit 74a4c88b4dc1713c5b879d4d34f249427559ccec[m[33m ([m[1;31morigin/jyoti[m[33m)[m
+Author: Jyoti Rospigliosi <jyoti.rospigliosi@unmsm.edu.pe>
+Date:   Thu Dec 31 10:27:46 2020 -0500
+
+    fix: correccion de algunos code smells
+
+[33mcommit faf8018af5c28addef6af5b828f3f85836dcc6a7[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Sat Dec 26 23:50:51 2020 -0500
+
+    Agregar .gitignore
+
+[33mcommit 1806eb600a120cdb646c08cb68011527955b0234[m
+Merge: 62e6c3d 2af0dcb
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Sat Dec 26 21:45:39 2020 -0500
+
+    Merge pull request #6 from locutermo/dev
+    
+    Dev
+
+[33mcommit c14dbc85ff50d228e3e543d4e396a05fc9f19c69[m
+Merge: 2169555 2af0dcb
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Sat Dec 26 21:44:42 2020 -0500
+
+    Merge pull request #4 from locutermo/dev
+    
+    Dev
+
+[33mcommit 2af0dcbdc66bbd2b190d8e720af2c365004ec116[m
+Merge: 7d8523a 2169555
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Sat Dec 26 21:44:26 2020 -0500
+
+    Merge pull request #5 from locutermo/daniel
+    
+    bugs 57 primeros hecho
+
+[33mcommit 2169555d12873214082e5deb20d59426934f2e7c[m
+Merge: bc85e22 04dfb31
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Sat Dec 26 21:42:41 2020 -0500
+
+    Merge branch 'sneemias' into daniel
+
+[33mcommit 7d8523a4852919c908852ee99a84bf7846ffe9ae[m
+Merge: 167904d 04dfb31
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Sat Dec 26 21:36:11 2020 -0500
+
+    Merge pull request #3 from locutermo/sneemias
+    
+    Sneemias
+
+[33mcommit 167904dd8ea889b7406054a279feb0ff1551529d[m
+Merge: 62e6c3d f1ad0f1
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Sat Dec 26 21:16:23 2020 -0500
+
+    Merge pull request #2 from locutermo/yohony
+    
+    Yohony
+
+[33mcommit 04dfb311dff2154b4eb9bcba7973e8f203438d4d[m[33m ([m[1;31morigin/sneemias[m[33m)[m
+Author: SaulNeemias-23 <saul.iparraguirre@unmsm.edu.pe>
+Date:   Sat Dec 26 20:51:42 2020 -0500
+
+    Agregar atributo lang a la etiqueta <html>
+
+[33mcommit fdac616783695a12891d6d940b73e14cff295747[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Sat Dec 26 20:48:00 2020 -0500
+
+    feat: Agregar instalacion
+
+[33mcommit a80355b4066c2c3cb5a82e2d569927c3fa199550[m
+Author: SaulNeemias-23 <saul.iparraguirre@unmsm.edu.pe>
+Date:   Sat Dec 26 19:30:35 2020 -0500
+
+    Agregar atributo scope a la etiqueta <th>
+
+[33mcommit f1ad0f11e3bf542bae6e859d88250dd3c66d305d[m[33m ([m[1;31morigin/yohony[m[33m)[m
+Author: tatureload <jhonny.lp@gmail.com>
+Date:   Sat Dec 26 19:14:48 2020 -0500
+
+    Update html2pdf.class.php
+
+[33mcommit 1d9083a0472edc37c56aaa9ce759db69da93626a[m
+Author: tatureload <jhonny.lp@gmail.com>
+Date:   Sat Dec 26 19:14:14 2020 -0500
+
+    Update qrcode.php
+    
+    bloques encapsulados
+
+[33mcommit b233fce17c7b8e64641ee4de3b3c3897bbfce083[m
+Author: tatureload <jhonny.lp@gmail.com>
+Date:   Sat Dec 26 02:48:47 2020 -0500
+
+    Update class.upload.php
+    
+    se creo modulos
+
+[33mcommit 9c58685a064c19e84bd194c3cb4d1101c99873f8[m
+Author: SaulNeemias-23 <saul.iparraguirre@unmsm.edu.pe>
+Date:   Fri Dec 25 22:56:49 2020 -0500
+
+    Reemplazar etiqueta <i> por <em> y <b> por <strong>
+
+[33mcommit bc85e2292ffd0cad2fecfacc742bcb04a2f01289[m
+Author: daniel715 <danielmontellanosllamoca@gmail.com>
+Date:   Fri Dec 25 11:12:24 2020 -0500
+
+    bugs 57 primeros hecho
+
+[33mcommit 62e6c3d4ce5811deefebd6578dbf520c298dd7c6[m[33m ([m[1;31morigin/ddd[m[33m)[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Thu Nov 5 11:04:17 2020 -0500
+
+    fix: Solucionar el error tal
+
+[33mcommit a97f4ee11b79eda0187a95f4308d3ddd292633e5[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Thu Nov 5 00:13:49 2020 -0500
+
+    Update README.md
+
+[33mcommit 1806acd1ff8c0a70bda96ecca0eaa2dc5e490490[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Thu Nov 5 00:13:13 2020 -0500
+
+    Create README.md
+
+[33mcommit 6a9764bed874752f007182889eb5ff0298dd0aa8[m
+Author: Jose Francisco Mateo Carrasco <locutermo@gmail.com>
+Date:   Thu Nov 5 00:09:48 2020 -0500
+
+    init

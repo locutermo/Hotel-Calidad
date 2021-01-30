@@ -90,7 +90,7 @@
               <div class="form-group"> 
                 <div class="input-group">
                     <span class="input-group-addon">Check In</span>
-                    <input type="date" class="form-control" name="txtDate" id="txtDate" required>
+                    <input type="date"  class="form-control" name="txtDate" id="txtDate" required>
                     <span class="input-group-addon">Hora</span>
                     <input type="time" class="form-control" name="txtHour" id="txtHour" required>
                 </div>
@@ -109,6 +109,8 @@
                   <span class="input-group-addon">Documento</span>
                   <input type="text" class="form-control" name="documento" id="documento" required placeholder="Ingrese documento" pattern=".{8,12}">
                 </div>
+                <button type="submit" class="btn btn-success"  id="btnVerificar">Verificar</button>
+
               </div>
 
               <div class="form-group"> 
@@ -151,7 +153,6 @@
 <script>
 
   $(function() { // document ready
-
     $('#calendar').fullCalendar({
       now: new Date(),
       editable: true,
@@ -179,6 +180,7 @@
       ],
       
       select: function(startDate, endDate,mjsEvent, view, resource) {
+        limpiar();
 
         var fechaHora=startDate.format().split("T");
         var fechaHoraEnd=endDate.format().split("T");
@@ -194,7 +196,7 @@
         $('#id_habitacion').val(resource.id);
         $('#titleEvent').html(resource.title);
         if (check >= today) {
-        $("#ModalEvent").modal();
+          $("#ModalEvent").modal();
         }
         else {
           alert("No se pueden crear reserva en el pasado!");
@@ -203,6 +205,7 @@
     },
       eventClick:function(calEvent){
             // H2
+
             if (calEvent.estado == "3") {
             $('#titleEvent').html(calEvent.title);
             // Information events
@@ -317,12 +320,48 @@
       $('#calendar').fullCalendar('refetchResources');
     });
 
+    $('#btnVerificar').click(function(){
+      DataGUI();
+      if(NewEvent.documento.trim()!=""){
+        $.ajax({
+          type:'POST',
+          url:'index.php?action=reserva&accion=verificar',
+          data:NewEvent, 
+          success:function(msg){
+            if (msg){
+              document.getElementById("nombre").value = msg.nombre;              
+              document.getElementById("documento").value = msg.documento;              
+              document.getElementById("direccion").value = msg.direccion;
+              $('#calendar').fullCalendar('refetchEvents');
+              console.log(msg)
+            }else{
+              alert('El dni no pertenece a un cliente')
+            }
+          },
+          error:function(){
+            alert("Hay un error");
+          }
+        });
+
+      }else{
+        alert("Debe ingresar el dni para que se verifique")
+      }
+
+    });
+
    $('#btnAdd').click(function(){
      
       DataGUI();
-      DataSendUI('agregar',NewEvent);
-      $('#ModalEvent').modal('toggle');
+      console.log("Datos :",NewEvent);
+      if(NewEvent.documento.trim()=="" ){
+        alert("Debe ingresar el numero de documento ")
+      }else{
+        alert("Si el numero de documento ingresado no es de un cliente, debe ingresar el nombre, de lo contrario puede ser vacio")
+        DataSendUI('agregar',NewEvent);
+      }
+      
       limpiar();
+      $('#ModalEvent').modal('toggle');
     });
 
     $('#btnDel').click(function(){
@@ -356,7 +395,7 @@
         document.getElementById("txtId").value = "";
         document.getElementById("id_habitacion").value = "";
         document.getElementById("documento").value = "";
-        document.getElementById("nombre").value = "";
+        $('#nombre').val("");
         document.getElementById("direccion").value = "";
         document.getElementById("txtDate").value = "";
         document.getElementById("txtDateEnd").value = "";
@@ -380,6 +419,7 @@
     }       
 
     function DataSendUI(accion,objEvento){ 
+
         $.ajax({
           type:'POST',
           url:'index.php?action=reserva&accion='+accion,

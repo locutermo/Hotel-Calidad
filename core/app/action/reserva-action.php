@@ -8,10 +8,20 @@ $pdo = $base->connect1();
 $accion = (isset($_GET['accion'])) ? $_GET['accion'] : 'leer';
 
 switch ($accion) {
+	case 'verificar':
+		$clientes = PersonaData::getLikeDni($_POST['documento']);
+		$clienteData = $clientes ? $clientes->toArray() : [];
+		if (!empty($clienteData)){
+			echo json_encode($clienteData);
+		}else{
+			echo json_encode(null);
+		}
+
+		break; 
 	case 'agregar':
 		$clientes = PersonaData::getLikeDni($_POST['documento']);
 		$clienteData = $clientes ? $clientes->toArray() : [];
-		if (isset($clienteData))
+		if (!empty($clienteData))
 		{
 		  $id_cliente = $clienteData['id'];
 		} else {
