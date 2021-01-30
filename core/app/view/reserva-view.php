@@ -178,8 +178,7 @@
       ],
       
       select: function(startDate, endDate,mjsEvent, view, resource) {
-        alert('click en evento');
-        console.log('Datos de evento id : ',resource,mjsEvent,view);
+        limpiar();
 
         var fechaHora=startDate.format().split("T");
         var fechaHoraEnd=endDate.format().split("T");
@@ -204,7 +203,6 @@
     },
       eventClick:function(calEvent){
             // H2
-            limpiar();
 
             if (calEvent.estado == "3") {
             $('#titleEvent').html(calEvent.title);
@@ -324,7 +322,13 @@
      
       DataGUI();
       console.log("Datos :",NewEvent);
-      DataSendUI('agregar',NewEvent);
+      if(NewEvent.documento.trim()=="" ){
+        alert("Debe ingresar el numero de documento ")
+      }else{
+        alert("Si el numero de documento ingresado no es de un cliente, debe ingresar el nombre, de lo contrario puede ser vacio")
+        DataSendUI('agregar',NewEvent);
+      }
+      
       limpiar();
       $('#ModalEvent').modal('toggle');
     });

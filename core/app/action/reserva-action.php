@@ -11,7 +11,7 @@ switch ($accion) {
 	case 'agregar':
 		$clientes = PersonaData::getLikeDni($_POST['documento']);
 		$clienteData = $clientes ? $clientes->toArray() : [];
-		if (isset($clienteData))
+		if (!empty($clienteData))
 		{
 		  $id_cliente = $clienteData['id'];
 		} else {
