@@ -6,12 +6,12 @@ class Database
 	public static $con;
 
 	function Database(){
-		$this->user="root";$this->pass="";$this->host="localhost";$this->ddbb="hotel5estrellas";
+		$this->user="root";$this->pass="secret";$this->host="homestead";$this->ddbb="homestead";
 	} 
 
 
 	function connect(){
-		$con = new mysqli($this->host,$this->user,$this->pass,$this->ddbb,3308);
+		$con = new mysqli($this->host,$this->user,$this->pass,$this->ddbb);
 		$con->query("set sql_mode=''");
 		return $con;
 	}
