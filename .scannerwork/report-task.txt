@@ -1,6 +1,6 @@
-projectKey=hotelv3
-serverUrl=http://localhost:9000
-serverVersion=8.2.0.32929
-dashboardUrl=http://localhost:9000/dashboard?id=hotelv3
-ceTaskId=AXbFzNSIc_qVA2-d35n2
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AXbFzNSIc_qVA2-d35n2
+projectKey=Hotel-Calidad
+serverUrl=http://localhost:9000/sonarqube
+serverVersion=8.5.1.38104
+dashboardUrl=http://localhost:9000/sonarqube/dashboard?id=Hotel-Calidad
+ceTaskId=AXas3bYLOpgDIaR1WSIo
+ceTaskUrl=http://localhost:9000/sonarqube/api/ce/task?id=AXas3bYLOpgDIaR1WSIo
