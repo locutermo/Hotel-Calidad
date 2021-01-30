@@ -109,6 +109,8 @@
                   <span class="input-group-addon">Documento</span>
                   <input type="text" class="form-control" name="documento" id="documento" required placeholder="Ingrese documento" pattern=".{8,12}">
                 </div>
+                <button type="submit" class="btn btn-success"  id="btnVerificar">Verificar</button>
+
               </div>
 
               <div class="form-group"> 
@@ -316,6 +318,35 @@
       $('#ModalRoom').modal('toggle');
       limpiar();
       $('#calendar').fullCalendar('refetchResources');
+    });
+
+    $('#btnVerificar').click(function(){
+      DataGUI();
+      if(NewEvent.documento.trim()!=""){
+        $.ajax({
+          type:'POST',
+          url:'index.php?action=reserva&accion=verificar',
+          data:NewEvent, 
+          success:function(msg){
+            if (msg){
+              document.getElementById("nombre").value = msg.nombre;              
+              document.getElementById("documento").value = msg.documento;              
+              document.getElementById("direccion").value = msg.direccion;
+              $('#calendar').fullCalendar('refetchEvents');
+              console.log(msg)
+            }else{
+              alert('El dni no pertenece a un cliente')
+            }
+          },
+          error:function(){
+            alert("Hay un error");
+          }
+        });
+
+      }else{
+        alert("Debe ingresar el dni para que se verifique")
+      }
+
     });
 
    $('#btnAdd').click(function(){
