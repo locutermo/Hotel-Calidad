@@ -90,7 +90,7 @@
               <div class="form-group"> 
                 <div class="input-group">
                     <span class="input-group-addon">Check In</span>
-                    <input type="date" class="form-control" name="txtDate" id="txtDate" required>
+                    <input type="date"  class="form-control" name="txtDate" id="txtDate" required>
                     <span class="input-group-addon">Hora</span>
                     <input type="time" class="form-control" name="txtHour" id="txtHour" required>
                 </div>
@@ -151,7 +151,6 @@
 <script>
 
   $(function() { // document ready
-
     $('#calendar').fullCalendar({
       now: new Date(),
       editable: true,
@@ -179,6 +178,8 @@
       ],
       
       select: function(startDate, endDate,mjsEvent, view, resource) {
+        alert('click en evento');
+        console.log('Datos de evento id : ',resource,mjsEvent,view);
 
         var fechaHora=startDate.format().split("T");
         var fechaHoraEnd=endDate.format().split("T");
@@ -194,7 +195,7 @@
         $('#id_habitacion').val(resource.id);
         $('#titleEvent').html(resource.title);
         if (check >= today) {
-        $("#ModalEvent").modal();
+          $("#ModalEvent").modal();
         }
         else {
           alert("No se pueden crear reserva en el pasado!");
@@ -203,6 +204,8 @@
     },
       eventClick:function(calEvent){
             // H2
+            limpiar();
+
             if (calEvent.estado == "3") {
             $('#titleEvent').html(calEvent.title);
             // Information events
@@ -320,9 +323,10 @@
    $('#btnAdd').click(function(){
      
       DataGUI();
+      console.log("Datos :",NewEvent);
       DataSendUI('agregar',NewEvent);
-      $('#ModalEvent').modal('toggle');
       limpiar();
+      $('#ModalEvent').modal('toggle');
     });
 
     $('#btnDel').click(function(){
@@ -356,7 +360,7 @@
         document.getElementById("txtId").value = "";
         document.getElementById("id_habitacion").value = "";
         document.getElementById("documento").value = "";
-        document.getElementById("nombre").value = "";
+        $('#nombre').val("");
         document.getElementById("direccion").value = "";
         document.getElementById("txtDate").value = "";
         document.getElementById("txtDateEnd").value = "";
@@ -380,6 +384,7 @@
     }       
 
     function DataSendUI(accion,objEvento){ 
+
         $.ajax({
           type:'POST',
           url:'index.php?action=reserva&accion='+accion,
